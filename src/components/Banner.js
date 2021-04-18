@@ -11,11 +11,11 @@ import '../css/Banner.css';
 
 function Banner() {
 	return (
-		<div className='hero-container'>
+		<div className='banner-container'>
 			<video src={Videos.video_corse} autoPlay loop muted />
 			<h1>CORSE 2021</h1>
 			<p>{Strings.banner_msg}</p>
-			<div className='hero-btns'>
+			<div className='banner-btns'>
 				<Button
 					className='btns'
 					buttonStyle='btn--outline'
