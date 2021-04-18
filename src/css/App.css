@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.home,
+.berlin,
+.bourgogne,
+.bretagne,
+.crete,
+.corse,
+.perche {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.berlin,
+.bourgogne,
+.bretagne,
+.crete,
+.corse,
+.perche {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.berlin {
+  background-image: url('../assets/images/cards/img-berlin.jpg');
+}
+
+.bretagne {
+  background-image: url('../assets/images/cards/img-bretagne.jpg');
+}
+
+.bourgogne {
+  background-image: url('../assets/images/cards/img-berlin.jpg');
+}
+
+.crete {
+  background-image: url('../assets/images/cards/img-crete.jpg');
+}
+
+.corse {
+  background-image: url('../assets/images/cards/img-berlin.jpg');
+}
+
+.perche {
+  background-image: url('../assets/images/cards/img-perche.jpg');
+}
