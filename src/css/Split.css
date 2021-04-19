@@ -1,0 +1,15 @@
+.split_screen {
+    display: 'flex';
+    flex-direction: 'row';
+	height: 100vh;
+}
+
+.left_pane {
+    width: '50%';
+	height: 100%;
+}
+
+.right_pane {
+    width: '50%';
+	height: 100%;
+}
