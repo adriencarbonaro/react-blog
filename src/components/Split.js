@@ -1,5 +1,3 @@
-import { Pane } from "./Pane"
-
 /* CSS */
 import '../css/Split.css'
 
