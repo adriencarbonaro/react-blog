@@ -1,6 +1,7 @@
 .split_screen {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .left_pane {
