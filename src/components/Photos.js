@@ -14,30 +14,28 @@ export const PhotoSingle = (props) => {
 }
 
 export const PhotoGallery = (props) => {
+	const elem = (src) => {
+		if (src != "") {
+			return (
+				<>
+					<li className="photo_gallery_item">
+						<img
+							className="photo_gallery_img"
+							src={src}
+							alt="alt1"
+						/>
+					</li>
+				</>
+			)
+		}
+	};
+
 	return (
 		<div className="photo_gallery">
 			<ul className="photo_gallery_items">
-				<li className="photo_gallery_item">
-					<img
-					  className="photo_gallery_img"
-					  src={props.src_1}
-					  alt="alt1"
-					/>
-				</li>
-				<li className="photo_gallery_item">
-					<img
-					  className="photo_gallery_img"
-					  src={props.src_2}
-					  alt="alt"
-					/>
-				</li>
-				<li className="photo_gallery_item">
-					<img
-					  className="photo_gallery_img"
-					  src={props.src_3}
-					  alt="alt"
-					/>
-				</li>
+				{elem(props.src_1)}
+				{elem(props.src_2)}
+				{elem(props.src_3)}
 			</ul>
 		</div>
 	)
