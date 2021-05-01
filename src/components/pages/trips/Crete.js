@@ -4,8 +4,9 @@ import { Component }      from 'react';
 import { Story } from "../../Story"
 import { TitleBloc } from "../../TitleBloc"
 import { Split } from "../../Split"
-import { PhotoSingle } from "../../Photos"
-import { PhotoGallery } from "../../Photos"
+import { PhotoSingle,
+         PhotoGallery,
+         PhotoT } from "../../Photos"
 import { Images } from "../../../assets/Images"
 import { ImagesCrete } from "../../../assets/ImagesCrete"
 
@@ -64,13 +65,10 @@ export default class Crete extends ComponentScrollTop {
 				<Story
 					text={<P5/>}
 				/>
-				<PhotoSingle
-					src={ImagesCrete.img_crete_4}
-				/>
-				<PhotoGallery
-					src_1=""
-					src_2={ImagesCrete.img_crete_5}
-					src_3={ImagesCrete.img_crete_6}
+				<PhotoT
+					src_large={ImagesCrete.img_crete_4}
+					src_row_1={ImagesCrete.img_crete_5}
+					src_row_2={ImagesCrete.img_crete_6}
 				/>
 				<TitleBloc
 					subtitle="Mardi 4 Septembre"

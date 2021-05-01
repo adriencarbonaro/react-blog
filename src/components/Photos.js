@@ -93,3 +93,55 @@ export const PhotoDoubleGallery = (props) => {
 		</div>
 	)
 }
+
+export const PhotoT = (props) => {
+	const t_large = (src_large) => {
+		return (
+			<>
+				<img
+					className="photo-gallery-item-top"
+					src={src_large}
+					alt="alt"
+				/>
+			</>
+		)
+	}
+	const t_row = (src_row_1, src_row_2) => {
+		return (
+			<>
+				<div className="photo-gallery-items-row">
+					<img
+						className="photo-gallery-item-row"
+						src={src_row_1}
+						alt="alt"
+					/>
+					<img
+						className="photo-gallery-item-row"
+						src={src_row_2}
+						alt="alt"
+					/>
+				</div>
+			</>
+		)
+	}
+	if (props.inverted) {
+		var elem = (
+			<>
+				{t_row(props.src_row_1, props.src_row_2)}
+				{t_large(props.src_large)}
+			</>
+		)
+	} else {
+		var elem = (
+			<>
+				{t_large(props.src_large)}
+				{t_row(props.src_row_1, props.src_row_2)}
+			</>
+		)
+	}
+	return (
+		<div className="photo-gallery-t">
+			{elem}
+		</div>
+	)
+}
