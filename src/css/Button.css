@@ -8,6 +8,7 @@
     outline: none;
     border: none;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .btn--primary {
@@ -26,21 +27,31 @@
 
 .btn-navbar {
     background-color: transparent;
-    color: #555;
-    border: 2px solid #555;
+    width: 110px;
+    color: white;
+    border: 2px solid white;
     transition: all 0.3s ease-out;
+}
+
+.btn-navbar.scrolled {
+    border-color: #555;
+    color: #555;
 }
 
 .btn-navbar:hover {
     background-color: transparent;
     color: #f78a74 !important;
-    border: 2px solid #555;
+    border: 2px solid white;
     transition: all 0.3s ease-out;
+}
+
+.btn-navbar.scrolled:hover {
+    border-color: #555;
 }
 
 .btn--medium {
     padding: 8px 20px;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .btn--large {
@@ -53,4 +64,11 @@
     background: #fff;
     color: #242424;
     transition: all 0.3s ease-out;
+}
+
+@media screen and (max-width: 960px) {
+    .btn-navbar {
+        border-color: #555;
+        color: #555;
+    }
 }

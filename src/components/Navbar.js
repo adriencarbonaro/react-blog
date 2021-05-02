@@ -1,62 +1,78 @@
 import React                 from 'react';
-import { useState,
-         useEffect }         from 'react';
+import { useState }          from 'react';
 import { Link }              from 'react-router-dom';
 import { Button }            from './Button';
 
 /* Assets */
-import { Strings }           from '../assets/Strings';
 
 function Navbar() {
-	const [click, setClick]   = useState(false);
-	const [button, setButton] = useState(true);
+	const [click_menu, setClickMenu]   = useState(false);
+	const [click_submenu_1, setClickSubMenu1] = useState(false);
+	const [click_submenu_2, setClickSubMenu2] = useState(false);
+	const [scroll_state,
+	       setScrollState]    = useState(false);
 
-	const handleClick     = () => setClick(!click);
-	const closeMobileMenu = () => setClick(false);
+	const handleClickMenu = () => setClickMenu(!click_menu);
+	const closeMobileMenu = () => setClickMenu(false);
 
-	const showButton = () => {
-		setButton(!(window.innerWidth <= 960))
+	const handleScroll = () => {
+		let scrollY = window.scrollY;
+		setScrollState(scrollY > 200)
 	}
 
-	useEffect(() => {
-		showButton()
-	}, [])
+	const handleClickSubMenu = (click_menu) => {
+		if (click_menu === "click_submenu_1") {
+			setClickSubMenu1(!click_submenu_1)
+		}
+		if (click_menu === "click_submenu_2") {
+			setClickSubMenu2(!click_submenu_2)
+		}
+	}
 
-	window.addEventListener('resize', showButton)
+	const classWithScroll = (classname) => {
+		return scroll_state ? classname + " scrolled" : classname
+	}
+
+	window.addEventListener('scroll', handleScroll)
 
 	return (
 		<>
-			<nav className="navbar">
+			<nav className={click_menu ? classWithScroll("navbar nav-mob-active") : classWithScroll("navbar")}>
 				<div className="navbar-container">
-					<Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-						{Strings.navbar_title} <i className="fas fa-paw"></i>
-					</Link>
-					<div className="menu-icon" onClick={handleClick}>
-						<i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+					<div className="menu-icon" onClick={handleClickMenu}>
+						<i className={click_menu ? classWithScroll("fas fa-times") : classWithScroll("fas fa-bars")} />
 					</div>
-					<ul className={click ? "nav-menu active" : "nav-menu"}>
-						<li className="nav-item">
-							<Link to="/" className="nav-links" onClick={closeMobileMenu}>
-								<i className="fas fa-home"></i>
-							</Link>
+					<Link to="/" className={classWithScroll("navbar-logo")} onClick={closeMobileMenu}>
+						<i className="fas fa-paw"></i>
+					</Link>
+					<ul className={click_menu ? "nav-menu active" : "nav-menu"}>
+						<li className={click_submenu_1 ? "nav-item active" : "nav-item"} onClick={(e) => handleClickSubMenu("click_submenu_1")}>
+							<div className={classWithScroll("nav-links")}>
+								France <i class="fas fa-chevron-down"></i>
+							</div>
+							<ul className={classWithScroll("nav-submenu")}>
+								<li className="submenu-item"><Link to="/bourgogne" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Bourgogne</Link></li>
+								<li className="submenu-item"><Link to="/" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Le Berry</Link></li>
+								<li className="submenu-item"><Link to="/" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Bourges</Link></li>
+								<li className="submenu-item"><Link to="/bretagne" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Bretagne</Link></li>
+								<li className="submenu-item"><Link to="/perche" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Perche</Link></li>
+							</ul>
+						</li>
+						<li className={click_submenu_2 ? "nav-item active" : "nav-item"} onClick={(e) => handleClickSubMenu("click_submenu_2")}>
+							<div to="/products" className={classWithScroll("nav-links")}>
+								Monde <i class="fas fa-chevron-down"></i>
+							</div>
+							<ul className={classWithScroll("nav-submenu")}>
+								<li className="submenu-item"><Link to="/berlin" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Berlin</Link></li>
+								<li className="submenu-item"><Link to="/crete" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Crète</Link></li>
+							</ul>
 						</li>
 						<li className="nav-item">
-							<Link to="/services" className="nav-links" onClick={closeMobileMenu}>
-								A propos de nous
-							</Link>
-						</li>
-						<li className="nav-item">
-							<Link to="/products" className="nav-links" onClick={closeMobileMenu}>
-								Codes Promos
-							</Link>
-						</li>
-						<li className="nav-item">
-							<Link to="/sign-up" className="nav-links-mobile" onClick={closeMobileMenu}>
-								Sign Up
+							<Link to="/sign-up" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>
+								<Button buttonBaseStyle={classWithScroll("btn-navbar")} buttonStyle='btn-outline'>SIGN UP</Button>
 							</Link>
 						</li>
 					</ul>
-					{button && <Button buttonBaseStyle='btn-navbar' buttonStyle='btn-outline'>SIGN UP</Button>}
 				</div>
 			</nav>
 

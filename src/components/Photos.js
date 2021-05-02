@@ -15,7 +15,7 @@ export const PhotoSingle = (props) => {
 
 export const PhotoGallery = (props) => {
 	const elem = (src) => {
-		if (src != "") {
+		if (src !== "") {
 			return (
 				<>
 					<li className="photo_gallery_item">
@@ -132,7 +132,7 @@ export const PhotoT = (props) => {
 			</>
 		)
 	} else {
-		var elem = (
+		elem = (
 			<>
 				{t_large(props.src_large)}
 				{t_row(props.src_row_1, props.src_row_2)}

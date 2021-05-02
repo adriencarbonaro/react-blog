@@ -28,7 +28,6 @@ function Banner() {
 					className='btns'
 					buttonStyle='btn--primary'
 					buttonSize='btn--large'
-					onClick={console.log('hey')}
 				>
 					VOIR LE FILM <i className='far fa-play-circle' />
 				</Button>

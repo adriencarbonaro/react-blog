@@ -7,7 +7,6 @@ import { Split } from "../../Split"
 import { PhotoSingle,
          PhotoGallery,
          PhotoT } from "../../Photos"
-import { Images } from "../../../assets/Images"
 import { ImagesCrete } from "../../../assets/ImagesCrete"
 
 /* CSS */

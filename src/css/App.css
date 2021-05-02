@@ -30,6 +30,8 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+  height: 100vh;
+  margin-top: -80px;
 }
 
 .berlin {
