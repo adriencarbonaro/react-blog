@@ -212,11 +212,6 @@ ol, ul, li {
   }
 
   .fa-times {
-    color: white;
-    font-size: 2rem;
-  }
-
-  .fa-times.scrolled {
     color: #555;
   }
 
