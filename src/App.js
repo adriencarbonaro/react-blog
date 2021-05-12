@@ -1,6 +1,7 @@
 import React                 from 'react';
 import { BrowserRouter as
          Router }            from 'react-router-dom'
+import { Component }         from 'react';
 import { Switch, Route }     from 'react-router-dom'
 
 import Navbar                from './components/Navbar';
@@ -19,25 +20,25 @@ import Perche                from './components/pages/trips/Perche'
 /* CSS */
 import './css/App.css';
 
-function App() {
+class App extends Component {
+	render () {
 	return (
 		<>
-		<Router>
-				<Navbar />
-				<Switch>
-						<Route path="/berlin"    component={Berlin} />
-						<Route path="/bourges"   component={Bourges} />
-						<Route path="/bourgogne" component={Bourgogne} />
-						<Route path="/bretagne"  component={Bretagne} />
-						<Route path="/crete"     component={Crete} />
-						<Route path="/corse"     component={Corse} />
-						<Route path="/perche"    component={Perche} />
-						<Route path="/"          component={Home} />
-				</Switch>
-				<Footer />
-		</Router>
+			<Navbar />
+			<Switch>
+				<Route path="/berlin"    component={Berlin} />
+				<Route path="/bourges"   component={Bourges} />
+				<Route path="/bourgogne" component={Bourgogne} />
+				<Route path="/bretagne"  component={Bretagne} />
+				<Route path="/crete"     component={Crete} />
+				<Route path="/corse"     component={Corse} />
+				<Route path="/perche"    component={Perche} />
+				<Route path="/"          component={Home} />
+			</Switch>
+			<Footer />
 		</>
 	);
+	}
 }
 
 export default App;
