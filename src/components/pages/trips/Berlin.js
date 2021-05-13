@@ -9,22 +9,25 @@ import { ImagesBerlin } from '../../../assets/ImagesBerlin';
 
 /* CSS */
 import '../../../css/App.css';
-import '../../../css/Berlin.css'
+import '../../../css/trips/Berlin.css'
 
 export default class Berlin extends ComponentScrollTop {
 	render () {
+		const class_name = "berlin"
 		return (
 			<div>
 				<h1 className='berlin'>Berlin</h1>
 				<TitleBloc
 					title="Trois jours à Berlin"
 					subtitle="Escapade dans la capitale allemande"
+					accent={class_name}
 				/>
 				<Story
 					text={<P1/>}
 				/>
 				<TitleBloc
 					subtitle="Mercredi 31 octobre"
+					accent={class_name}
 				/>
 				<Story
 					text={<P2/>}
@@ -43,6 +46,7 @@ export default class Berlin extends ComponentScrollTop {
 				/>
 				<TitleBloc
 					subtitle="Jeudi 1er Novembre"
+					accent={class_name}
 				/>
 				<Story
 					text={<P4/>}
@@ -57,12 +61,14 @@ export default class Berlin extends ComponentScrollTop {
 				/>
 				<TitleBloc
 					subtitle="Vendredi 2 Novembre"
+					accent={class_name}
 				/>
 				<Story
 					text={<P5/>}
 				/>
 				<TitleBloc
 					subtitle="Fun Fact !"
+					accent={class_name}
 				/>
 				<Story
 					text={<P6/>}

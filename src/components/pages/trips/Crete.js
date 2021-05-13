@@ -11,21 +11,25 @@ import { ImagesCrete } from "../../../assets/ImagesCrete"
 
 /* CSS */
 import '../../../css/App.css';
+import '../../../css/trips/Crete.css'
 
 export default class Crete extends ComponentScrollTop {
 	render () {
+		const class_name = "crete"
 		return (
 			<div>
 				<h1 className='crete'>Crète</h1>
 				<TitleBloc
 					title="Une semaine en Crète"
 					subtitle="Le berceaux des Dieux"
+					accent={class_name}
 				/>
 				<Story
 					text={<P1/>}
 				/>
 				<TitleBloc
 					subtitle="Vendredi 31 Août"
+					accent={class_name}
 				/>
 				<Story
 					text={<P2/>}
@@ -35,6 +39,7 @@ export default class Crete extends ComponentScrollTop {
 						<>
 						<TitleBloc
 							subtitle="Samedi 1er Septembre"
+							accent={class_name}
 						/>
 						<Story
 							text={<P3/>}
@@ -49,6 +54,7 @@ export default class Crete extends ComponentScrollTop {
 				/>
 				<TitleBloc
 					subtitle="Dimanche 2 Septembre"
+					accent={class_name}
 				/>
 				<Story
 					text={<P4/>}
@@ -60,6 +66,7 @@ export default class Crete extends ComponentScrollTop {
 				/>
 				<TitleBloc
 					subtitle="Lundi 3 Septembre"
+					accent={class_name}
 				/>
 				<Story
 					text={<P5/>}
@@ -71,24 +78,28 @@ export default class Crete extends ComponentScrollTop {
 				/>
 				<TitleBloc
 					subtitle="Mardi 4 Septembre"
+					accent={class_name}
 				/>
 				<Story
 					text={<P6/>}
 				/>
 				<TitleBloc
 					subtitle="Mercredi 5 Septembre"
+					accent={class_name}
 				/>
 				<Story
 					text={<P7/>}
 				/>
 				<TitleBloc
 					subtitle="Jeudi 6 Septembre"
+					accent={class_name}
 				/>
 				<Story
 					text={<P8/>}
 				/>
 				<TitleBloc
 					subtitle="Vendredi 7 Septembre"
+					accent={class_name}
 				/>
 				<Story
 					text={<P9/>}

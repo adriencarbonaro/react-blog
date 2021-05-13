@@ -1,15 +1,16 @@
 .title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
-    text-transform: uppercase;
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 50px;
     text-align: center;
     color: #333333;
     margin: 50px 0 30px 0;
 }
 
 .subtitle {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    /* font-style: italic; */
     text-align: center;
     color: #333333;
 }
