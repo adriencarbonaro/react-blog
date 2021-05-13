@@ -7,6 +7,7 @@
 
 .home,
 .berlin,
+.bourges,
 .bourgogne,
 .bretagne,
 .crete,
@@ -20,6 +21,7 @@
 }
 
 .berlin,
+.bourges,
 .bourgogne,
 .bretagne,
 .crete,
@@ -40,6 +42,10 @@
 
 .bretagne {
   background-image: url('../assets/images/cards/img-bretagne.jpg');
+}
+
+.bourges {
+  background-image: linear-gradient(#00000000, #00000030), url('../assets/images/cards/img-bourges.jpg');
 }
 
 .bourgogne {

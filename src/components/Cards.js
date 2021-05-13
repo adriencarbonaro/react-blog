@@ -47,6 +47,12 @@ function Cards() {
 							label='Weekend'
 							path='/perche'
 						/>
+						<CardItem
+							src={Images.img_bourges}
+							text={Trips.bourges}
+							label='Weekend'
+							path='/bourges'
+						/>
 					</ul>
 				</div>
 			</div>

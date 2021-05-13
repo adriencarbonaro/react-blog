@@ -9,6 +9,7 @@ import Home                  from './components/pages/Home'
 
 /* Trips */
 import Berlin                from './components/pages/trips/Berlin'
+import Bourges               from './components/pages/trips/Bourges'
 import Bourgogne             from './components/pages/trips/Bourgogne'
 import Bretagne              from './components/pages/trips/Bretagne'
 import Crete                 from './components/pages/trips/Crete'
@@ -25,6 +26,7 @@ function App() {
 				<Navbar />
 				<Switch>
 						<Route path="/berlin"    component={Berlin} />
+						<Route path="/bourges"   component={Bourges} />
 						<Route path="/bourgogne" component={Bourgogne} />
 						<Route path="/bretagne"  component={Bretagne} />
 						<Route path="/crete"     component={Crete} />
