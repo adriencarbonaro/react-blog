@@ -1,0 +1,25 @@
+#logo-svg {
+	height: 75%;
+}
+
+#logo-font > path {
+	transition: fill 0.3s ease-out;
+}
+
+.logo-font.scrolled > g#logo-font > path {
+	fill: #897975;
+}
+
+.a305a1b7-56f4-451f-8361-036c42412837{fill:#FFFFFF;}
+.a30637b5-52d9-4cdf-ab8c-4a37384639db{fill:#e1d3cf;}
+.b29ba85e-5ed8-453e-8a0e-5837d450fb61{fill:#f4eec6;}
+.aa7d331a-e88a-4e8d-8cb2-7e505162920e{fill:#f4ecea;}
+.bf4c8258-5d86-41dd-8275-517ade9484c7{fill:#897975;}
+.f5defc25-292e-4f05-bf98-5b6ef9869c8a{fill:#545c7a;}
+.b88cf6db-2aac-462e-9090-96278b3dceef{fill:#f6f6f6;}
+.bc9f9bb1-ef92-4d18-bcc2-43f5c72c9d8f{fill:#565e7a;}
+.fa93ede4-3eda-4573-8db8-b034f7df6633{fill:#fbd9cf;}
+.ba2e79fc-ee8e-4d7a-aef3-593d8601a958{fill:#f6b19e;}
+.b2fae1d3-84b0-464c-b1ad-00acc059276a{fill:#dceff4;}
+.eb1cf231-b524-4ba1-b0c6-b060cf1545d8{fill:#b4dee0;}
+.b08e5caf-5055-4691-b2ff-c88adeef4325{fill:#d3e9ee;}

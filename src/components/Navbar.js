@@ -2,15 +2,18 @@ import React                 from 'react';
 import { useState }          from 'react';
 import { Link }              from 'react-router-dom';
 import { Button }            from './Button';
+import LogoSVG               from './LogoSVG';
+
+import logo                  from '../assets/logo/logo.svg'
 
 /* Assets */
+import '../css/logo.css'
 
 function Navbar() {
-	const [click_menu, setClickMenu]   = useState(false);
+	const [click_menu, setClickMenu]          = useState(false);
 	const [click_submenu_1, setClickSubMenu1] = useState(false);
 	const [click_submenu_2, setClickSubMenu2] = useState(false);
-	const [scroll_state,
-	       setScrollState]    = useState(false);
+	const [scroll_state, setScrollState]      = useState(false);
 
 	const handleClickMenu = () => setClickMenu(!click_menu);
 	const closeMobileMenu = () => setClickMenu(false);
@@ -43,7 +46,9 @@ function Navbar() {
 						<i className={click_menu ? classWithScroll("fas fa-times") : classWithScroll("fas fa-bars")} />
 					</div>
 					<Link to="/" className={classWithScroll("navbar-logo")} onClick={closeMobileMenu}>
-						<i className="fas fa-paw"></i>
+						<LogoSVG
+						  fontClass={classWithScroll("logo-font")}
+						/> 
 					</Link>
 					<ul className={click_menu ? "nav-menu active" : "nav-menu"}>
 						<li className={click_submenu_1 ? "nav-item active" : "nav-item"} onClick={(e) => handleClickSubMenu("click_submenu_1")}>

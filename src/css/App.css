@@ -35,7 +35,7 @@
 }
 
 .berlin {
-  background-image: url('../assets/images/cards/img-berlin.jpg');
+  background-image: linear-gradient(#00000000, #00000030), url('../assets/images/cards/img-berlin.jpg');
 }
 
 .bretagne {
@@ -48,6 +48,7 @@
 
 .crete {
   background-image: url('../assets/images/cards/img-crete.jpg');
+  background-image: linear-gradient(#00000000, #00000030), url('../assets/images/cards/img-crete.jpg');
 }
 
 .corse {
