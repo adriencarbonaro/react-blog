@@ -6,6 +6,7 @@ import '../../../css/App.css';
 
 export default class Corse extends ComponentScrollTop {
 	render () {
-		return <h1 className='corse'>Corse</h1>;
+		const class_name = "corse";
+		return <h1 className={"banner-title " + class_name}>Corse</h1>;
 	}
 }

@@ -15,10 +15,10 @@ import '../../../css/trips/Bourges.css'
 
 export default class Bourges extends ComponentScrollTop {
 	render () {
-		const class_name = "bourges"
+		const class_name = "bourges";
 		return (
 			<div>
-				<h1 className='bourges'>Bourges</h1>
+				<h1 className={"banner-title " + class_name}>Bourges</h1>
 				<TitleBloc
 					title="Week-end dans le Berry"
 					subtitle="Terroir de Sancerre"

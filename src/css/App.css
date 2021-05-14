@@ -5,28 +5,11 @@
   font-family: 'PT Sans', sans-serif;
 }
 
-.home,
-.berlin,
-.bourges,
-.bourgogne,
-.bretagne,
-.crete,
-.corse,
-.perche {
+.banner-title
+{
   display: flex;
-  height: 90vh;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
-}
-
-.berlin,
-.bourges,
-.bourgogne,
-.bretagne,
-.crete,
-.corse,
-.perche {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,30 +20,29 @@
 }
 
 .berlin {
-  background-image: linear-gradient(#00000000, #00000030), url('../assets/images/cards/img-berlin.jpg');
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-berlin.jpg');
 }
 
 .bretagne {
-  background-image: url('../assets/images/cards/img-bretagne.jpg');
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-bretagne.jpg');
 }
 
 .bourges {
-  background-image: linear-gradient(#00000000, #00000030), url('../assets/images/cards/img-bourges.jpg');
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-bourges.jpg');
 }
 
 .bourgogne {
-  background-image: url('../assets/images/cards/img-bourgogne.jpg');
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-bourgogne.jpg');
 }
 
 .crete {
-  background-image: url('../assets/images/cards/img-crete.jpg');
-  background-image: linear-gradient(#00000000, #00000030), url('../assets/images/cards/img-crete.jpg');
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-crete.jpg');
 }
 
 .corse {
-  background-image: url('../assets/images/cards/img-corse.jpg');
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-corse.jpg');
 }
 
 .perche {
-  background-image: url('../assets/images/cards/img-perche.jpg');
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-perche.jpg');
 }

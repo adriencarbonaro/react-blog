@@ -15,10 +15,10 @@ import '../../../css/trips/Berlin.css'
 
 export default class Berlin extends ComponentScrollTop {
 	render () {
-		const class_name = "berlin"
+		const class_name = "berlin";
 		return (
 			<div>
-				<h1 className='berlin'>Berlin</h1>
+				<h1 className={"banner-title " + class_name}>Berlin</h1>
 				<TitleBloc
 					title="Trois jours à Berlin"
 					subtitle="Escapade dans la capitale allemande"

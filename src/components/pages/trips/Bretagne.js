@@ -6,6 +6,7 @@ import '../../../css/App.css';
 
 export default class Bretagne extends ComponentScrollTop {
 	render () {
-		return <h1 className='bretagne'>Bretagne</h1>;
+		const class_name = "bretagne";
+		return <h1 className={"banner-title " + class_name}>Bretagne</h1>;
 	}
 }

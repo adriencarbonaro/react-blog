@@ -17,10 +17,10 @@ import '../../../css/trips/Crete.css'
 
 export default class Crete extends ComponentScrollTop {
 	render () {
-		const class_name = "crete"
+		const class_name = "crete";
 		return (
 			<div>
-				<h1 className='crete'>Crète</h1>
+				<h1 className={"banner-title " + class_name}>Crète</h1>
 				<TitleBloc
 					title="Une semaine en Crète"
 					subtitle="Le berceaux des Dieux"
