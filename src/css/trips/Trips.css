@@ -4,3 +4,29 @@
 	--tripadvisor: #40dfa3;
 	--tripadvisor-hover: #227e5b;
 }
+
+.fa-airbnb {
+	font-weight: 600;
+}
+
+a {
+	text-decoration: none;
+	transition: color 0.3s ease-out;
+}
+
+a.airbnb {
+	color: var(--airbnb);
+}
+
+a.airbnb:hover {
+	color: var(--airbnb-hover);
+}
+
+a.tripadvisor {
+	color: var(--tripadvisor);
+}
+
+a.tripadvisor:hover {
+	color: var(--tripadvisor-hover);
+}
+

@@ -10,39 +10,6 @@
 	color: var(--accent-berlin);
 }
 
-.fa-airbnb {
-	font-weight: 600;
-}
-
-a {
-	text-decoration: none;
-	transition: color 0.3s ease-out;
-}
-
-a.airbnb {
-	color: var(--airbnb);
-}
-
-a.airbnb:hover {
-	color: var(--airbnb-hover);
-}
-
-a.wine {
-	color: var(--wine);
-}
-
-a.wine:hover {
-	color: var(--wine-hover);
-}
-
-a.tripadvisor {
-	color: var(--tripadvisor);
-}
-
-a.tripadvisor:hover {
-	color: var(--tripadvisor-hover);
-}
-
 a.hotel {
 	color: var(--hotel);
 }
