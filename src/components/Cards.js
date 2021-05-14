@@ -42,7 +42,7 @@ function Cards() {
 						<CardItem
 							src={Images.img_berlin}
 							text={Trips.berlin}
-							label='Weekend'
+							label='Holiday'
 							path='/berlin'
 						/>
 					</ul>
