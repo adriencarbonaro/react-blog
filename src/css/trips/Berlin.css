@@ -1,3 +1,64 @@
+:root {
+	--accent-berlin: #dc9339;
+	--airbnb: #ec385a;
+	--airbnb-hover: #8a2034;
+	--tripadvisor: #40dfa3;
+	--tripadvisor-hover: #227e5b;
+	--hotel: #fd8724;
+	--hotel-hover: #a15617;
+	--monument: #9c7250;
+	--monument-hover: #5a4d43;
+}
+
 .subtitle-berlin {
-	color: #dc9339;
+	color: var(--accent-berlin);
+}
+
+.fa-airbnb {
+	font-weight: 600;
+}
+
+a {
+	text-decoration: none;
+	transition: color 0.3s ease-out;
+}
+
+a.airbnb {
+	color: var(--airbnb);
+}
+
+a.airbnb:hover {
+	color: var(--airbnb-hover);
+}
+
+a.wine {
+	color: var(--wine);
+}
+
+a.wine:hover {
+	color: var(--wine-hover);
+}
+
+a.tripadvisor {
+	color: var(--tripadvisor);
+}
+
+a.tripadvisor:hover {
+	color: var(--tripadvisor-hover);
+}
+
+a.hotel {
+	color: var(--hotel);
+}
+
+a.hotel:hover {
+	color: var(--hotel-hover);
+}
+
+a.monument {
+	color: var(--monument);
+}
+
+a.monument:hover {
+	color: var(--monument-hover);
 }
