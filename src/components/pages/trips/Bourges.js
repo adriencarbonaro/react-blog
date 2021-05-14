@@ -10,6 +10,7 @@ import CustomLink from '../../CustomLink';
 
 /* CSS */
 import '../../../css/App.css';
+import '../../../css/trips/Trips.css'
 import '../../../css/trips/Bourges.css'
 
 export default class Bourges extends ComponentScrollTop {
