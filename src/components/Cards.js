@@ -1,5 +1,8 @@
 import React from 'react';
+import { useState } from 'react';
 import CardItem from './CardItem';
+import SVGGlobe from './SVGGlobe';
+import SVGFrance from './SVGFrance';
 
 /* Assets */
 import { Strings, Trips }    from '../assets/Strings';
@@ -9,11 +12,25 @@ import { Images }            from '../assets/Images';
 import '../css/Cards.css';
 
 function Cards() {
+	const [scroll_state, setScrollState]      = useState(false);
+
+	const handleScroll = () => {
+		let scrollY = window.scrollY;
+		setScrollState(scrollY > (window.innerHeight * 0.95))
+	}
+
+	const classWithScroll = (classname) => {
+		return scroll_state ? classname + " scrolled" : classname
+	}
+
+	window.addEventListener('scroll', handleScroll)
+
 	return (
 		<div className='cards'>
 			<h1>{Strings.cards_header_title}</h1>
 			<div className='cards__container'>
 				<div className='cards__wrapper'>
+					<SVGGlobe className={classWithScroll()}/>
 					<ul className='cards__items'>
 						<CardItem
 							src={Images.img_crete}
@@ -28,6 +45,7 @@ function Cards() {
 							path='/berlin'
 						/>
 					</ul>
+					<SVGFrance className={classWithScroll()}/>
 					<ul className='cards__items'>
 						<CardItem
 							src={Images.img_bourgogne}
@@ -41,6 +59,8 @@ function Cards() {
 							label='Weekend'
 							path='/bretagne'
 						/>
+					</ul>
+					<ul className='cards__items'>
 						<CardItem
 							src={Images.img_perche}
 							text={Trips.perche}

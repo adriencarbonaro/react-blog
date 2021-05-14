@@ -1,6 +1,6 @@
 import '../css/logo.css'
 
-function LogoSVG(props) {
+function SVGLogo(props) {
 	return (
 		<>
 			<svg class={props.fontClass} id="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1498.97 486.96">
@@ -77,4 +77,4 @@ function LogoSVG(props) {
 	)
 }
 
-export default LogoSVG
+export default SVGLogo

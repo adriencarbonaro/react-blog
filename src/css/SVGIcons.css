@@ -1,0 +1,7 @@
+.svg-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 25px 0;
+	justify-content: center;
+}

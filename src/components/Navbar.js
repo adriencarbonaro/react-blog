@@ -2,7 +2,7 @@ import React                 from 'react';
 import { useState }          from 'react';
 import { Link }              from 'react-router-dom';
 import { Button }            from './Button';
-import LogoSVG               from './LogoSVG';
+import SVGLogo               from './SVGLogo';
 
 import logo                  from '../assets/logo/logo.svg'
 
@@ -46,7 +46,7 @@ function Navbar() {
 						<i className={click_menu ? classWithScroll("fas fa-times") : classWithScroll("fas fa-bars")} />
 					</div>
 					<Link to="/" className={classWithScroll("navbar-logo")} onClick={closeMobileMenu}>
-						<LogoSVG
+						<SVGLogo
 						  fontClass={classWithScroll("logo-font")}
 						/> 
 					</Link>

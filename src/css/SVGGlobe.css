@@ -1,0 +1,23 @@
+#globe-svg {
+	height: 100px;
+}
+
+#globe-svg > g > path {
+	transition: fill 0.3s ease-out;
+}
+
+.globe-svg-sea          {fill:#ffffff;}
+.globe-svg-earth        {fill:#ffffff;}
+.globe-svg-border       {fill:#c9c9c9;}
+
+#globe-svg.scrolled > g.globe-svg-sea > path {
+	fill: #78D2FA;
+}
+
+#globe-svg.scrolled > g.globe-svg-earth > path {
+	fill: #a5dc69;
+}
+#globe-svg.scrolled > g.globe-svg-border > path {
+	fill: #3b3b3b;
+}
+

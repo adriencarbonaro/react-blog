@@ -1,0 +1,29 @@
+#france-svg {
+	height: 100px;
+	margin:auto;
+}
+
+#france-svg > g > path {
+	transition: fill 0.3s ease-out;
+}
+
+.france-svg-blue         {fill:#ffffff;}
+.france-svg-white        {fill:#ffffff;}
+.france-svg-red          {fill:#ffffff;}
+.france-svg-border       {fill:#c9c9c9;}
+
+#france-svg.scrolled > g.france-svg-blue > path {
+	fill: #60a4ff;
+}
+
+#france-svg.scrolled > g.france-svg-white > path {
+	fill: #ffffff;
+}
+
+#france-svg.scrolled > g.france-svg-red > path {
+	fill: #ff5a58;
+}
+
+#france-svg.scrolled > g.france-svg-border > path {
+	fill: #3b3b3b;
+}
