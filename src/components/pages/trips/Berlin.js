@@ -67,13 +67,6 @@ export default class Berlin extends ComponentScrollTop {
 				<Story
 					text={<P5/>}
 				/>
-				<TitleBloc
-					subtitle="Fun Fact !"
-					accent={class_name}
-				/>
-				<Story
-					text={<P6/>}
-				/>
 			</div>
 		)
 	}
@@ -133,16 +126,6 @@ class P5 extends Component {
 			<>
 Dernier jour à Berlin. Nous avons cette fois-ci passé la matinée sur l'île des musées qui se situe au centre de Berlin. Nous sommes montés en haut du Berliner Schloss afin d’avoir une belle vue sur l’île, l’esplanade au centre et les musées en face. Puis nous nous sommes promenés sur l’esplanade. Une ambiance très agréable, des gens qui bouquinent sur la pelouse, des musiciens qui jouent … comme un air de printemps au mois de novembre. Nous avons ensuite marché dans les rues et avons déjeuné chez <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g187323-d715413-Reviews-Keyser_Soze-Berlin.html" name="Keyzer Soze"/>. Puis balade et shopping dans les rues aux alentours avant de retourner à l’auberge de jeunesse pour récupérer nos affaires et direction l’aéroport. 
 Berlin fut une très belle découverte. Cette ville détruite par l’histoire puis qui tente de se reconstruire depuis, qui oscille entre architecture très “impériale” puis “industrielle” a énormément à offrir. Elle est jeune, dynamique et regorge d’endroits insolites : on y retournera c’est sûr !
-			</>
-		)
-	}
-}
-
-class P6 extends Component {
-	render () {
-		return (
-			<>
-C’est lors de ce voyage qu’Adrien a obtenu son stage de fin d’étude dans la boîte où il bosse toujours aujourd’hui, un souvenir en plus.
 			</>
 		)
 	}
