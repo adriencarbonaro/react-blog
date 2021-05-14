@@ -7,6 +7,7 @@ import { Component }         from 'react';
 import { PhotoDoubleGallery, PhotoSingle } from '../../Photos';
 import { ImagesBerlin } from '../../../assets/ImagesBerlin';
 import CustomLink from '../../CustomLink';
+import SVGLocation from '../../SVGLocation'
 
 /* CSS */
 import '../../../css/App.css';
@@ -19,6 +20,7 @@ export default class Berlin extends ComponentScrollTop {
 		return (
 			<div>
 				<h1 className={"banner-title " + class_name}>Berlin</h1>
+				<SVGLocation className={class_name}/>
 				<TitleBloc
 					title="Trois jours à Berlin"
 					subtitle="Escapade dans la capitale allemande"

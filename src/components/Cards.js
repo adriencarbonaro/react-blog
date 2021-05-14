@@ -1,8 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import CardItem from './CardItem';
-import SVGGlobe from './SVGGlobe';
-import SVGFrance from './SVGFrance';
+import SVGLocation from './SVGLocation';
 
 /* Assets */
 import { Strings, Trips }    from '../assets/Strings';
@@ -12,14 +11,16 @@ import { Images }            from '../assets/Images';
 import '../css/Cards.css';
 
 function Cards() {
-	const [scroll_state, setScrollState]      = useState(false);
+	const [scroll_state_globe,  setScrollStateGlobe]   = useState(false);
+	const [scroll_state_france, setScrollStateFrance]  = useState(false);
 
 	const handleScroll = () => {
 		let scrollY = window.scrollY;
-		setScrollState(scrollY > (window.innerHeight * 0.95))
+		setScrollStateGlobe(scrollY > (window.innerHeight * 0.95))
+		setScrollStateFrance(scrollY > (window.innerHeight * 0.95) + 300)
 	}
 
-	const classWithScroll = (classname) => {
+	const classWithScroll = (scroll_state, classname) => {
 		return scroll_state ? classname + " scrolled" : classname
 	}
 
@@ -30,7 +31,7 @@ function Cards() {
 			<h1>{Strings.cards_header_title}</h1>
 			<div className='cards__container'>
 				<div className='cards__wrapper'>
-					<SVGGlobe className={classWithScroll()}/>
+					<SVGLocation className={classWithScroll(scroll_state_globe, "globe")}/>
 					<ul className='cards__items'>
 						<CardItem
 							src={Images.img_crete}
@@ -45,7 +46,7 @@ function Cards() {
 							path='/berlin'
 						/>
 					</ul>
-					<SVGFrance className={classWithScroll()}/>
+					<SVGLocation className={classWithScroll(scroll_state_france, "france")}/>
 					<ul className='cards__items'>
 						<CardItem
 							src={Images.img_bourgogne}

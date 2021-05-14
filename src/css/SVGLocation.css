@@ -1,0 +1,72 @@
+.svg-location {
+	text-align: center;
+	margin: 30px 0;
+}
+
+.svg-location > svg {
+	height: 200px;
+}
+
+g.background {
+	fill: #ffffff;
+}
+
+g.border {
+	fill: #3b3b3b;
+}
+
+g.circle > circle {
+	fill: #ff5050;
+}
+
+/* Globe */
+
+.globe {
+	height: 100px;
+}
+
+.globe > g > path {
+	transition: fill 0.3s ease-out;
+}
+
+.globe-sea          {fill:#ffffff;}
+.globe-earth        {fill:#ffffff;}
+.globe-border       {fill:#c9c9c9;}
+
+.globe.scrolled > g.globe-sea > path {
+	fill: #78D2FA;
+}
+
+.globe.scrolled > g.globe-earth > path {
+	fill: #a5dc69;
+}
+.globe.scrolled > g.globe-border > path {
+	fill: #3b3b3b;
+}
+
+/* France */
+
+.france > g > path {
+	transition: fill 0.3s ease-out;
+}
+
+.france-blue         {fill:#ffffff;}
+.france-white        {fill:#ffffff;}
+.france-red          {fill:#ffffff;}
+.france-border       {fill:#c9c9c9;}
+
+.france.scrolled > g.france-blue > path {
+	fill: #60a4ff;
+}
+
+.france.scrolled > g.france-white > path {
+	fill: #ffffff;
+}
+
+.france.scrolled > g.france-red > path {
+	fill: #ff5a58;
+}
+
+.france.scrolled > g.france-border > path {
+	fill: #3b3b3b;
+}
