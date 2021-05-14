@@ -1,0 +1,17 @@
+:root {
+	--accent-bourgogne: #94755d;
+	--tree: #7ba833;
+	--tree-hover: #456923;
+}
+
+.subtitle-bourgogne {
+	color: var(--accent-bourgogne);
+}
+
+a.tree {
+	color: var(--tree);
+}
+
+a.tree:hover {
+	color: var(--tree-hover);
+}

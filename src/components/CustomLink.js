@@ -7,6 +7,7 @@ function CustomLink (props) {
 		"monument"     : "fas fa-landmark",
 		"hotel"        : "fas fa-hotel",
 		"wine"         : "fas fa-wine-glass-alt",
+		"tree"         : "fas fa-tree",
 	}
 	
 	return (
