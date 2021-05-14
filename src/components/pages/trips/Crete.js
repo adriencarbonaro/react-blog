@@ -130,7 +130,7 @@ class P2 extends Component {
 			<>
 Nous sommes arrivés à l’aéroport d’Hania le vendredi en fin d'après-midi. 
 Après avoir récupéré la voiture, il nous restait une petite heure de route avant d’arriver à Réthymnon, troisième ville de Crète, où nous avions choisi de poser nos valises pour la semaine. 
-Une fois nos affaires déposées au Airbnb, idéalement placé au centre de la vieille ville, nous avons directement été nous balader dans les ruelles très animées des alentours pour nous imprégner de l’atmosphère et trouver une terrasse sympa pour le dîner.
+Une fois nos affaires déposées au <a class="airbnb" target="_blank" href="https://www.airbnb.fr/rooms/19362825?source_impression_id=p3_1619964646_G0XsWccExltSEsl8&guests=1&adults=1"><i class="fab fa-airbnb"/> Airbnb</a>, idéalement placé au centre de la vieille ville, nous avons directement été nous balader dans les ruelles très animées des alentours pour nous imprégner de l’atmosphère et trouver une terrasse sympa pour le dîner.
 			</>
 		)
 	}
@@ -172,7 +172,7 @@ Grosse journée en prévision. Nous voulions aller voir la fameuse île des lép
 Nous avons donc roulé jusqu’à Plaka, station balnéaire située en face de l’île, puis pris un petit bateau pour arriver sur Spinalonga. 
 Il s’agit d’une forteresse vénitienne où fut installé au début du XXe siècle un village de lépreux en attendant de trouver un remède pour éviter que la maladie se propage. 
 Cette léproserie n’a été fermée qu’en 1950. Bien que l’île soit totalement à l’abandon depuis et que la plupart des bâtiments aient été détruits, il est encore possible de voir certaines habitations qui ont été reconstruites par la suite pour en faire un musée. 
-Pour le déjeuner, nous sommes retournés sur Plaka où nous avons mangé dans un restaurant sur le bord de mer en face de l’île. 
+Pour le déjeuner, nous sommes retournés sur Plaka où nous avons mangé chez <a class="tripadvisor" target="_blank" href="https://www.tripadvisor.fr/Restaurant_Review-g6754342-d21206508-Reviews-Ta_Kymata-Plaka_Elounda_Lasithi_Prefecture_Crete.html"><i class="fab fa-tripadvisor"/> Ta Kymata</a>, un restaurant sur le bord de mer en face de l’île. 
 L’après-midi, nous avons été voir la grotte de Dikti où selon la légende, Zeus fut caché par sa mère lorsqu’il était bébé pour échapper à son père qui mangeait ses enfants. 
 Pour atteindre la grotte il faut grimper un peu, la visite se fait très rapidement mais une fois en haut, on a une superbe vue sur tout le plateau du Lassithi. 
 Nous en avons d’ailleurs profité en repartant pour aller voir les ruines des fameux moulins à vent qui furent construits le long de la crête tout autour du plateau.
@@ -190,7 +190,7 @@ Celle-ci est pour le coup très facile d’accès. Elle n’est composée que d�
 En effet, bien que selon la mythologie elle représente un sanctuaire en l’honneur du géant Talos, elle est surtout connue pour le drame qui s’y est produit en 1824. 
 Alors que l’armée turque gagnait du terrain durant la révolution, des centaines de villageois s’y réfugièrent pour se cacher. 
 L’armée trouva leur cachette et mit le feu à la grotte où ils périrent tous enfumés. La salle est très bien éclairée et se visite selon un circuit tracé. 
-Pour le déjeuner nous sommes retournés sur Rethymnon et nous nous sommes rendus chez Parastratima, notre coup de cœur culinaire des vacances. 
+Pour le déjeuner nous sommes retournés sur Rethymnon et nous nous sommes rendus chez <a class="tripadvisor" target="_blank" href="https://www.tripadvisor.fr/Restaurant_Review-g189421-d6581263-Reviews-To_Parastratima-Rethymnon_Rethymnon_Prefecture_Crete.html"><i class="fab fa-tripadvisor"/> To Parastratima</a>, notre coup de cœur culinaire des vacances. 
 Un tout petit restaurant situé dans la ruelle à côté de la fontaine proposant une cuisine locale et peu chère. 
 Puis l’après-midi nous nous sommes baladés dans le port de la vieille ville.
 			</>
@@ -207,7 +207,7 @@ Le circuit est très sympa, il descend le long des gorges parfois à l’aide de
 Il faut compter 1 à 2h pour descendre selon sa vitesse. 
 Une fois arrivé au lac, on peut soit faire le chemin inverse soit passer par la route qui contourne les gorges. 
 Celle-ci étant en plein soleil, nous avons pour notre part fait du stop et deux grecs très sympa nous ont ramenés jusqu’au point de départ. 
-Nous en avons profité pour déjeuner dans la taverne “Drimos” située à côté du parking. Ambiance familiale et plats locaux, c’était très bon !
+Nous en avons profité pour déjeuner dans la taverne <a class="tripadvisor" target="_blank" href="https://www.tripadvisor.fr/Restaurant_Review-g8391638-d2464240-Reviews-Taverna_Drimos-Patsos_Rethymnon_Prefecture_Crete.html"><i class="fab fa-tripadvisor"/> Drimos</a> située à côté du parking. Ambiance familiale et plats locaux, c’était très bon !
 			</>
 		)
 	}
@@ -229,7 +229,7 @@ class P9 extends Component {
 	render () {
 		return (
 			<>
-Après avoir rendu le Airbnb et déposé les valises à la voiture, direction la petite place de Rethymnon pour un brunch au restaurant “Cul de sac”. 
+Après avoir rendu le Airbnb et déposé les valises à la voiture, direction la petite place de Rethymnon pour un brunch au restaurant <a class="tripadvisor" target="_blank“" href="https://www.tripadvisor.fr/Restaurant_Review-g189421-d4580478-Reviews-Cul_De_Sac-Rethymnon_Rethymnon_Prefecture_Crete.html"><i class="fab fa-tripadvisor"/> Cul de sac</a>. 
 Pour le coup la cuisine est moins locale mais cela change et c’était une tuerie ! 
 Nous avons fait nos derniers achats de souvenirs pour ramener des épices et des produits locaux puis pris la route pour visiter La Canée sur la route de l’aéroport. 
 La vieille ville est très sympa et nous avons déjeuné sur le port. 

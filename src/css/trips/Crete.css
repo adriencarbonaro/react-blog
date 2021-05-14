@@ -1,3 +1,36 @@
+:root {
+	--accent-crete: #2996df;
+	--airbnb: #ec385a;
+	--airbnb-hover: #8a2034;
+	--tripadvisor: #40dfa3;
+	--tripadvisor-hover: #227e5b;
+}
+
 .subtitle-crete {
-	color: #2996df;
+	color: var(--accent-crete);
+}
+
+.fa-airbnb {
+	font-weight: 600;
+}
+
+a {
+	text-decoration: none;
+	transition: color 0.3s ease-out;
+}
+
+a.airbnb {
+	color: var(--airbnb);
+}
+
+a.airbnb:hover {
+	color: var(--airbnb-hover);
+}
+
+a.tripadvisor {
+	color: var(--tripadvisor);
+}
+
+a.tripadvisor:hover {
+	color: var(--tripadvisor-hover);
 }
