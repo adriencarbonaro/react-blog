@@ -1,3 +1,46 @@
+:root {
+	--accent-bourges: #8a0e2d;
+	--airbnb: #ec385a;
+	--airbnb-hover: #8a2034;
+	--wine: #b3a12e;
+	--wine-hover: #635918;
+	--tripadvisor: #40dfa3;
+	--tripadvisor-hover: #227e5b;
+}
+
 .subtitle-bourges {
-	color: #8a0e2d;
+	color: var(--accent-bourges);
+}
+
+.fa-airbnb {
+	font-weight: 600;
+}
+
+a {
+	text-decoration: none;
+	transition: color 0.3s ease-out;
+}
+
+a.airbnb {
+	color: var(--airbnb);
+}
+
+a.airbnb:hover {
+	color: var(--airbnb-hover);
+}
+
+a.wine {
+	color: var(--wine);
+}
+
+a.wine:hover {
+	color: var(--wine-hover);
+}
+
+a.tripadvisor {
+	color: var(--tripadvisor);
+}
+
+a.tripadvisor:hover {
+	color: var(--tripadvisor-hover);
 }
