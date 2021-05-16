@@ -35,6 +35,7 @@ video {
 
 .banner-btns {
   margin-top: 32px;
+  text-align: center;
 }
 
 .banner-btns .btn {
@@ -68,6 +69,6 @@ video {
   }
 
   .btn {
-    width: 100%;
+    width: 60%;
   }
 }
