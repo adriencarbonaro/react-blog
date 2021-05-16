@@ -20,7 +20,7 @@ export default class Bourgogne extends ComponentScrollTop {
 		const class_name = "bourgogne";
 		return (
 			<>
-				<h1 className={"banner-title " + class_name}>Bourgogne</h1>;
+				<h1 className={"banner-title " + class_name}>Bourgogne</h1>
 				<SVGLocation className={class_name}/>
 				<TitleBloc
 				  title="Une nuit sous les étoiles"
