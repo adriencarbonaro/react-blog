@@ -25,8 +25,8 @@ yarn-error.log*
 # assets
 /src/assets/images/
 /src/assets/videos/
+/src/assets/svg
+/src/assets/logo
 
 # user settings
 .vscode
-
-src/assets/svg
