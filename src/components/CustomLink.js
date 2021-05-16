@@ -14,6 +14,7 @@ function CustomLink (props) {
 		<a
 		  class={props.type}
 		  target="_blank"
+		  rel="noreferrer"
 		  href={props.link}
 		>
 			<i class={icon_classes[props.type]}/>

@@ -1,6 +1,4 @@
 import React                 from 'react';
-import { BrowserRouter as
-         Router }            from 'react-router-dom'
 import { Component }         from 'react';
 import { Switch, Route }     from 'react-router-dom'
 
