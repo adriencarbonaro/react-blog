@@ -46,3 +46,7 @@
 .perche {
   background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-perche.jpg');
 }
+
+.trouville {
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-trouville.jpg');
+}

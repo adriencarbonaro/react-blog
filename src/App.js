@@ -14,6 +14,7 @@ import Bretagne              from './components/pages/trips/Bretagne'
 import Crete                 from './components/pages/trips/Crete'
 import Corse                 from './components/pages/trips/Corse'
 import Perche                from './components/pages/trips/Perche'
+import Trouville             from './components/pages/trips/Trouville'
 
 /* CSS */
 import './css/App.css';
@@ -31,6 +32,7 @@ class App extends Component {
 				<Route path="/crete"     component={Crete} />
 				<Route path="/corse"     component={Corse} />
 				<Route path="/perche"    component={Perche} />
+				<Route path="/trouville" component={Trouville} />
 				<Route path="/"          component={Home} />
 			</Switch>
 			<Footer />

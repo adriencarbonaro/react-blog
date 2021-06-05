@@ -49,6 +49,14 @@ function Cards() {
 					<SVGLocation className={classWithScroll(scroll_state_france, "france")}/>
 					<ul className='cards__items'>
 						<CardItem
+							src={Images.img_trouville}
+							text={Trips.trouville}
+							label='Weekend'
+							path='/trouville'
+						/>
+					</ul>
+					<ul className='cards__items'>
+						<CardItem
 							src={Images.img_bourgogne}
 							text={Trips.bourgogne}
 							label='Insolite'
