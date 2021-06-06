@@ -22,11 +22,12 @@ h1 {
 
 .cards__items {
   margin-bottom: 24px;
+  justify-content: center;
 }
 
 .cards__item {
   display: flex;
-  flex: 1;
+  flex: 0 0 50%;
   margin: 0 1rem;
   border-radius: 10px;
 }
