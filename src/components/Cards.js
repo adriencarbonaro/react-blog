@@ -83,6 +83,34 @@ function Cards() {
 							path='/bourges'
 						/>
 					</ul>
+					<ul className='cards__items'>
+						<CardItem
+							src={Images.img_etretat}
+							text={Trips.etretat}
+							label='Weekend'
+							path='/etretat'
+						/>
+						<CardItem
+							src={Images.img_fontainebleau}
+							text={Trips.fontainebleau}
+							label='Weekend'
+							path='/fontainebleau'
+						/>
+					</ul>
+					<ul className='cards__items'>
+						<CardItem
+							src={Images.img_honfleur}
+							text={Trips.honfleur}
+							label='Weekend'
+							path='/honfleur'
+						/>
+						<CardItem
+							src={Images.img_nantes}
+							text={Trips.nantes}
+							label='Weekend'
+							path='/nantes'
+						/>
+					</ul>
 				</div>
 			</div>
 		</div>
