@@ -103,7 +103,7 @@ class P1 extends Component {
 			<>
 Bourges et la région du Berry permettent de retrouver le calme et la nature durant l’espace d’un week-end.
 C’est une destination idéale également pour les amateurs de vin et de bonne nourriture.
-Nous sommes toujours à la recherche de week-end au vert proche de Paris et cette région fut une très belle découverte. 
+Nous sommes toujours à la recherche de week-end au vert proche de Paris et cette région fut une très belle découverte.
 Pour la petite histoire, au XXe siècle, la région fut l’une des premières de France à accueillir des routes touristiques afin d’encourager les visiteurs à rester un peu plus longtemps.
 			</>
 		)
@@ -126,7 +126,7 @@ class P3 extends Component {
 	render () {
 		return (
 			<>
-Après une grasse matinée et un petit déjeuner tardif, nous sommes sortis nous balader dans les rues de Bourges. La vieille ville, qui se visite à pied, a beaucoup de charme avec ses petites ruelles et places. Elle a d'ailleurs reçu le label “Ville d’art et d’histoire” grâce à son riche patrimoine architectural. 
+Après une grasse matinée et un petit déjeuner tardif, nous sommes sortis nous balader dans les rues de Bourges. La vieille ville, qui se visite à pied, a beaucoup de charme avec ses petites ruelles et places. Elle a d'ailleurs reçu le label “Ville d’art et d’histoire” grâce à son riche patrimoine architectural.
 <br/>
 <br/>
 A voir dans Bourges (entre autre) :<br/>
@@ -136,7 +136,7 @@ A voir dans Bourges (entre autre) :<br/>
     - La promenade piétonne du rempart gallo-romain (qui est fléchée à partir de la cathédrale)<br/>
     - Le palais Jacques Coeur <br/>
 … et toutes les petites ruelles qui s’entrecroisent :) <br/><br/>
-Ensuite nous avons marché jusqu’aux marais, aussi appelés “Le poumon vert de Bourges". Sur plus de 135 hectares, cet espace protégé est classé au Patrimoine naturel. C’est un vrai dépaysement : une fois dans les marais, on n’entend plus les bruits de la ville, on se sent au calme et reposés. 
+Ensuite nous avons marché jusqu’aux marais, aussi appelés “Le poumon vert de Bourges". Sur plus de 135 hectares, cet espace protégé est classé au Patrimoine naturel. C’est un vrai dépaysement : une fois dans les marais, on n’entend plus les bruits de la ville, on se sent au calme et reposés.
 			</>
 		)
 	}
@@ -150,11 +150,11 @@ Direction Sancerre et ses centaines d'hectares de vignes.
 Nous nous sommes rendus chez <CustomLink type="wine" link="http://jeanmarc-mathieu-crochet.com/" name="Jean-Marc & Mathieu Crochet"/>, un vignoble tenu de père en fils.
 Jean-Marc nous a gentiment fait visiter son exploitation.
 Il nous a ainsi expliqué tout le cheminement de la fabrication du vin, de la récolte jusqu’à la mise en bouteille.
-Puis il nous a emmené dans sa boutique où nous avons pu déguster quelques-unes de ses cuvées. 
+Puis il nous a emmené dans sa boutique où nous avons pu déguster quelques-unes de ses cuvées.
 Nous avons poursuivi notre périple jusqu’à la vieille ville de Sancerre, une cité toute en hauteur.
-Nous avons dégusté de succulentes tartines de chèvre chaud au <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g580139-d2340264-Reviews-Cafe_des_Arts-Sancerre_Cher_Berry_Centre_Val_de_Loire.html" name="Café des Arts"/> situé sur la petite place. 
+Nous avons dégusté de succulentes tartines de chèvre chaud au <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g580139-d2340264-Reviews-Cafe_des_Arts-Sancerre_Cher_Berry_Centre_Val_de_Loire.html" name="Café des Arts"/> situé sur la petite place.
 Pour digérer nous avons fait le tour du village en suivant la ligne rouge sur les pavés, qui nous permet de visiter toute la cité.
-Puis nous avons repris la voiture pour rentrer et nous avons fait un petit détour sur les collines voisines pour avoir une vue de Sancerre. 
+Puis nous avons repris la voiture pour rentrer et nous avons fait un petit détour sur les collines voisines pour avoir une vue de Sancerre.
 <br/><br/>De retour à Bourges nous avons tenté d’aller prendre un café dans l’un des nombreux coffee shop de la rue Bourbonnoux.
 Après plusieurs tentatives, les cafés étant très prisés pour l’heure de goûter, nous avons dégoté une petite table chez <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g187120-d8658555-Reviews-Delichou_Tarterie_Espresso_Bar-Bourges_Cher_Berry_Centre_Val_de_Loire.html " name="Délichou !" /> une tarterie beaucoup trop mignonne.
 Et deuxième coup de bol, ils leur restaient une table de deux pour le brunch du dimanche !
