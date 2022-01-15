@@ -5,10 +5,10 @@ import img_bourges     from '../assets/images/cards/img-bourges.jpg';
 import img_bourgogne   from '../assets/images/cards/img-bourgogne.jpg';
 import img_crete       from '../assets/images/cards/img-crete.jpg';
 import img_corse       from '../assets/images/cards/img-crete.jpg';
-import img_etretat     from '../assets/images/cards/img-etretat.jpg';
-import img_fontainebleau from '../assets/images/cards/img-fontainebleau.jpg';
-import img_honfleur    from '../assets/images/cards/img-honfleur.jpg';
-import img_nantes      from '../assets/images/cards/img-nantes.jpg';
+import img_etretat     from '../assets/images/cards/img-crete.jpg';
+import img_fontainebleau from '../assets/images/cards/img-crete.jpg';
+import img_honfleur    from '../assets/images/cards/img-crete.jpg';
+import img_nantes      from '../assets/images/cards/img-crete.jpg';
 import img_perche      from '../assets/images/cards/img-perche.jpg';
 import img_trouville   from '../assets/images/cards/img-trouville.jpg';
 

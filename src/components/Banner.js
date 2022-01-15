@@ -12,7 +12,7 @@ import '../css/Banner.css';
 function Banner() {
 	return (
 		<div className='banner-container'>
-			<video src={Videos.video_corse} autoPlay loop muted />
+			<video className='video-banner' src={Videos.video_corse} autoPlay loop muted />
 			<h1>CORSE 2021</h1>
 			<p>{Strings.banner_msg}</p>
 			<div className='banner-btns'>
