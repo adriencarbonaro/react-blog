@@ -8,8 +8,10 @@ function CustomLink (props) {
 		"hotel"        : "fas fa-hotel",
 		"wine"         : "fas fa-wine-glass-alt",
 		"tree"         : "fas fa-tree",
+		"bicycle"      : "fas fa-bicycle",
+		"scooter"      : "fas fa-motorcycle",
 	}
-	
+
 	return (
 		<a
 		  class={props.type}

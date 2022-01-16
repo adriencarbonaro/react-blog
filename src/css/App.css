@@ -19,6 +19,10 @@
   margin-top: -80px;
 }
 
+.amsterdam {
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-amsterdam.jpg');
+}
+
 .berlin {
   background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-berlin.jpg');
 }

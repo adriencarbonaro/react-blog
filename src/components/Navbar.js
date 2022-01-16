@@ -46,7 +46,7 @@ function Navbar() {
 					<Link to="/" className={classWithScroll("navbar-logo")} onClick={closeMobileMenu}>
 						<SVGLogo
 						  fontClass={classWithScroll("logo-font")}
-						/> 
+						/>
 					</Link>
 					<ul className={click_menu ? "nav-menu active" : "nav-menu"}>
 						<li className={click_submenu_1 ? "nav-item active" : "nav-item"} onClick={(e) => handleClickSubMenu("click_submenu_1")}>
@@ -66,6 +66,7 @@ function Navbar() {
 								Monde <i class="fas fa-chevron-down"></i>
 							</div>
 							<ul className={classWithScroll("nav-submenu")}>
+								<li className="submenu-item"><Link to="/amsterdam" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Amsterdam</Link></li>
 								<li className="submenu-item"><Link to="/berlin" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Berlin</Link></li>
 								<li className="submenu-item"><Link to="/crete" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Crète</Link></li>
 							</ul>

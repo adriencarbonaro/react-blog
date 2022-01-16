@@ -1,4 +1,5 @@
 /* Images */
+import img_amsterdam   from '../assets/images/cards/img-amsterdam.jpg';
 import img_berlin      from '../assets/images/cards/img-berlin.jpg';
 import img_bretagne    from '../assets/images/cards/img-bretagne.jpg';
 import img_bourges     from '../assets/images/cards/img-bourges.jpg';
@@ -16,6 +17,7 @@ import img_trouville   from '../assets/images/cards/img-trouville.jpg';
 import video_corse     from '../assets/videos/video-banner.mp4';
 
 export const Images = {
+	img_amsterdam,
 	img_berlin,
 	img_bretagne,
 	img_bourges,

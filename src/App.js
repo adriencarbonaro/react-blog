@@ -7,6 +7,7 @@ import Footer                from './components/Footer'
 import Home                  from './components/pages/Home'
 
 /* Trips */
+import Amsterdam             from './components/pages/trips/Amsterdam'
 import Berlin                from './components/pages/trips/Berlin'
 import Bourges               from './components/pages/trips/Bourges'
 import Bourgogne             from './components/pages/trips/Bourgogne'
@@ -25,6 +26,7 @@ class App extends Component {
 		<>
 			<Navbar />
 			<Switch>
+				<Route path="/amsterdam" component={Amsterdam} />
 				<Route path="/berlin"    component={Berlin} />
 				<Route path="/bourges"   component={Bourges} />
 				<Route path="/bourgogne" component={Bourgogne} />

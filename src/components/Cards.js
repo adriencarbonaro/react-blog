@@ -34,6 +34,12 @@ function Cards() {
 					<SVGLocation className={classWithScroll(scroll_state_globe, "globe")}/>
 					<ul className='cards__items'>
 						<CardItem
+							src={Images.img_amsterdam}
+							text={Trips.amsterdam}
+							label='Holiday'
+							path='/amsterdam'
+						/>
+						<CardItem
 							src={Images.img_crete}
 							text={Trips.crete}
 							label='Holiday'
@@ -54,8 +60,6 @@ function Cards() {
 							label='Weekend'
 							path='/trouville'
 						/>
-					</ul>
-					<ul className='cards__items'>
 						<CardItem
 							src={Images.img_bourgogne}
 							text={Trips.bourgogne}
@@ -82,22 +86,20 @@ function Cards() {
 							label='Weekend'
 							path='/bourges'
 						/>
-					</ul>
-					<ul className='cards__items'>
 						<CardItem
 							src={Images.img_etretat}
 							text={Trips.etretat}
 							label='Weekend'
 							path='/etretat'
 						/>
+					</ul>
+					<ul className='cards__items'>
 						<CardItem
 							src={Images.img_fontainebleau}
 							text={Trips.fontainebleau}
 							label='Weekend'
 							path='/fontainebleau'
 						/>
-					</ul>
-					<ul className='cards__items'>
 						<CardItem
 							src={Images.img_honfleur}
 							text={Trips.honfleur}
