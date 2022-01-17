@@ -72,7 +72,7 @@ export function PhoneVideo(props) {
 			<div class="clip-cont">
 				{Phone()}
 				<video height={PHONE_SIZE} class="svg-clip-video" id="video1" loop controls>
-					<source src="http://letellierstation.freeboxos.fr/assets/amsterdam.mp4" type="video/mp4"/>
+					<source src="http://letellierstation.freeboxos.fr:81/assets/amsterdam.mp4" type="video/mp4"/>
 				</video>
 			</div>
 		</>
