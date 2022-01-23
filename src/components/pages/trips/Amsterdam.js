@@ -5,7 +5,6 @@ import { TitleBloc }          from "../../TitleBloc"
 import { Split }              from "../../Split"
 import { Component }          from 'react';
 import {
-	PhotoDuo,
 	PhotoGallery,
 	PhotoSingle,
 	PhotoT,

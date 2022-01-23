@@ -6,7 +6,6 @@ import { Split } from "../../Split"
 import { Component }         from 'react';
 import { PhotoDuo, PhotoGallery, PhotoSingle, PhotoTSide } from '../../Photos';
 import { ImagesBourges } from '../../../assets/ImagesBourges';
-import { Images, Videos } from '../../../assets/Images';
 import CustomLink from '../../CustomLink';
 import SVGLocation from '../../SVGLocation';
 

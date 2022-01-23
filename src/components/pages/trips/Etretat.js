@@ -2,13 +2,10 @@ import React                  from 'react';
 import ComponentScrollTop     from '../../ComponentScrollTop';
 import { Story }              from "../../Story"
 import { TitleBloc }          from "../../TitleBloc"
-import { Split }              from "../../Split"
 import { Component }          from 'react';
 import {
-	PhotoDuo,
 	PhotoGallery,
 	PhotoSingle,
-	PhotoTSide,
 }                             from '../../Photos';
 import { ImagesEtretat }      from '../../../assets/ImagesEtretat';
 import CustomLink             from '../../CustomLink';

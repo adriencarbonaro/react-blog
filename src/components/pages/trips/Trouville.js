@@ -5,11 +5,9 @@ import CustomLink             from '../../CustomLink';
 import { ImagesTrouville }    from '../../../assets/ImagesTrouville';
 import {
 	PhotoDuo,
-	PhotoGallery,
 	PhotoDoubleGallery,
 	PhotoSingle,
 	PhotoT,
-	PhotoTSide,
 }                             from '../../Photos';
 import { Split }              from "../../Split"
 import { Story }              from "../../Story"
