@@ -14,6 +14,7 @@ import Bourgogne             from './components/pages/trips/Bourgogne'
 import Bretagne              from './components/pages/trips/Bretagne'
 import Crete                 from './components/pages/trips/Crete'
 import Corse                 from './components/pages/trips/Corse'
+import Etretat               from './components/pages/trips/Etretat'
 import Honfleur              from './components/pages/trips/Honfleur';
 import Perche                from './components/pages/trips/Perche'
 import Trouville             from './components/pages/trips/Trouville'
@@ -34,6 +35,7 @@ class App extends Component {
 				<Route path="/bretagne"  component={Bretagne} />
 				<Route path="/crete"     component={Crete} />
 				<Route path="/corse"     component={Corse} />
+				<Route path="/etretat"   component={Etretat} />
 				<Route path="/honfleur"  component={Honfleur} />
 				<Route path="/perche"    component={Perche} />
 				<Route path="/trouville" component={Trouville} />

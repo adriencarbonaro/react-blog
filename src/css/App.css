@@ -47,6 +47,10 @@
   background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-corse.jpg');
 }
 
+.etretat {
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-etretat.jpg');
+}
+
 .honfleur {
   background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-honfleur.jpg');
 }

@@ -57,6 +57,7 @@ function Navbar() {
 								<li className="submenu-item"><Link to="/bourgogne" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Bourgogne</Link></li>
 								<li className="submenu-item"><Link to="/bourges" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Bourges</Link></li>
 								<li className="submenu-item"><Link to="/bretagne" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Bretagne</Link></li>
+								<li className="submenu-item"><Link to="/etretat" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Etretat</Link></li>
 								<li className="submenu-item"><Link to="/honfleur" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Honfleur</Link></li>
 								<li className="submenu-item"><Link to="/perche" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Perche</Link></li>
 								<li className="submenu-item"><Link to="/trouville" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Trouville</Link></li>
