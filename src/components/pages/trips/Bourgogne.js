@@ -90,7 +90,7 @@ class P3 extends Component {
 			<>
 La cabane est très bien aménagée et comporte également des toilettes sèches. Pour la douche, une salle de bain privative se trouve à 2 minutes à pied de la cabane avec tout le confort nécessaire.<br/>
 Si l’on choisit de ne pas fermer les stores pour dormir au plus près de la nature, nous sommes réveillés tout en douceur au petit matin par les premiers rayons du soleil qui illuminent la cabane. Le petit déjeuner est déposé en haut des escaliers dans un charmant petit panier.<br/>
-Au menu : 
+Au menu :
 Café, thé, jus de pomme maison, pain et confitures maisons, madeleines.<br/>
 Un régal !
 			</>
