@@ -19,7 +19,6 @@ import SVGLocation            from '../../SVGLocation'
 /* CSS */
 import '../../../css/App.css';
 import '../../../css/trips/Trips.css'
-import '../../../css/trips/Amsterdam.css'
 import '../../../css/PhoneVideo.css'
 
 export default class Amsterdam extends ComponentScrollTop {

@@ -14,7 +14,6 @@ import SVGLocation from '../../SVGLocation';
 /* CSS */
 import '../../../css/App.css';
 import '../../../css/trips/Trips.css'
-import '../../../css/trips/Crete.css'
 
 export default class Crete extends ComponentScrollTop {
 	render () {

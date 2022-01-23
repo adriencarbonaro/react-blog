@@ -1,7 +1,0 @@
-:root {
-	--accent-honfleur: #4fd6f8;
-}
-
-.subtitle-honfleur {
-	color: var(--accent-honfleur);
-}

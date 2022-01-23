@@ -13,7 +13,6 @@ import { ImagesBourgogne } from "../../../assets/ImagesBourgogne"
 /* CSS */
 import '../../../css/App.css';
 import '../../../css/trips/Trips.css'
-import '../../../css/trips/Bourgogne.css'
 
 export default class Bourgogne extends ComponentScrollTop {
 	render () {

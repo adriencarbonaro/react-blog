@@ -1,13 +1,45 @@
 :root {
+	--accent-amsterdam: #d23ccb;
+	--accent-berlin: #dc9339;
+	--accent-bourges: #8a0e2d;
+	--accent-bourgogne: #94755d;
+	--accent-etretat: #87d769;
+	--accent-honfleur: #4fd6f8;
+	--accent-trouville: #f8714f;
+	--accent-crete: #2996df;
+
 	--airbnb: #ec385a;
 	--airbnb-hover: #8a2034;
+
+	--bicycle: #2953ee;
+	--bicycle-hover: #294ac1;
+
+	--hotel: #fd8724;
+	--hotel-hover: #a15617;
+
+	--monument: #9c7250;
+	--monument-hover: #5a4d43;
+
+	--scooter: #9a4bfb;
+	--scooter-hover: #8146ca;
+
 	--tripadvisor: #40dfa3;
 	--tripadvisor-hover: #227e5b;
+
+	--tree: #7ba833;
+	--tree-hover: #456923;
+
+	--wine: #b3a12e;
+	--wine-hover: #635918;
 }
+
+/* Font Awesome ***************************************************************/
 
 .fa-airbnb {
 	font-weight: 600;
 }
+
+/* Links **********************************************************************/
 
 a {
 	text-decoration: none;
@@ -22,6 +54,46 @@ a.airbnb:hover {
 	color: var(--airbnb-hover);
 }
 
+a.bicycle {
+	color: var(--bicycle);
+}
+
+a.bicycle:hover {
+	color: var(--bicycle-hover);
+}
+
+a.hotel {
+	color: var(--hotel);
+}
+
+a.hotel:hover {
+	color: var(--hotel-hover);
+}
+
+a.monument {
+	color: var(--monument);
+}
+
+a.monument:hover {
+	color: var(--monument-hover);
+}
+
+a.scooter {
+	color: var(--scooter);
+}
+
+a.scooter:hover {
+	color: var(--scooter-hover);
+}
+
+a.tree {
+	color: var(--tree);
+}
+
+a.tree:hover {
+	color: var(--tree-hover);
+}
+
 a.tripadvisor {
 	color: var(--tripadvisor);
 }
@@ -30,3 +102,44 @@ a.tripadvisor:hover {
 	color: var(--tripadvisor-hover);
 }
 
+a.wine {
+	color: var(--wine);
+}
+
+a.wine:hover {
+	color: var(--wine-hover);
+}
+
+/* Subtitles ******************************************************************/
+
+.subtitle-amsterdam {
+	color: var(--accent-amsterdam);
+}
+
+.subtitle-berlin {
+	color: var(--accent-berlin);
+}
+
+.subtitle-bourges {
+	color: var(--accent-bourges);
+}
+
+.subtitle-bourgogne {
+	color: var(--accent-bourgogne);
+}
+
+.subtitle-crete {
+	color: var(--accent-crete);
+}
+
+.subtitle-etretat {
+	color: var(--accent-etretat);
+}
+
+.subtitle-honfleur {
+	color: var(--accent-honfleur);
+}
+
+.subtitle-trouville {
+	color: var(--accent-trouville);
+}

@@ -17,7 +17,6 @@ import SVGLocation            from '../../SVGLocation'
 /* CSS */
 import '../../../css/App.css';
 import '../../../css/trips/Trips.css'
-import '../../../css/trips/Etretat.css'
 
 export default class Etretat extends ComponentScrollTop {
 	render () {
