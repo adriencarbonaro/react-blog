@@ -2,7 +2,7 @@ import React                 from 'react';
 
 function CustomLink (props) {
 	const icon_classes = {
-		"tripadvisor"  : "fab fa-tripadvisor",
+		"tripadvisor"  : "fa  fa-search",
 		"airbnb"       : "fab fa-airbnb",
 		"monument"     : "fas fa-landmark",
 		"hotel"        : "fas fa-hotel",
