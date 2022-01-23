@@ -13,7 +13,8 @@ function SVGLocation(props) {
 		"berlin"             : SVGBerlin(),
 		"bourgogne"          : SVGBourgogne(),
 		"bourges"            : SVGBourges(),
-		"trouville"          : SVGTrouville(),
+		"honfleur"           : SVGNormandie(),
+		"trouville"          : SVGNormandie(),
 	}
 
 	return (
@@ -277,7 +278,7 @@ const SVGFrance = (props) => {
 	)
 }
 
-const SVGTrouville = () => {
+const SVGNormandie = () => {
 	return (
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 501.5 512">
 <g class="background">
