@@ -23,6 +23,9 @@
 	--scooter: #9a4bfb;
 	--scooter-hover: #8146ca;
 
+	--store: #00bfff;
+	--store-hover: #00a4db;
+
 	--tripadvisor: #40dfa3;
 	--tripadvisor-hover: #227e5b;
 
@@ -84,6 +87,14 @@ a.scooter {
 
 a.scooter:hover {
 	color: var(--scooter-hover);
+}
+
+a.store {
+	color: var(--store);
+}
+
+a.store:hover {
+	color: var(--store-hover);
 }
 
 a.tree {

@@ -10,6 +10,7 @@ function CustomLink (props) {
 		"tree"         : "fas fa-tree",
 		"bicycle"      : "fas fa-bicycle",
 		"scooter"      : "fas fa-motorcycle",
+		"store"        : "fas fa-store",
 	}
 
 	return (
