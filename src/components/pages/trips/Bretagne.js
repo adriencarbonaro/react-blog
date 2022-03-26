@@ -4,16 +4,21 @@ import { Story }              from "../../Story"
 import { TitleBloc }          from "../../TitleBloc"
 import { Component }          from 'react';
 import {
+	PhotoDoubleGallery,
 	PhotoGallery,
 	PhotoSingle,
+	PhotoT,
+	PhotoTSide,
 }                             from '../../Photos';
 // import { ImagesBretagne }      from '../../../assets/ImagesBretagne';
 import CustomLink             from '../../CustomLink';
 import SVGLocation            from '../../SVGLocation'
+import { ImagesBretagne }     from '../../../assets/ImagesBretagne';
 
 /* CSS */
 import '../../../css/App.css';
 import '../../../css/trips/Trips.css'
+import { Split } from '../../Split';
 
 export default class Bretagne extends ComponentScrollTop {
 	render () {
@@ -40,8 +45,18 @@ export default class Bretagne extends ComponentScrollTop {
 				<Story
 					text={<P3/>}
 				/>
+				<PhotoGallery
+				  src_1={ImagesBretagne.img_bretagne_2}
+				  src_2={ImagesBretagne.img_bretagne_1}
+				  src_3={ImagesBretagne.img_bretagne_3}
+				/>
 				<Story
 					text={<P4/>}
+				/>
+				<PhotoT
+					src_large={ImagesBretagne.img_bretagne_5}
+					src_row_1={ImagesBretagne.img_bretagne_6}
+					src_row_2={ImagesBretagne.img_bretagne_7}
 				/>
 				<Story
 					text={<P5/>}
@@ -56,8 +71,18 @@ export default class Bretagne extends ComponentScrollTop {
 				<Story
 					text={<P7/>}
 				/>
+				<PhotoTSide
+					src_side={ImagesBretagne.img_bretagne_9}
+					src_col_1={ImagesBretagne.img_bretagne_10}
+					src_col_2={ImagesBretagne.img_bretagne_11}
+				/>
 				<Story
 					text={<P8/>}
+				/>
+				<PhotoGallery
+				  src_1={ImagesBretagne.img_bretagne_12}
+				  src_2={ImagesBretagne.img_bretagne_14}
+				  src_3={ImagesBretagne.img_bretagne_15}
 				/>
 				<TitleBloc
 					subtitle="Jour 3 : Le Croisic et La Baule"
@@ -72,15 +97,38 @@ export default class Bretagne extends ComponentScrollTop {
 				<Story
 					text={<P11/>}
 				/>
+				<PhotoT
+					inverted
+					src_large={ImagesBretagne.img_bretagne_16}
+					src_row_1={ImagesBretagne.img_bretagne_19}
+					src_row_2={ImagesBretagne.img_bretagne_20}
+				/>
 				<Story
 					text={<P12/>}
 				/>
-				<TitleBloc
-					subtitle="Jour 3 : Guérande et le village de Kerhinet"
-					accent={class_name}
+				<Split
+					left={
+						<>
+						<TitleBloc
+							subtitle="Jour 3 : Guérande et le village de Kerhinet"
+							accent={class_name}
+						/>
+						<Story text={<P13/>} />
+						</>
+					}
+					right={
+						<PhotoSingle
+							src={ImagesBretagne.img_bretagne_24}
+						/>
+					}
 				/>
-				<Story
-					text={<P13/>}
+				<PhotoDoubleGallery
+				  src_1={ImagesBretagne.img_bretagne_25}
+				  src_2={ImagesBretagne.img_bretagne_26}
+				  src_3={ImagesBretagne.img_bretagne_27}
+				  src_4={ImagesBretagne.img_bretagne_29}
+				  src_5={ImagesBretagne.img_bretagne_30}
+				  src_6={ImagesBretagne.img_bretagne_32}
 				/>
 				<TitleBloc
 					subtitle="Jour 4 : Retour en passant par La Roche Bernard"
@@ -88,6 +136,12 @@ export default class Bretagne extends ComponentScrollTop {
 				/>
 				<Story
 					text={<P14/>}
+				/>
+				<PhotoT
+					inverted
+					src_large={ImagesBretagne.img_bretagne_33}
+					src_row_1={ImagesBretagne.img_bretagne_34}
+					src_row_2={ImagesBretagne.img_bretagne_35}
 				/>
 			</div>
 		)
@@ -124,7 +178,7 @@ class P3 extends Component {
 	render () {
 		return (
 			<>
-Le matin, après avoir testé les spécialité de <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g196537-d12885089-Reviews-La_Huche_a_Pain-Vannes_Morbihan_Brittany.html" name="La Ruche à Pain"/> pour le petit déjeuner, nous avons profité de la vieille ville en nous perdant dans les petites ruelles.
+Le matin, après avoir testé les spécialités de <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g196537-d12885089-Reviews-La_Huche_a_Pain-Vannes_Morbihan_Brittany.html" name="La Ruche à Pain"/> pour le petit déjeuner, nous avons profité de la vieille ville en nous perdant dans les petites ruelles.
 Pour le déjeuner, nous nous sommes rendus par hasard à la <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g196537-d2262415-Reviews-Creperie_Saint_Guenhael-Vannes_Morbihan_Brittany.html" name="crêperie Saint Guenhael"/> et nous avons adoré !
 			</>
 		)
@@ -264,7 +318,7 @@ class P13 extends Component {
 Pour ce 4ème jour, nous nous sommes rendus à Guérande.
 C’est une jolie cité médiévale connue notamment pour son sel qui est cultivé dans les marais salants aux alentours.
 Nous nous sommes baladés dans les ruelles de la vieille ville et nous avons déjeuné dans la crêperie <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g668653-d3412413-Reviews-La_Saline-Guerande_Loire_Atlantique_Pays_de_la_Loire.html" name="La Saline"/> que nous avons apprécié.
-L’après midi, nous sommes passés au <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Attraction_Review-g793711-d8737011-Reviews-Village_de_Kerhinet-Saint_Lyphard_Loire_Atlantique_Pays_de_la_Loire.html" name="Village de Kerhinet"/>.
+L’après midi, nous sommes passés au <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Attraction_Review-g793711-d8737011-Reviews-Village_de_Kerhinet-Saint_Lyphard_Loire_Atlantique_Pays_de_la_Loire.html" name="Village de Kerhinet"/>. Il s’agit d’un village racheté par le Parc naturel régional de Brière où les chaumières ont été restaurées afin de montrer les habitations traditionnelles briéronnes. Il est possible de se promener gratuitement dans le village où l’on trouve des explications sur l’histoire de ce village et où l’on peut découvrir des produits d’artisans et de producteurs locaux.
 		</>
 		)
 	}

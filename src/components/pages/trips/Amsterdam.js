@@ -47,9 +47,6 @@ export default class Amsterdam extends ComponentScrollTop {
 					accent={class_name}
 				/>
 				<Story
-					text={<P1/>}
-				/>
-				<Story
 					text={<P2/>}
 				/>
 				<Split
