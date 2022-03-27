@@ -3,15 +3,10 @@ export const Strings = {
 	navbar_title:                      "Camille & Adrien",
 
 	/* Banner */
-	banner_msg:                        "Prochain voyage",
+	banner_msg:                        "Dernier voyage",
 
 	/* Cards */
 	cards_header_title:                "Nos autres voyages",
-
-	/* Footer */
-	footer_news_title:                 "Rejoignez l'aventure en recevant notre newsletter",
-	footer_news_mail_placeholder:      "Votre email",
-	footer_news_mail_send:             "Envoyer",
 
 	/* About Us */
 	about_us_title:                    "A propos de nous",

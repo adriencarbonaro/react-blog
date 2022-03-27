@@ -24,13 +24,6 @@ function Banner() {
 				>
 					LET'S GO
 				</Button>
-				<Button
-					className='btns'
-					buttonStyle='btn--primary'
-					buttonSize='btn--large'
-				>
-					VOIR LE FILM <i className='far fa-play-circle' />
-				</Button>
 			</div>
 		</div>
 	);
