@@ -3,6 +3,7 @@ import ComponentScrollTop     from '../../ComponentScrollTop';
 import { Story }              from "../../Story"
 import { TitleBloc }          from "../../TitleBloc"
 import { Component }          from 'react';
+import { Split }              from '../../Split';
 import {
 	PhotoDoubleGallery,
 	PhotoGallery,
@@ -18,7 +19,6 @@ import { ImagesBretagne }     from '../../../assets/ImagesBretagne';
 /* CSS */
 import '../../../css/App.css';
 import '../../../css/trips/Trips.css'
-import { Split } from '../../Split';
 
 export default class Bretagne extends ComponentScrollTop {
 	render () {

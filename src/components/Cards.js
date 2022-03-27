@@ -95,10 +95,10 @@ function Cards() {
 					</ul>
 					<ul className='cards__items'>
 						<CardItem
-							src={Images.img_fontainebleau}
-							text={Trips.fontainebleau}
+							src={Images.img_gacilly}
+							text={Trips.gacilly}
 							label='Weekend'
-							path='/fontainebleau'
+							path='/gacilly'
 						/>
 						<CardItem
 							src={Images.img_honfleur}

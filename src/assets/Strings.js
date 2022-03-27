@@ -28,7 +28,7 @@ export const Trips = {
 	bourges:                           "Bourges",
 	bretagne:                          "Bretagne",
 	etretat:                           "Etretat",
-	fontainebleau:                     "Fontainebleau",
+	gacilly:                           "La Gacilly",
 	honfleur:                          "Honfleur",
 	nantes:                            "Nantes",
 	perche:                            "Perche",
