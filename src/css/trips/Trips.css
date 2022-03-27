@@ -6,6 +6,7 @@
 	--accent-etretat: #87d769;
 	--accent-honfleur: #4fd6f8;
 	--accent-trouville: #f8714f;
+	--accent-corse: #2996df;
 	--accent-crete: #2996df;
 
 	--airbnb: #ec385a;
@@ -16,6 +17,9 @@
 
 	--hotel: #fd8724;
 	--hotel-hover: #a15617;
+
+	--maps: #1e77e6;
+	--maps-hover: #3f94fc;
 
 	--monument: #9c7250;
 	--monument-hover: #5a4d43;
@@ -71,6 +75,14 @@ a.hotel {
 
 a.hotel:hover {
 	color: var(--hotel-hover);
+}
+
+a.maps {
+	color: var(--maps);
+}
+
+a.maps:hover {
+	color: var(--maps-hover);
 }
 
 a.monument {
@@ -137,6 +149,10 @@ a.wine:hover {
 
 .subtitle-bourgogne {
 	color: var(--accent-bourgogne);
+}
+
+.subtitle-corse {
+	color: var(--accent-corse);
 }
 
 .subtitle-crete {

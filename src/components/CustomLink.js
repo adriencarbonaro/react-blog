@@ -4,6 +4,7 @@ function CustomLink (props) {
 	const icon_classes = {
 		"tripadvisor"  : "fa  fa-search",
 		"airbnb"       : "fab fa-airbnb",
+		"maps"         : "fas fa-map",
 		"monument"     : "fas fa-landmark",
 		"hotel"        : "fas fa-hotel",
 		"wine"         : "fas fa-wine-glass-alt",
