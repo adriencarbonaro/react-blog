@@ -4,7 +4,10 @@ import { Story } from "../../Story"
 import { TitleBloc } from "../../TitleBloc"
 import { Split } from "../../Split"
 import { Component }         from 'react';
-import { PhotoDoubleGallery, PhotoSingle } from '../../Photos';
+import {
+	PhotoGallery,
+	PhotoSingle
+}                             from '../../Photos';
 import { ImagesBerlin } from '../../../assets/ImagesBerlin';
 import CustomLink from '../../CustomLink';
 import SVGLocation from '../../SVGLocation'
@@ -54,14 +57,14 @@ export default class Berlin extends ComponentScrollTop {
 				<Story
 					text={<P4/>}
 				/>
-				<PhotoDoubleGallery
-				  src_1={ImagesBerlin.img_berlin_1}
-				  src_2={ImagesBerlin.img_berlin_2}
-				  src_3={ImagesBerlin.img_berlin_3}
-				  src_4={ImagesBerlin.img_berlin_4}
-				  src_5={ImagesBerlin.img_berlin_5}
-				  src_6={ImagesBerlin.img_berlin_6}
-				/>
+				<PhotoGallery list={[
+				  ImagesBerlin.img_berlin_1,
+				  ImagesBerlin.img_berlin_2,
+				  ImagesBerlin.img_berlin_3,
+				  ImagesBerlin.img_berlin_4,
+				  ImagesBerlin.img_berlin_5,
+				  ImagesBerlin.img_berlin_6,
+				]} />
 				<TitleBloc
 					subtitle="Vendredi 2 Novembre"
 					accent={class_name}

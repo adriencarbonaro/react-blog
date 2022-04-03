@@ -5,7 +5,6 @@ import { TitleBloc }          from "../../TitleBloc"
 import { Component }          from 'react';
 import { Split }              from '../../Split';
 import {
-	PhotoDoubleGallery,
 	PhotoGallery,
 	PhotoSingle,
 	PhotoT,
@@ -45,11 +44,11 @@ export default class Bretagne extends ComponentScrollTop {
 				<Story
 					text={<P3/>}
 				/>
-				<PhotoGallery
-				  src_1={ImagesBretagne.img_bretagne_2}
-				  src_2={ImagesBretagne.img_bretagne_1}
-				  src_3={ImagesBretagne.img_bretagne_3}
-				/>
+				<PhotoGallery list={[
+				  ImagesBretagne.img_bretagne_2,
+				  ImagesBretagne.img_bretagne_1,
+				  ImagesBretagne.img_bretagne_3,
+				]} />
 				<Story
 					text={<P4/>}
 				/>
@@ -79,11 +78,11 @@ export default class Bretagne extends ComponentScrollTop {
 				<Story
 					text={<P8/>}
 				/>
-				<PhotoGallery
-				  src_1={ImagesBretagne.img_bretagne_12}
-				  src_2={ImagesBretagne.img_bretagne_14}
-				  src_3={ImagesBretagne.img_bretagne_15}
-				/>
+				<PhotoGallery list={[
+				  ImagesBretagne.img_bretagne_12,
+				  ImagesBretagne.img_bretagne_14,
+				  ImagesBretagne.img_bretagne_15,
+				]} />
 				<TitleBloc
 					subtitle="Jour 3 : Le Croisic et La Baule"
 					accent={class_name}
@@ -122,14 +121,14 @@ export default class Bretagne extends ComponentScrollTop {
 						/>
 					}
 				/>
-				<PhotoDoubleGallery
-				  src_1={ImagesBretagne.img_bretagne_25}
-				  src_2={ImagesBretagne.img_bretagne_26}
-				  src_3={ImagesBretagne.img_bretagne_27}
-				  src_4={ImagesBretagne.img_bretagne_29}
-				  src_5={ImagesBretagne.img_bretagne_30}
-				  src_6={ImagesBretagne.img_bretagne_32}
-				/>
+				<PhotoGallery list={[
+				  ImagesBretagne.img_bretagne_25,
+				  ImagesBretagne.img_bretagne_26,
+				  ImagesBretagne.img_bretagne_27,
+				  ImagesBretagne.img_bretagne_29,
+				  ImagesBretagne.img_bretagne_30,
+				  ImagesBretagne.img_bretagne_32,
+				]} />
 				<TitleBloc
 					subtitle="Jour 4 : Retour en passant par La Roche Bernard"
 					accent={class_name}

@@ -63,11 +63,11 @@ export default class Crete extends ComponentScrollTop {
 				<Story
 					text={<P4/>}
 				/>
-				<PhotoGallery
-				  src_1={ImagesCrete.img_crete_1}
-				  src_2={ImagesCrete.img_crete_2}
-				  src_3={ImagesCrete.img_crete_3}
-				/>
+				<PhotoGallery list={[
+				  ImagesCrete.img_crete_1,
+				  ImagesCrete.img_crete_2,
+				  ImagesCrete.img_crete_3,
+				]} />
 				<TitleBloc
 					subtitle="Lundi 3 Septembre"
 					accent={class_name}
@@ -76,11 +76,11 @@ export default class Crete extends ComponentScrollTop {
 					text={<P5/>}
 				/>
 				<PhotoSingle src={ImagesCrete.img_crete_4} />
-				<PhotoGallery
-				  src_1={ImagesCrete.img_crete_5}
-				  src_2={ImagesCrete.img_crete_6}
-				  src_3={ImagesCrete.img_crete_12}
-				/>
+				<PhotoGallery list={[
+				  ImagesCrete.img_crete_5,
+				  ImagesCrete.img_crete_6,
+				  ImagesCrete.img_crete_12,
+				]} />
 				<PhotoTSide
 				  src_side={ImagesCrete.img_crete_14}
 				  src_col_1={ImagesCrete.img_crete_13}
@@ -98,11 +98,11 @@ export default class Crete extends ComponentScrollTop {
 				  src_col_1={ImagesCrete.img_crete_17}
 				  src_col_2={ImagesCrete.img_crete_18}
 				/>
-				<PhotoGallery
-				  src_1={ImagesCrete.img_crete_19}
-				  src_2={ImagesCrete.img_crete_20}
-				  src_3={ImagesCrete.img_crete_21}
-				/>
+				<PhotoGallery list={[
+				  ImagesCrete.img_crete_19,
+				  ImagesCrete.img_crete_20,
+				  ImagesCrete.img_crete_21,
+				]} />
 				<Split
 					left={
 						<>

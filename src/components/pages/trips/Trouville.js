@@ -5,7 +5,7 @@ import CustomLink             from '../../CustomLink';
 import { ImagesTrouville }    from '../../../assets/ImagesTrouville';
 import {
 	PhotoDuo,
-	PhotoDoubleGallery,
+	PhotoGallery,
 	PhotoSingle,
 	PhotoT,
 }                             from '../../Photos';
@@ -86,14 +86,14 @@ export default class Trouville extends ComponentScrollTop {
 					accent={class_name}
 				/>
 				<Story text={<P6/>}/>
-				<PhotoDoubleGallery
-				  src_1={ImagesTrouville.img_trouville_12}
-				  src_2={ImagesTrouville.img_trouville_13}
-				  src_3={ImagesTrouville.img_trouville_14}
-				  src_4={ImagesTrouville.img_trouville_15}
-				  src_5={ImagesTrouville.img_trouville_16}
-				  src_6={ImagesTrouville.img_trouville_17}
-				/>
+				<PhotoGallery list={[
+				  ImagesTrouville.img_trouville_12,
+				  ImagesTrouville.img_trouville_13,
+				  ImagesTrouville.img_trouville_14,
+				  ImagesTrouville.img_trouville_15,
+				  ImagesTrouville.img_trouville_16,
+				  ImagesTrouville.img_trouville_17,
+				]} />
 			</div>
 		)
 	}

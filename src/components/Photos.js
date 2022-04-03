@@ -31,83 +31,60 @@ export const PhotoDuo = (props) => {
 }
 
 export const PhotoGallery = (props) => {
-	const elem = (src) => {
-		if (src !== "") {
+	const createLi = (list) => {
+		const elem = [];
+		for (let img of list) {
+			elem.push(
+				<li className="photo_gallery_item">
+					<img className="photo_gallery_img" src={img} alt='alt' />
+				</li>
+			)
+		}
+		return (
+			<>
+			{elem}
+			</>
+		)
+	}
+
+	const createUl = (list) => {
+		const uls = [];
+
+		const newUl = (list) => {
 			return (
 				<>
-					<li className="photo_gallery_item">
-						<img
-							className="photo_gallery_img"
-							src={src}
-							alt="alt1"
-						/>
-					</li>
+				<ul className="photo_gallery_items">
+					{createLi(list)}
+				</ul>
 				</>
 			)
 		}
-	};
+		const DIVIDER = 3;
+		for (let i = 0; i < (list.length / DIVIDER); i++) {
+			let sub = list.slice(DIVIDER * i, DIVIDER * (i + 1));
+			uls.push(newUl(sub));
+		}
+		return (
+			<>
+			{uls}
+			</>
+		)
+	}
+
+	const createDiv = (list) => {
+		return (
+			<>
+			<div className="photo_gallery">
+				{createUl(list)}
+			</div>
+			</>
+		)
+	}
 
 	return (
-		<div className="photo_gallery">
-			<ul className="photo_gallery_items">
-				{elem(props.src_1)}
-				{elem(props.src_2)}
-				{elem(props.src_3)}
-			</ul>
-		</div>
-	)
-}
-
-export const PhotoDoubleGallery = (props) => {
-	return (
-		<div className="photo_gallery">
-			<ul className="photo_gallery_items">
-				<li className="photo_gallery_item">
-					<img
-					  className="photo_gallery_img"
-					  src={props.src_1}
-					  alt="alt1"
-					/>
-				</li>
-				<li className="photo_gallery_item">
-					<img
-					  className="photo_gallery_img"
-					  src={props.src_2}
-					  alt="alt"
-					/>
-				</li>
-				<li className="photo_gallery_item">
-					<img
-					  className="photo_gallery_img"
-					  src={props.src_3}
-					  alt="alt"
-					/>
-				</li>
-			</ul>
-			<ul className="photo_gallery_items">
-				<li className="photo_gallery_item">
-					<img
-					  className="photo_gallery_img"
-					  src={props.src_4}
-					  alt="alt1"
-					/>
-				</li>
-				<li className="photo_gallery_item">
-					<img
-					  className="photo_gallery_img"
-					  src={props.src_5}
-					  alt="alt"
-					/>
-				</li>
-				<li className="photo_gallery_item">
-					<img
-					  className="photo_gallery_img"
-					  src={props.src_6}
-					  alt="alt"
-					/>
-				</li>
-			</ul>
-		</div>
+		<>
+		{createDiv(props.list)}
+		</>
 	)
 }
 

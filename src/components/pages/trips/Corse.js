@@ -5,7 +5,6 @@ import { TitleBloc }          from "../../TitleBloc"
 import { Component }          from 'react';
 import { Split }              from '../../Split';
 import {
-	PhotoDoubleGallery,
 	PhotoDuo,
 	PhotoGallery,
 	PhotoSingle,
@@ -46,11 +45,11 @@ export default class Corse extends ComponentScrollTop {
 			/>
 			<TitleBloc title="" subtitle="Découverte de Sartène" accent={class_name} />
 			<Story text={<P2/>} />
-			<PhotoGallery
-			  src_1={ImagesCorse.img_corse_5}
-			  src_2={ImagesCorse.img_corse_6}
-			  src_3={ImagesCorse.img_corse_7}
-			/>
+			<PhotoGallery list={[
+			  ImagesCorse.img_corse_5,
+			  ImagesCorse.img_corse_6,
+			  ImagesCorse.img_corse_7,
+			]} />
 			<Split
 				left={<Story text={<P3/>} />}
 				right={<PhotoSingle src={ImagesCorse.img_corse_1} />}

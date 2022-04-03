@@ -71,11 +71,11 @@ export default class Bourges extends ComponentScrollTop {
 					src_col_1={ImagesBourges.img_bourges_3}
 					src_col_2={ImagesBourges.img_bourges_5}
 				/>
-				<PhotoGallery
-					src_1={ImagesBourges.img_bourges_6}
-					src_2={ImagesBourges.img_bourges_7}
-					src_3={ImagesBourges.img_bourges_8}
-				/>
+				<PhotoGallery list={[
+					ImagesBourges.img_bourges_6,
+					ImagesBourges.img_bourges_7,
+					ImagesBourges.img_bourges_8,
+				]} />
 				<TitleBloc
 					subtitle="Dimanche 16 février"
 					accent={class_name}

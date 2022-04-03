@@ -73,11 +73,11 @@ export default class Amsterdam extends ComponentScrollTop {
 				    />
 				  }
 				/>
-				<PhotoGallery
-					src_1={ImagesAmsterdam.img_amsterdam_3_3}
-					src_2={ImagesAmsterdam.img_amsterdam_3_2}
-					src_3={ImagesAmsterdam.img_amsterdam_3_4}
-				/>
+				<PhotoGallery list={[
+				  ImagesAmsterdam.img_amsterdam_3_3,
+				  ImagesAmsterdam.img_amsterdam_3_2,
+				  ImagesAmsterdam.img_amsterdam_3_4,
+				]} />
 				<Story
 					text={<P5/>}
 				/>

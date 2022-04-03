@@ -69,11 +69,11 @@ export default class Honfleur extends ComponentScrollTop {
 				<Story
 					text={<P5/>}
 				/>
-				<PhotoGallery
-					src_1={ImagesHonfleur.img_honfleur_2}
-					src_2={ImagesHonfleur.img_honfleur_4}
-					src_3={ImagesHonfleur.img_honfleur_6}
-				/>
+				<PhotoGallery list={[
+					ImagesHonfleur.img_honfleur_2,
+					ImagesHonfleur.img_honfleur_4,
+					ImagesHonfleur.img_honfleur_6,
+				]} />
 				<TitleBloc
 					subtitle="Visiter le Musée Eugène Boudin"
 					accent={class_name}
