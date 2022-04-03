@@ -51,6 +51,10 @@
   background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-etretat.jpg');
 }
 
+.gacilly {
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-gacilly.jpg');
+}
+
 .honfleur {
   background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-honfleur.jpg');
 }

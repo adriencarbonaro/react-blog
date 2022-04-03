@@ -15,6 +15,7 @@ function SVGLocation(props) {
 		"bourgogne"          : SVGBourgogne(),
 		"bourges"            : SVGBourges(),
 		"etretat"            : SVGNormandie(),
+		"gacilly"            : SVGBretagne(),
 		"honfleur"           : SVGNormandie(),
 		"perche"             : SVGPerche(),
 		"trouville"          : SVGNormandie(),

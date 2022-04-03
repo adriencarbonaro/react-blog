@@ -4,6 +4,7 @@
 	--accent-bourges: #8a0e2d;
 	--accent-bourgogne: #94755d;
 	--accent-etretat: #87d769;
+	--accent-gacilly: #68bc92;
 	--accent-honfleur: #4fd6f8;
 	--accent-trouville: #f8714f;
 	--accent-corse: #2996df;
@@ -161,6 +162,10 @@ a.wine:hover {
 
 .subtitle-etretat {
 	color: var(--accent-etretat);
+}
+
+.subtitle-gacilly {
+	color: var(--accent-gacilly);
 }
 
 .subtitle-honfleur {
