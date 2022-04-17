@@ -1,6 +1,7 @@
 {
   "name": "react-website-yt-1",
   "version": "0.1.0",
+  "license": "ISC",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.3",

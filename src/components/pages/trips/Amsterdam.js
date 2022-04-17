@@ -34,7 +34,7 @@ export default class Amsterdam extends ComponentScrollTop {
 				/>
 				<Split
 				  right={
-				    <PhoneVideo />
+				    <PhoneVideo src="https://nid-de-poule.s3.eu-west-3.amazonaws.com/amsterdam.mp4"/>
 				  }
 				  left={
 				    <Story
