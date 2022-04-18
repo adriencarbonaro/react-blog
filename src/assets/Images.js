@@ -5,7 +5,7 @@ import img_bretagne    from '../assets/images/cards/img-bretagne.jpg';
 import img_bourges     from '../assets/images/cards/img-bourges.jpg';
 import img_bourgogne   from '../assets/images/cards/img-bourgogne.jpg';
 import img_crete       from '../assets/images/cards/img-crete.jpg';
-import img_corse       from '../assets/images/cards/img-crete.jpg';
+import img_corse       from '../assets/images/cards/img-corse.jpg';
 import img_etretat     from '../assets/images/cards/img-etretat.jpg';
 import img_gacilly     from '../assets/images/cards/img-gacilly.jpg';
 import img_honfleur    from '../assets/images/cards/img-honfleur.jpg';

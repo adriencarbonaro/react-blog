@@ -107,10 +107,10 @@ function Cards() {
 							path='/honfleur'
 						/>
 						<CardItem
-							src={Images.img_nantes}
-							text={Trips.nantes}
-							label='Weekend'
-							path='/nantes'
+							src={Images.img_corse}
+							text={Trips.corse}
+							label='Vacances'
+							path='/corse'
 						/>
 					</ul>
 				</div>
