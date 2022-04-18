@@ -3,7 +3,7 @@ export const Strings = {
 	navbar_title:                      "Camille & Adrien",
 
 	/* Banner */
-	banner_msg:                        "Dernier voyage",
+	banner_msg:                        "Prochain voyage",
 
 	/* Cards */
 	cards_header_title:                "Nos autres voyages",
