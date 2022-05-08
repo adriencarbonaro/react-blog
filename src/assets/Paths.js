@@ -1,0 +1,16 @@
+export const Paths = {
+	germany                   : "/germany",
+	netherlands               : "/netherlands",
+	greece                    : "/greece",
+	bourges                   : "/bourges",
+	bourgogne                 : "/bourgogne",
+	bretagne                  : "/bretagne",
+	corse                     : "/corse",
+	etretat                   : "/etretat",
+	gacilly                   : "/gacilly",
+	honfleur                  : "/honfleur",
+	mans                      : "/mans",
+	perche                    : "/perche",
+	trouville                 : "/trouville",
+	home                      : "/",
+}

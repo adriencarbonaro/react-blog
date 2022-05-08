@@ -26,7 +26,14 @@ export const Trips = {
 	etretat:                           "Etretat",
 	gacilly:                           "La Gacilly",
 	honfleur:                          "Honfleur",
+	mans:                              "Le Mans",
 	nantes:                            "Nantes",
 	perche:                            "Perche",
 	trouville:                         "Trouville"
+}
+
+export const Countries = {
+	germany                             : "Allemagne",
+	netherlands                         : "Pays-Bas",
+	greece                              : "Grèce",
 }

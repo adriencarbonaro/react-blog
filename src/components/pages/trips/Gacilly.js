@@ -8,7 +8,7 @@ import {
 	PhotoGallery,
 	PhotoDuo,
 	PhotoSingle,
-	PhotoTSide
+	PhotoT
 }                             from '../../Photos';
 import { Split }              from '../../Split';
 import SVGLocation            from '../../SVGLocation';
@@ -22,7 +22,7 @@ export default class Gacilly extends ComponentScrollTop {
 		const class_name = "gacilly";
 		return (
 		<div>
-			<h1 className={"banner-title " + class_name}>La Gacilly</h1>
+			<h1 className={"banner-title " + class_name}>La Gacilly & Le Mans</h1>
 			<SVGLocation className={class_name}/>
 			<TitleBloc title="Week-end détente : La Gacilly et Le Mans" subtitle="" accent={class_name} />
 			<Split
@@ -32,10 +32,10 @@ export default class Gacilly extends ComponentScrollTop {
 			<TitleBloc title="" subtitle="L’Eco-Hôtel Spa Yves Rocher" accent={class_name} />
 			<Story text={<P2/>} />
 			<Story text={<P3/>} />
-			<PhotoSingle src={ImagesGacilly.img_gacilly_3} />
-			<PhotoDuo
-			  src_1={ImagesGacilly.img_gacilly_1}
-			  src_2={ImagesGacilly.img_gacilly_2}
+			<PhotoT
+			  src_large={ImagesGacilly.img_gacilly_3}
+			  src_row_1={ImagesGacilly.img_gacilly_1}
+			  src_row_2={ImagesGacilly.img_gacilly_2}
 			/>
 			<Story text={<P4/>} />
 			<PhotoGallery list={[

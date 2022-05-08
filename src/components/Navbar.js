@@ -6,6 +6,11 @@ import SVGLogo               from './SVGLogo';
 
 /* Assets */
 import '../css/logo.css'
+import {
+	Countries,
+	Trips
+}                            from '../assets/Strings';
+import { Paths }             from '../assets/Paths';
 
 function Navbar() {
 	const [click_menu, setClickMenu]          = useState(false);

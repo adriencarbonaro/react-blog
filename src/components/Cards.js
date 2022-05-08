@@ -4,8 +4,13 @@ import CardItem from './CardItem';
 import SVGLocation from './SVGLocation';
 
 /* Assets */
-import { Strings, Trips }    from '../assets/Strings';
+import { Paths }              from '../assets/Paths';
 import { Images }            from '../assets/Images';
+import {
+	Countries,
+	Strings,
+	Trips
+}                             from '../assets/Strings';
 
 /* CSS */
 import '../css/Cards.css';
@@ -35,21 +40,21 @@ function Cards() {
 					<ul className='cards__items'>
 						<CardItem
 							src={Images.img_amsterdam}
-							text={Trips.amsterdam}
+							text={Countries.netherlands}
 							label='Holiday'
-							path='/amsterdam'
+							path={Paths.netherlands}
 						/>
 						<CardItem
 							src={Images.img_crete}
-							text={Trips.crete}
+							text={Countries.greece}
 							label='Holiday'
-							path='/crete'
+							path={Paths.greece}
 						/>
 						<CardItem
 							src={Images.img_berlin}
-							text={Trips.berlin}
+							text={Countries.germany}
 							label='Holiday'
-							path='/berlin'
+							path={Paths.germany}
 						/>
 					</ul>
 					<SVGLocation className={classWithScroll(scroll_state_france, "france")}/>
@@ -58,19 +63,19 @@ function Cards() {
 							src={Images.img_trouville}
 							text={Trips.trouville}
 							label='Weekend'
-							path='/trouville'
+							path={Paths.trouville}
 						/>
 						<CardItem
 							src={Images.img_bourgogne}
 							text={Trips.bourgogne}
 							label='Insolite'
-							path='/bourgogne'
+							path={Paths.bourgogne}
 						/>
 						<CardItem
 							src={Images.img_bretagne}
 							text={Trips.bretagne}
 							label='Weekend'
-							path='/bretagne'
+							path={Paths.bretagne}
 						/>
 					</ul>
 					<ul className='cards__items'>
@@ -78,39 +83,39 @@ function Cards() {
 							src={Images.img_perche}
 							text={Trips.perche}
 							label='Weekend'
-							path='/perche'
+							path={Paths.perche}
 						/>
 						<CardItem
 							src={Images.img_bourges}
 							text={Trips.bourges}
 							label='Weekend'
-							path='/bourges'
+							path={Paths.bourges}
 						/>
 						<CardItem
 							src={Images.img_etretat}
 							text={Trips.etretat}
 							label='Weekend'
-							path='/etretat'
+							path={Paths.etretat}
 						/>
 					</ul>
 					<ul className='cards__items'>
 						<CardItem
 							src={Images.img_gacilly}
-							text={Trips.gacilly}
+							text={Trips.gacilly + " & " + Trips.mans}
 							label='Weekend'
-							path='/gacilly'
+							path={Paths.gacilly}
 						/>
 						<CardItem
 							src={Images.img_honfleur}
 							text={Trips.honfleur}
 							label='Weekend'
-							path='/honfleur'
+							path={Paths.honfleur}
 						/>
 						<CardItem
 							src={Images.img_corse}
 							text={Trips.corse}
 							label='Vacances'
-							path='/corse'
+							path={Paths.corse}
 						/>
 					</ul>
 				</div>
