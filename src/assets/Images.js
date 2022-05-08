@@ -13,9 +13,6 @@ import img_nantes      from '../assets/images/cards/img-crete.jpg';
 import img_perche      from '../assets/images/cards/img-perche.jpg';
 import img_trouville   from '../assets/images/cards/img-trouville.jpg';
 
-/* Videos */
-import video_corse     from '../assets/videos/video-banner.mp4';
-
 export const Images = {
 	img_amsterdam,
 	img_berlin,
@@ -32,6 +29,3 @@ export const Images = {
 	img_trouville
 }
 
-export const Videos = {
-	video_corse
-}
