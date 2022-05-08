@@ -32,3 +32,11 @@ video.svg-clip-video {
 .phone-spot > .spot {
 	fill: #fce8ec;
 }
+
+/* Reduce spot on phones */
+@media screen and (max-width: 500px) {
+  .phone-spot {
+    height: 530px;
+    transform: translateX(20px);
+  }
+}
