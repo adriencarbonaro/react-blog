@@ -8,13 +8,15 @@ import {
 	PhotoGallery,
 	PhotoSingle
 }                             from '../../Photos';
-import { ImagesBerlin } from '../../../assets/ImagesBerlin';
 import CustomLink from '../../CustomLink';
 import SVGLocation from '../../SVGLocation'
+import Consts                 from '../../../consts';
 
 /* CSS */
 import '../../../css/App.css';
 import '../../../css/trips/Trips.css'
+
+const PHOTOS = Consts.AWS_URL + "photos/trips/berlin/";
 
 export default class Berlin extends ComponentScrollTop {
 	render () {
@@ -46,7 +48,7 @@ export default class Berlin extends ComponentScrollTop {
 				  }
 				  right={
 				    <PhotoSingle
-				      src={ImagesBerlin.img_berlin_0}
+				      src={PHOTOS + "img-berlin-0.jpg"}
 				    />
 				  }
 				/>
@@ -58,12 +60,12 @@ export default class Berlin extends ComponentScrollTop {
 					text={<P4/>}
 				/>
 				<PhotoGallery list={[
-				  ImagesBerlin.img_berlin_1,
-				  ImagesBerlin.img_berlin_2,
-				  ImagesBerlin.img_berlin_3,
-				  ImagesBerlin.img_berlin_4,
-				  ImagesBerlin.img_berlin_5,
-				  ImagesBerlin.img_berlin_6,
+				  PHOTOS + "img-berlin-1.jpg",
+				  PHOTOS + "img-berlin-2.jpg",
+				  PHOTOS + "img-berlin-3.jpg",
+				  PHOTOS + "img-berlin-4.jpg",
+				  PHOTOS + "img-berlin-5.jpg",
+				  PHOTOS + "img-berlin-6.jpg",
 				]} />
 				<TitleBloc
 					subtitle="Vendredi 2 Novembre"

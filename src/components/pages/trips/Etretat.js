@@ -7,13 +7,15 @@ import {
 	PhotoGallery,
 	PhotoSingle,
 }                             from '../../Photos';
-import { ImagesEtretat }      from '../../../assets/ImagesEtretat';
 import CustomLink             from '../../CustomLink';
 import SVGLocation            from '../../SVGLocation'
+import Consts                 from '../../../consts';
 
 /* CSS */
 import '../../../css/App.css';
 import '../../../css/trips/Trips.css'
+
+const PHOTOS = Consts.AWS_URL + "photos/trips/etretat/";
 
 export default class Etretat extends ComponentScrollTop {
 	render () {
@@ -38,15 +40,15 @@ export default class Etretat extends ComponentScrollTop {
 					text={<P2/>}
 				/>
 				<PhotoGallery list={[
-					ImagesEtretat.img_etretat_3,
-					ImagesEtretat.img_etretat_2,
-					ImagesEtretat.img_etretat_4,
+					PHOTOS + "img-etretat-3.jpg",
+					PHOTOS + "img-etretat-2.jpg",
+					PHOTOS + "img-etretat-4.jpg",
 				]} />
 				<Story
 					text={<P3/>}
 				/>
 				<PhotoSingle
-					src={ImagesEtretat.img_etretat_8}
+					src={PHOTOS + "img-etretat-8.jpg"}
 				/>
 				<TitleBloc
 					subtitle="Jour 2 : Fecamp"
@@ -59,7 +61,7 @@ export default class Etretat extends ComponentScrollTop {
 					text={<P5/>}
 				/>
 				<PhotoSingle
-					src={ImagesEtretat.img_etretat_6}
+					src={PHOTOS + "img-etretat-6.jpg"}
 				/>
 			</div>
 		)

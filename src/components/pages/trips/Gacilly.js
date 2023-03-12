@@ -3,7 +3,6 @@ import ComponentScrollTop     from '../../ComponentScrollTop';
 import CustomLink             from '../../CustomLink';
 import { Story }              from '../../Story';
 import { TitleBloc }          from '../../TitleBloc';
-import { ImagesGacilly }      from '../../../assets/ImagesGacilly';
 import {
 	PhotoGallery,
 	PhotoDuo,
@@ -13,9 +12,12 @@ import {
 import { Split }              from '../../Split';
 import SVGLocation            from '../../SVGLocation';
 import { PhoneVideo }         from '../../PhoneVideo';
+import Consts                 from '../../../consts';
 
 /* CSS */
 import '../../../css/App.css';
+
+const PHOTOS = Consts.AWS_URL + "photos/trips/gacilly/";
 
 export default class Gacilly extends ComponentScrollTop {
 	render () {
@@ -33,30 +35,30 @@ export default class Gacilly extends ComponentScrollTop {
 			<Story text={<P2/>} />
 			<Story text={<P3/>} />
 			<PhotoT
-			  src_large={ImagesGacilly.img_gacilly_3}
-			  src_row_1={ImagesGacilly.img_gacilly_1}
-			  src_row_2={ImagesGacilly.img_gacilly_2}
+			  src_large={PHOTOS + "img-gacilly-3.jpg"}
+			  src_row_1={PHOTOS + "img-gacilly-1.jpg"}
+			  src_row_2={PHOTOS + "img-gacilly-2.jpg"}
 			/>
 			<Story text={<P4/>} />
 			<PhotoGallery list={[
-				ImagesGacilly.img_gacilly_4,
-				ImagesGacilly.img_gacilly_5,
-				ImagesGacilly.img_gacilly_6,
-				ImagesGacilly.img_gacilly_7,
-				ImagesGacilly.img_gacilly_8,
-				ImagesGacilly.img_gacilly_9,
+				PHOTOS + "img-gacilly-4.jpg",
+				PHOTOS + "img-gacilly-5.jpg",
+				PHOTOS + "img-gacilly-6.jpg",
+				PHOTOS + "img-gacilly-7.jpg",
+				PHOTOS + "img-gacilly-8.jpg",
+				PHOTOS + "img-gacilly-9.jpg",
 			]}
 			/>
 			<TitleBloc title="" subtitle="Le village de La Gacilly" accent={class_name} />
 			<Story text={<P5/>} />
 			<PhotoDuo
-			  src_1={ImagesGacilly.img_gacilly_10}
-			  src_2={ImagesGacilly.img_gacilly_11}
+			  src_1={PHOTOS + "img-gacilly-10.jpg"}
+			  src_2={PHOTOS + "img-gacilly-11.jpg"}
 			/>
 			<Story text={<P6/>} />
 			<PhotoDuo
-			  src_1={ImagesGacilly.img_gacilly_12}
-			  src_2={ImagesGacilly.img_gacilly_13}
+			  src_1={PHOTOS + "img-gacilly-12.jpg"}
+			  src_2={PHOTOS + "img-gacilly-13.jpg"}
 			/>
 			<TitleBloc title="" subtitle="Passage rapide au Mans" accent={class_name} />
 			<Split
@@ -64,9 +66,9 @@ export default class Gacilly extends ComponentScrollTop {
 				left={<PhoneVideo color_spot="#ffd7bc" color_text="#c96236" src="https://nid-de-poule.s3.eu-west-3.amazonaws.com/videos/phone/mans.mp4" />}
 			/>
 			<PhotoGallery list={[
-				ImagesGacilly.img_gacilly_14,
-				ImagesGacilly.img_gacilly_15,
-				ImagesGacilly.img_gacilly_16,
+				PHOTOS + "img-gacilly-14.jpg",
+				PHOTOS + "img-gacilly-15.jpg",
+				PHOTOS + "img-gacilly-16.jpg",
 			]}
 			/>
 		</div>

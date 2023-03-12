@@ -3,7 +3,6 @@ import ComponentScrollTop     from '../../ComponentScrollTop';
 import CustomLink             from '../../CustomLink';
 import { Story }              from '../../Story';
 import { TitleBloc }          from '../../TitleBloc';
-import { ImagesPerche }       from '../../../assets/ImagesPerche';
 import {
 	PhotoGallery,
 	PhotoDuo,
@@ -11,9 +10,12 @@ import {
 	PhotoT
 }                             from '../../Photos';
 import SVGLocation            from '../../SVGLocation';
+import Consts                 from '../../../consts';
 
 /* CSS */
 import '../../../css/App.css';
+
+const PHOTOS = Consts.AWS_URL + "photos/trips/perche/";
 
 export default class Perche extends ComponentScrollTop {
 	render () {
@@ -28,39 +30,39 @@ export default class Perche extends ComponentScrollTop {
 			<TitleBloc title="" subtitle="Jeudi 30 mai : Marché de Bélème et les jardins de La Petite Rochelle" accent={class_name} />
 			<Story text={<P2/>} />
 			<PhotoDuo
-			  src_1={ImagesPerche.img_perche_1}
-			  src_2={ImagesPerche.img_perche_2}
+			  src_1={PHOTOS + "img-perche-1.jpg"}
+			  src_2={PHOTOS + "img-perche-2.jpg"}
 			/>
 			<Story text={<P3/>} />
-			<PhotoSingle src={ImagesPerche.img_perche_3} />
+			<PhotoSingle src={PHOTOS + "img-perche-3.jpg"} />
 			<PhotoGallery list={[
-				ImagesPerche.img_perche_4,
-				ImagesPerche.img_perche_5,
-				ImagesPerche.img_perche_6,
-				ImagesPerche.img_perche_8,
-				ImagesPerche.img_perche_7,
-				ImagesPerche.img_perche_9,
-				ImagesPerche.img_perche_11,
-				ImagesPerche.img_perche_13,
-				ImagesPerche.img_perche_12,
-				ImagesPerche.img_perche_14,
-				ImagesPerche.img_perche_10,
-				ImagesPerche.img_perche_15,
+				PHOTOS + "img-perche-4.jpg",
+				PHOTOS + "img-perche-5.jpg",
+				PHOTOS + "img-perche-6.jpg",
+				PHOTOS + "img-perche-8.jpg",
+				PHOTOS + "img-perche-7.jpg",
+				PHOTOS + "img-perche-9.jpg",
+				PHOTOS + "img-perche-11.jpg",
+				PHOTOS + "img-perche-13.jpg",
+				PHOTOS + "img-perche-12.jpg",
+				PHOTOS + "img-perche-14.jpg",
+				PHOTOS + "img-perche-10.jpg",
+				PHOTOS + "img-perche-15.jpg",
 			]} />
 			<TitleBloc title="" subtitle="Vendredi 31 mai : Le château de la Ferté Vidame et balade dans la forêt de Senonche" accent={class_name} />
 			<Story text={<P4/>} />
 			<PhotoT
-			  src_large={ImagesPerche.img_perche_16}
-			  src_row_1={ImagesPerche.img_perche_17}
-			  src_row_2={ImagesPerche.img_perche_18}
+			  src_large={PHOTOS + "img-perche-16.jpg"}
+			  src_row_1={PHOTOS + "img-perche-17.jpg"}
+			  src_row_2={PHOTOS + "img-perche-18.jpg"}
 			/>
 			<Story text={<P5/>} />
 			<TitleBloc title="" subtitle="Samedi 1er et dimanche 2 juin : Nogent-Le-Rotrou et La Ferté Bernard" accent={class_name} />
 			<Story text={<P6/>} />
 			<Story text={<P7/>} />
 			<PhotoDuo
-			  src_1={ImagesPerche.img_perche_19}
-			  src_2={ImagesPerche.img_perche_20}
+			  src_1={PHOTOS + "img-perche-19.jpg"}
+			  src_2={PHOTOS + "img-perche-20.jpg"}
 			/>
 		</div>
 		)

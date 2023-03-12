@@ -5,12 +5,12 @@ import SVGLocation from './SVGLocation';
 
 /* Assets */
 import { Paths }              from '../assets/Paths';
-import { Images }            from '../assets/Images';
 import {
 	Countries,
 	Strings,
 	Trips
 }                             from '../assets/Strings';
+import Consts                 from '../consts';
 
 /* CSS */
 import '../css/Cards.css';
@@ -18,6 +18,8 @@ import '../css/Cards.css';
 function Cards() {
 	const [scroll_state_globe,  setScrollStateGlobe]   = useState(false);
 	const [scroll_state_france, setScrollStateFrance]  = useState(false);
+
+	const photos = Consts.AWS_URL + "photos/cards/";
 
 	const handleScroll = () => {
 		let scrollY = window.scrollY;
@@ -39,19 +41,19 @@ function Cards() {
 					<SVGLocation className={classWithScroll(scroll_state_globe, "globe")}/>
 					<ul className='cards__items'>
 						<CardItem
-							src={Images.img_amsterdam}
+							src={photos + "img-amsterdam.jpg"}
 							text={Countries.netherlands}
 							label='Holiday'
 							path={Paths.netherlands}
 						/>
 						<CardItem
-							src={Images.img_crete}
+							src={photos + "img-crete.jpg"}
 							text={Countries.greece}
 							label='Holiday'
 							path={Paths.greece}
 						/>
 						<CardItem
-							src={Images.img_berlin}
+							src={photos + "img-berlin.jpg"}
 							text={Countries.germany}
 							label='Holiday'
 							path={Paths.germany}
@@ -60,19 +62,19 @@ function Cards() {
 					<SVGLocation className={classWithScroll(scroll_state_france, "france")}/>
 					<ul className='cards__items'>
 						<CardItem
-							src={Images.img_trouville}
+							src={photos + "img-trouville.jpg"}
 							text={Trips.trouville}
 							label='Weekend'
 							path={Paths.trouville}
 						/>
 						<CardItem
-							src={Images.img_bourgogne}
+							src={photos + "img-bourgogne.jpg"}
 							text={Trips.bourgogne}
 							label='Insolite'
 							path={Paths.bourgogne}
 						/>
 						<CardItem
-							src={Images.img_bretagne}
+							src={photos + "img-bretagne.jpg"}
 							text={Trips.bretagne}
 							label='Weekend'
 							path={Paths.bretagne}
@@ -80,19 +82,19 @@ function Cards() {
 					</ul>
 					<ul className='cards__items'>
 						<CardItem
-							src={Images.img_perche}
+							src={photos + "img-perche.jpg"}
 							text={Trips.perche}
 							label='Weekend'
 							path={Paths.perche}
 						/>
 						<CardItem
-							src={Images.img_bourges}
+							src={photos + "img-bourges.jpg"}
 							text={Trips.bourges}
 							label='Weekend'
 							path={Paths.bourges}
 						/>
 						<CardItem
-							src={Images.img_etretat}
+							src={photos + "img-etretat.jpg"}
 							text={Trips.etretat}
 							label='Weekend'
 							path={Paths.etretat}
@@ -100,19 +102,19 @@ function Cards() {
 					</ul>
 					<ul className='cards__items'>
 						<CardItem
-							src={Images.img_gacilly}
+							src={photos + "img-gacilly.jpg"}
 							text={Trips.gacilly + " & " + Trips.mans}
 							label='Weekend'
 							path={Paths.gacilly}
 						/>
 						<CardItem
-							src={Images.img_honfleur}
+							src={photos + "img-honfleur.jpg"}
 							text={Trips.honfleur}
 							label='Weekend'
 							path={Paths.honfleur}
 						/>
 						<CardItem
-							src={Images.img_corse}
+							src={photos + "img-corse.jpg"}
 							text={Trips.corse}
 							label='Vacances'
 							path={Paths.corse}

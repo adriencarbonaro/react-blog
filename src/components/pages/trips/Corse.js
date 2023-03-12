@@ -13,11 +13,13 @@ import {
 }                             from '../../Photos';
 import CustomLink             from '../../CustomLink';
 import SVGLocation            from '../../SVGLocation'
-import { ImagesCorse }        from '../../../assets/ImagesCorse';
+import Consts                 from '../../../consts';
 
 /* CSS */
 import '../../../css/App.css';
 import '../../../css/trips/Trips.css'
+
+const PHOTOS = Consts.AWS_URL + "photos/trips/corse/";
 
 export default class Corse extends ComponentScrollTop {
 	render () {
@@ -41,25 +43,25 @@ export default class Corse extends ComponentScrollTop {
 					<Story text={<P1/>} />
 					</>
 				}
-				right={<PhotoSingle src={ImagesCorse.img_corse_13} />}
+				right={<PhotoSingle src={PHOTOS + "img-corse-13.jpg"} />}
 			/>
 			<TitleBloc title="" subtitle="Découverte de Sartène" accent={class_name} />
 			<Story text={<P2/>} />
 			<PhotoGallery list={[
-			  ImagesCorse.img_corse_5,
-			  ImagesCorse.img_corse_6,
-			  ImagesCorse.img_corse_7,
+			  PHOTOS + "img-corse-5.jpg",
+			  PHOTOS + "img-corse-6.jpg",
+			  PHOTOS + "img-corse-7.jpg",
 			]} />
 			<Split
 				left={<Story text={<P3/>} />}
-				right={<PhotoSingle src={ImagesCorse.img_corse_1} />}
+				right={<PhotoSingle src={PHOTOS + "img-corse-1.jpg"} />}
 			/>
 			<TitleBloc title="" subtitle="Le lac de l’Ospédale et la plage de Santa-Giulia" accent={class_name} />
 			<Story text={<P4/>} />
-			<PhotoSingle src={ImagesCorse.img_corse_2} />
+			<PhotoSingle src={PHOTOS + "img-corse-2.jpg"} />
 			<TitleBloc title="" subtitle="Le site archéologique de Cucuruzzu-Capula" accent={class_name} />
 			<Split
-				left={<PhotoSingle src={ImagesCorse.img_corse_4} />}
+				left={<PhotoSingle src={PHOTOS + "img-corse-4.jpg"} />}
 				right={
 				  <>
 				  <Story text={<P5/>} />
@@ -71,58 +73,58 @@ export default class Corse extends ComponentScrollTop {
 			<Story text={<P7/>} />
 			<Story text={<P8/>} />
 			<PhotoT
-			  src_large={ImagesCorse.img_corse_14}
-			  src_row_1={ImagesCorse.img_corse_72}
-			  src_row_2={ImagesCorse.img_corse_73}
+			  src_large={PHOTOS + "img-corse-14.jpg"}
+			  src_row_1={PHOTOS + "img-corse-72.jpg"}
+			  src_row_2={PHOTOS + "img-corse-73.jpg"}
 			/>
 			<Split
-				left={<PhotoSingle src={ImagesCorse.img_corse_74} />}
+				left={<PhotoSingle src={PHOTOS + "img-corse-74.jpg"} />}
 				right={<Story text={<P9/>} />}
 			/>
 			<Split
 				left={<Story text={<P10/>} />}
-				right={<PhotoSingle src={ImagesCorse.img_corse_26} />}
+				right={<PhotoSingle src={PHOTOS + "img-corse-26.jpg"} />}
 			/>
 			<TitleBloc title="" subtitle="Bonifacio et les îles Lavezzi" accent={class_name} />
 			<Story text={<P11/>} />
 			<Story text={<P12/>} />
-			<PhotoSingle src={ImagesCorse.img_corse_24} />
+			<PhotoSingle src={PHOTOS + "img-corse-24.jpg"} />
 			<Story text={<P13/>} />
 			<PhotoDuo
-			  src_1={ImagesCorse.img_corse_23}
-			  src_2={ImagesCorse.img_corse_25}
+			  src_1={PHOTOS + "img-corse-23.jpg"}
+			  src_2={PHOTOS + "img-corse-25.jpg"}
 			/>
 			<Story text={<P14/>} />
 			<PhotoDuo
-			  src_1={ImagesCorse.img_corse_22}
-			  src_2={ImagesCorse.img_corse_21}
+			  src_1={PHOTOS + "img-corse-22.jpg"}
+			  src_2={PHOTOS + "img-corse-21.jpg"}
 			/>
 			<TitleBloc title="" subtitle="Les aiguilles de Bavella" accent={class_name} />
 			<Story text={<P15/>} />
 			<PhotoT
 			  inverted
-			  src_large={ImagesCorse.img_corse_19}
-			  src_row_1={ImagesCorse.img_corse_18}
-			  src_row_2={ImagesCorse.img_corse_69}
+			  src_large={PHOTOS + "img-corse-19.jpg"}
+			  src_row_1={PHOTOS + "img-corse-18.jpg"}
+			  src_row_2={PHOTOS + "img-corse-69.jpg"}
 			/>
 			<TitleBloc title="" subtitle="Les cascades de Purcaraccia et Palombaggia" accent={class_name} />
 			<Story text={<P17/>} />
 			<Story text={<P18/>} />
 			<PhotoT
-			  src_large={ImagesCorse.img_corse_67}
-			  src_row_1={ImagesCorse.img_corse_17}
-			  src_row_2={ImagesCorse.img_corse_15}
+			  src_large={PHOTOS + "img-corse-67.jpg"}
+			  src_row_1={PHOTOS + "img-corse-17.jpg"}
+			  src_row_2={PHOTOS + "img-corse-15.jpg"}
 			/>
 			<Story text={<P19/>} />
 			<Story text={<P20/>} />
 			<TitleBloc title="" subtitle="Balade le long du sentier du littorale jusqu’au phare de Senetosa" accent={class_name} />
 			<Story text={<P21/>} />
-			<PhotoSingle src={ImagesCorse.img_corse_75} />
+			<PhotoSingle src={PHOTOS + "img-corse-75.jpg"} />
 			<Story text={<P22/>} />
 			<PhotoTSide
-			  src_side={ImagesCorse.img_corse_12}
-			  src_col_1={ImagesCorse.img_corse_9}
-			  src_col_2={ImagesCorse.img_corse_10}
+			  src_side={PHOTOS + "img-corse-12.jpg"}
+			  src_col_1={PHOTOS + "img-corse-9.jpg"}
+			  src_col_2={PHOTOS + "img-corse-10.jpg"}
 			/>
 		</div>
 		)

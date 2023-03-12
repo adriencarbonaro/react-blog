@@ -5,13 +5,15 @@ import { TitleBloc } from "../../TitleBloc"
 import { Split } from "../../Split"
 import { Component }         from 'react';
 import { PhotoDuo, PhotoGallery, PhotoSingle, PhotoTSide } from '../../Photos';
-import { ImagesBourges } from '../../../assets/ImagesBourges';
 import CustomLink from '../../CustomLink';
 import SVGLocation from '../../SVGLocation';
+import Consts                 from '../../../consts';
 
 /* CSS */
 import '../../../css/App.css';
 import '../../../css/trips/Trips.css'
+
+const PHOTOS = Consts.AWS_URL + "photos/trips/bourges/";
 
 export default class Bourges extends ComponentScrollTop {
 	render () {
@@ -42,7 +44,7 @@ export default class Bourges extends ComponentScrollTop {
 					}
 					right={
 						<PhotoSingle
-							src={ImagesBourges.img_bourges_0}
+							src={PHOTOS + "img-bourges-0.jpg"}
 						/>
 					}
 				/>
@@ -54,9 +56,9 @@ export default class Bourges extends ComponentScrollTop {
 					text={<P3/>}
 				/>
 				<PhotoTSide
-					src_side={ImagesBourges.img_bourges_1}
-					src_col_1={ImagesBourges.img_bourges_2}
-					src_col_2={ImagesBourges.img_bourges_2}
+					src_side={PHOTOS + "img-bourges-1.jpg"}
+					src_col_1={PHOTOS + "img-bourges-2.jpg"}
+					src_col_2={PHOTOS + "img-bourges-3.jpg"}
 				/>
 				<TitleBloc
 					subtitle="Samedi 15 février"
@@ -67,14 +69,14 @@ export default class Bourges extends ComponentScrollTop {
 				/>
 				<PhotoTSide
 					inverted={true}
-					src_side={ImagesBourges.img_bourges_4}
-					src_col_1={ImagesBourges.img_bourges_3}
-					src_col_2={ImagesBourges.img_bourges_5}
+					src_side={PHOTOS + "img-bourges-4.jpg"}
+					src_col_1={PHOTOS + "img-bourges-3.jpg"}
+					src_col_2={PHOTOS + "img-bourges-5.jpg"}
 				/>
 				<PhotoGallery list={[
-					ImagesBourges.img_bourges_6,
-					ImagesBourges.img_bourges_7,
-					ImagesBourges.img_bourges_8,
+					PHOTOS + "img-bourges-6.jpg",
+					PHOTOS + "img-bourges-7.jpg",
+					PHOTOS + "img-bourges-8.jpg",
 				]} />
 				<TitleBloc
 					subtitle="Dimanche 16 février"
@@ -87,8 +89,8 @@ export default class Bourges extends ComponentScrollTop {
 					text={<P6/>}
 				/>
 				<PhotoDuo
-					src_1={ImagesBourges.img_bourges_9}
-					src_2={ImagesBourges.img_bourges_10}
+					src_1={PHOTOS + "img-bourges-9.jpg"}
+					src_2={PHOTOS + "img-bourges-10.jpg"}
 				/>
 			</div>
 		)

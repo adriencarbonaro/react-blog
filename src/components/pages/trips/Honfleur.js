@@ -9,13 +9,15 @@ import {
 	PhotoGallery,
 	PhotoSingle,
 }                             from '../../Photos';
-import { ImagesHonfleur }     from '../../../assets/ImagesHonfleur';
 import CustomLink             from '../../CustomLink';
 import SVGLocation            from '../../SVGLocation'
+import Consts                 from '../../../consts';
 
 /* CSS */
 import '../../../css/App.css';
 import '../../../css/trips/Trips.css'
+
+const PHOTOS = Consts.AWS_URL + "photos/trips/honfleur/";
 
 export default class Honfleur extends ComponentScrollTop {
 	render () {
@@ -35,7 +37,7 @@ export default class Honfleur extends ComponentScrollTop {
 				<Split
 				  right={
 				    <PhotoSingle
-				      src={ImagesHonfleur.img_honfleur_7}
+				      src={PHOTOS + "img-honfleur-7.jpg"}
 				    />
 				  }
 				  left={
@@ -56,8 +58,8 @@ export default class Honfleur extends ComponentScrollTop {
 					text={<P3/>}
 				/>
 				<PhotoDuo
-					src_1={ImagesHonfleur.img_honfleur_3}
-					src_2={ImagesHonfleur.img_honfleur_5}
+					src_1={PHOTOS + "img-honfleur-3.jpg"}
+					src_2={PHOTOS + "img-honfleur-5.jpg"}
 				/>
 				<TitleBloc
 					subtitle="Se balader dans la vieille ville"
@@ -70,9 +72,9 @@ export default class Honfleur extends ComponentScrollTop {
 					text={<P5/>}
 				/>
 				<PhotoGallery list={[
-					ImagesHonfleur.img_honfleur_2,
-					ImagesHonfleur.img_honfleur_4,
-					ImagesHonfleur.img_honfleur_6,
+					PHOTOS + "img-honfleur-2.jpg",
+					PHOTOS + "img-honfleur-4.jpg",
+					PHOTOS + "img-honfleur-6.jpg",
 				]} />
 				<TitleBloc
 					subtitle="Visiter le Musée Eugène Boudin"

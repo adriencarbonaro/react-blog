@@ -11,14 +11,16 @@ import {
 	PhotoTSide,
 }                             from '../../Photos';
 import { PhoneVideo }         from '../../PhoneVideo';
-import { ImagesAmsterdam }    from '../../../assets/ImagesAmsterdam';
 import CustomLink             from '../../CustomLink';
 import SVGLocation            from '../../SVGLocation'
+import Consts                 from '../../../consts';
 
 /* CSS */
 import '../../../css/App.css';
 import '../../../css/trips/Trips.css'
 import '../../../css/PhoneVideo.css'
+
+const PHOTOS = Consts.AWS_URL + "photos/trips/amsterdam/";
 
 export default class Amsterdam extends ComponentScrollTop {
 	render () {
@@ -52,7 +54,7 @@ export default class Amsterdam extends ComponentScrollTop {
 				<Split
 				  left={
 				    <PhotoSingle
-				      src={ImagesAmsterdam.img_amsterdam_2}
+				      src={PHOTOS + "img-amsterdam-1.jpg"}
 				    />
 				  }
 				  right={
@@ -69,22 +71,22 @@ export default class Amsterdam extends ComponentScrollTop {
 				  }
 				  right={
 				    <PhotoSingle
-				      src={ImagesAmsterdam.img_amsterdam_3}
+				      src={PHOTOS + "img-amsterdam-3.jpg"}
 				    />
 				  }
 				/>
 				<PhotoGallery list={[
-				  ImagesAmsterdam.img_amsterdam_3_3,
-				  ImagesAmsterdam.img_amsterdam_3_2,
-				  ImagesAmsterdam.img_amsterdam_3_4,
+				  PHOTOS + "img-amsterdam-3-3.jpg",
+				  PHOTOS + "img-amsterdam-3-2.jpg",
+				  PHOTOS + "img-amsterdam-3-4.jpg",
 				]} />
 				<Story
 					text={<P5/>}
 				/>
 				<PhotoT
-					src_large={ImagesAmsterdam.img_amsterdam_4}
-					src_row_1={ImagesAmsterdam.img_amsterdam_5}
-					src_row_2={ImagesAmsterdam.img_amsterdam_6}
+					src_large={PHOTOS + "img-amsterdam-4.jpg"}
+					src_row_1={PHOTOS + "img-amsterdam-5.jpg"}
+					src_row_2={PHOTOS + "img-amsterdam-6.jpg"}
 				/>
 				<Story
 					text={<P6/>}
@@ -94,9 +96,9 @@ export default class Amsterdam extends ComponentScrollTop {
 				/>
 				<PhotoTSide
 					inverted
-					src_side={ImagesAmsterdam.img_amsterdam_6_2}
-					src_col_1={ImagesAmsterdam.img_amsterdam_8}
-					src_col_2={ImagesAmsterdam.img_amsterdam_7}
+					src_side={PHOTOS + "img-amsterdam-6-2.jpg"}
+					src_col_1={PHOTOS + "img-amsterdam-8.jpg"}
+					src_col_2={PHOTOS + "img-amsterdam-7.jpg"}
 				/>
 				<TitleBloc
 					subtitle="Samedi 18 septembre"
@@ -112,17 +114,17 @@ export default class Amsterdam extends ComponentScrollTop {
 					text={<P10/>}
 				/>
 				<PhotoTSide
-					src_side={ImagesAmsterdam.img_amsterdam_12_2}
-					src_col_1={ImagesAmsterdam.img_amsterdam_11}
-					src_col_2={ImagesAmsterdam.img_amsterdam_12}
+					src_side={PHOTOS + "img-amsterdam-12-2.jpg"}
+					src_col_1={PHOTOS + "img-amsterdam-11.jpg"}
+					src_col_2={PHOTOS + "img-amsterdam-12.jpg"}
 				/>
 				<Story
 					text={<P11/>}
 				/>
 				<PhotoT
-					src_large={ImagesAmsterdam.img_amsterdam_13}
-					src_row_1={ImagesAmsterdam.img_amsterdam_15}
-					src_row_2={ImagesAmsterdam.img_amsterdam_17}
+					src_large={PHOTOS + "img-amsterdam-13.jpg"}
+					src_row_1={PHOTOS + "img-amsterdam-15.jpg"}
+					src_row_2={PHOTOS + "img-amsterdam-17.jpg"}
 				/>
 				<Story
 					text={<P12/>}
@@ -139,7 +141,7 @@ export default class Amsterdam extends ComponentScrollTop {
 				  }
 				  right={
 				    <PhotoSingle
-				      src={ImagesAmsterdam.img_amsterdam_19}
+				      src={PHOTOS + "img-amsterdam-19.jpg"}
 				    />
 				  }
 				/>

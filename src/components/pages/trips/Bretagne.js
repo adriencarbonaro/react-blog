@@ -10,14 +10,15 @@ import {
 	PhotoT,
 	PhotoTSide,
 }                             from '../../Photos';
-// import { ImagesBretagne }      from '../../../assets/ImagesBretagne';
 import CustomLink             from '../../CustomLink';
 import SVGLocation            from '../../SVGLocation'
-import { ImagesBretagne }     from '../../../assets/ImagesBretagne';
+import Consts                 from '../../../consts';
 
 /* CSS */
 import '../../../css/App.css';
 import '../../../css/trips/Trips.css'
+
+const PHOTOS = Consts.AWS_URL + "photos/trips/bretagne/";
 
 export default class Bretagne extends ComponentScrollTop {
 	render () {
@@ -45,17 +46,17 @@ export default class Bretagne extends ComponentScrollTop {
 					text={<P3/>}
 				/>
 				<PhotoGallery list={[
-				  ImagesBretagne.img_bretagne_2,
-				  ImagesBretagne.img_bretagne_1,
-				  ImagesBretagne.img_bretagne_3,
+				  PHOTOS + "img-bretagne-2.jpg",
+				  PHOTOS + "img-bretagne-1.jpg",
+				  PHOTOS + "img-bretagne-3.jpg",
 				]} />
 				<Story
 					text={<P4/>}
 				/>
 				<PhotoT
-					src_large={ImagesBretagne.img_bretagne_5}
-					src_row_1={ImagesBretagne.img_bretagne_6}
-					src_row_2={ImagesBretagne.img_bretagne_7}
+					src_large={PHOTOS + "img-bretagne-5.jpg"}
+					src_row_1={PHOTOS + "img-bretagne-6.jpg"}
+					src_row_2={PHOTOS + "img-bretagne-7.jpg"}
 				/>
 				<Story
 					text={<P5/>}
@@ -71,17 +72,17 @@ export default class Bretagne extends ComponentScrollTop {
 					text={<P7/>}
 				/>
 				<PhotoTSide
-					src_side={ImagesBretagne.img_bretagne_9}
-					src_col_1={ImagesBretagne.img_bretagne_10}
-					src_col_2={ImagesBretagne.img_bretagne_11}
+					src_side={PHOTOS + "img-bretagne-9.jpg"}
+					src_col_1={PHOTOS + "img-bretagne-10.jpg"}
+					src_col_2={PHOTOS + "img-bretagne-11.jpg"}
 				/>
 				<Story
 					text={<P8/>}
 				/>
 				<PhotoGallery list={[
-				  ImagesBretagne.img_bretagne_12,
-				  ImagesBretagne.img_bretagne_14,
-				  ImagesBretagne.img_bretagne_15,
+				  PHOTOS + "img-bretagne-12.jpg",
+				  PHOTOS + "img-bretagne-14.jpg",
+				  PHOTOS + "img-bretagne-15.jpg",
 				]} />
 				<TitleBloc
 					subtitle="Jour 3 : Le Croisic et La Baule"
@@ -98,9 +99,9 @@ export default class Bretagne extends ComponentScrollTop {
 				/>
 				<PhotoT
 					inverted
-					src_large={ImagesBretagne.img_bretagne_16}
-					src_row_1={ImagesBretagne.img_bretagne_19}
-					src_row_2={ImagesBretagne.img_bretagne_20}
+					src_large={PHOTOS + "img-bretagne-16.jpg"}
+					src_row_1={PHOTOS + "img-bretagne-19.jpg"}
+					src_row_2={PHOTOS + "img-bretagne-20.jpg"}
 				/>
 				<Story
 					text={<P12/>}
@@ -117,17 +118,17 @@ export default class Bretagne extends ComponentScrollTop {
 					}
 					right={
 						<PhotoSingle
-							src={ImagesBretagne.img_bretagne_24}
+							src={PHOTOS + "img-bretagne-24.jpg"}
 						/>
 					}
 				/>
 				<PhotoGallery list={[
-				  ImagesBretagne.img_bretagne_25,
-				  ImagesBretagne.img_bretagne_26,
-				  ImagesBretagne.img_bretagne_27,
-				  ImagesBretagne.img_bretagne_29,
-				  ImagesBretagne.img_bretagne_30,
-				  ImagesBretagne.img_bretagne_32,
+				  PHOTOS + "img-bretagne-25.jpg",
+				  PHOTOS + "img-bretagne-26.jpg",
+				  PHOTOS + "img-bretagne-27.jpg",
+				  PHOTOS + "img-bretagne-29.jpg",
+				  PHOTOS + "img-bretagne-30.jpg",
+				  PHOTOS + "img-bretagne-32.jpg",
 				]} />
 				<TitleBloc
 					subtitle="Jour 4 : Retour en passant par La Roche Bernard"
@@ -138,9 +139,9 @@ export default class Bretagne extends ComponentScrollTop {
 				/>
 				<PhotoT
 					inverted
-					src_large={ImagesBretagne.img_bretagne_33}
-					src_row_1={ImagesBretagne.img_bretagne_34}
-					src_row_2={ImagesBretagne.img_bretagne_35}
+					src_large={PHOTOS + "img-bretagne-33.jpg"}
+					src_row_1={PHOTOS + "img-bretagne-34.jpg"}
+					src_row_2={PHOTOS + "img-bretagne-35.jpg"}
 				/>
 			</div>
 		)

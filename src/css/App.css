@@ -20,49 +20,49 @@
 }
 
 .amsterdam {
-  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-amsterdam.jpg');
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('https://nid-de-poule.s3.eu-west-3.amazonaws.com/photos/cards/img-amsterdam.jpg');
 }
 
 .berlin {
-  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-berlin.jpg');
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('https://nid-de-poule.s3.eu-west-3.amazonaws.com/photos/cards/img-berlin.jpg');
 }
 
 .bretagne {
-  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-bretagne.jpg');
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('https://nid-de-poule.s3.eu-west-3.amazonaws.com/photos/cards/img-bretagne.jpg');
 }
 
 .bourges {
-  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-bourges.jpg');
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('https://nid-de-poule.s3.eu-west-3.amazonaws.com/photos/cards/img-bourges.jpg');
 }
 
 .bourgogne {
-  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-bourgogne.jpg');
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('https://nid-de-poule.s3.eu-west-3.amazonaws.com/photos/cards/img-bourgogne.jpg');
 }
 
 .crete {
-  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-crete.jpg');
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('https://nid-de-poule.s3.eu-west-3.amazonaws.com/photos/cards/img-crete.jpg');
 }
 
 .corse {
-  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-corse.jpg');
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('https://nid-de-poule.s3.eu-west-3.amazonaws.com/photos/cards/img-corse.jpg');
 }
 
 .etretat {
-  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-etretat.jpg');
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('https://nid-de-poule.s3.eu-west-3.amazonaws.com/photos/cards/img-etretat.jpg');
 }
 
 .gacilly {
-  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-gacilly.jpg');
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('https://nid-de-poule.s3.eu-west-3.amazonaws.com/photos/cards/img-gacilly.jpg');
 }
 
 .honfleur {
-  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-honfleur.jpg');
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('https://nid-de-poule.s3.eu-west-3.amazonaws.com/photos/cards/img-honfleur.jpg');
 }
 
 .perche {
-  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-perche.jpg');
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('https://nid-de-poule.s3.eu-west-3.amazonaws.com/photos/cards/img-perche.jpg');
 }
 
 .trouville {
-  background-image: linear-gradient(#00000000, #00000030, #00000000), url('../assets/images/cards/img-trouville.jpg');
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('https://nid-de-poule.s3.eu-west-3.amazonaws.com/photos/cards/img-trouville.jpg');
 }

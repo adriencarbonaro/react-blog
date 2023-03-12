@@ -2,7 +2,6 @@ import React                  from 'react';
 import { Component }          from 'react';
 import ComponentScrollTop     from '../../ComponentScrollTop';
 import CustomLink             from '../../CustomLink';
-import { ImagesTrouville }    from '../../../assets/ImagesTrouville';
 import {
 	PhotoDuo,
 	PhotoGallery,
@@ -13,10 +12,13 @@ import { Split }              from "../../Split"
 import { Story }              from "../../Story"
 import { TitleBloc }          from "../../TitleBloc"
 import SVGLocation            from '../../SVGLocation';
+import Consts                 from '../../../consts';
 
 /* CSS */
 import '../../../css/App.css';
 import '../../../css/trips/Trips.css'
+
+const PHOTOS = Consts.AWS_URL + "photos/trips/trouville/";
 
 export default class Trouville extends ComponentScrollTop {
 	render () {
@@ -39,7 +41,7 @@ export default class Trouville extends ComponentScrollTop {
 				  }
 				  right={
 				    <PhotoSingle
-				      src={ImagesTrouville.img_trouville_20}
+				      src={PHOTOS + "img-trouville-20.jpg"}
 				    />
 				  }
 				/>
@@ -50,9 +52,9 @@ export default class Trouville extends ComponentScrollTop {
 				/>
 				<Story text={<P3/>}/>
 				<PhotoT
-					src_large={ImagesTrouville.img_trouville_21}
-					src_row_1={ImagesTrouville.img_trouville_2}
-					src_row_2={ImagesTrouville.img_trouville_3}
+					src_large={PHOTOS + "img-trouville-21.jpg"}
+					src_row_1={PHOTOS + "img-trouville-2.jpg"}
+					src_row_2={PHOTOS + "img-trouville-3.jpg"}
 				/>
 				<Split
 					right={
@@ -68,7 +70,7 @@ export default class Trouville extends ComponentScrollTop {
 					}
 					left={
 						<PhotoSingle
-						src={ImagesTrouville.img_trouville_22}
+						src={PHOTOS + "img-trouville-22.jpg"}
 						/>
 					}
 				/>
@@ -78,8 +80,8 @@ export default class Trouville extends ComponentScrollTop {
 				/>
 				<Story text={<P5/>}/>
 				<PhotoDuo
-					src_1={ImagesTrouville.img_trouville_23}
-					src_2={ImagesTrouville.img_trouville_19}
+					src_1={PHOTOS + "img-trouville-23.jpg"}
+					src_2={PHOTOS + "img-trouville-19.jpg"}
 				/>
 				<TitleBloc
 					subtitle="Le casino"
@@ -87,12 +89,12 @@ export default class Trouville extends ComponentScrollTop {
 				/>
 				<Story text={<P6/>}/>
 				<PhotoGallery list={[
-				  ImagesTrouville.img_trouville_12,
-				  ImagesTrouville.img_trouville_13,
-				  ImagesTrouville.img_trouville_14,
-				  ImagesTrouville.img_trouville_15,
-				  ImagesTrouville.img_trouville_16,
-				  ImagesTrouville.img_trouville_17,
+				  PHOTOS + "img-trouville-12.jpg",
+				  PHOTOS + "img-trouville-13.jpg",
+				  PHOTOS + "img-trouville-14.jpg",
+				  PHOTOS + "img-trouville-15.jpg",
+				  PHOTOS + "img-trouville-16.jpg",
+				  PHOTOS + "img-trouville-17.jpg",
 				]} />
 			</div>
 		)

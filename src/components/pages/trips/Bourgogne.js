@@ -6,13 +6,13 @@ import { Story } from "../../Story"
 import { TitleBloc } from '../../TitleBloc';
 import SVGLocation from '../../SVGLocation';
 import { PhotoDuo, PhotoSingle, PhotoT } from '../../Photos';
-
-/* Assets */
-import { ImagesBourgogne } from "../../../assets/ImagesBourgogne"
+import Consts                 from '../../../consts';
 
 /* CSS */
 import '../../../css/App.css';
 import '../../../css/trips/Trips.css'
+
+const PHOTOS = Consts.AWS_URL + "photos/trips/bourgogne/";
 
 export default class Bourgogne extends ComponentScrollTop {
 	render () {
@@ -30,22 +30,22 @@ export default class Bourgogne extends ComponentScrollTop {
 					text={<P1/>}
 				/>
 				<PhotoT
-				  src_large={ImagesBourgogne.img_bourgogne_5}
-				  src_row_1={ImagesBourgogne.img_bourgogne_2}
-				  src_row_2={ImagesBourgogne.img_bourgogne_1}
+				  src_large={PHOTOS + "img-bourgogne-5.jpg"}
+				  src_row_1={PHOTOS + "img-bourgogne-2.jpg"}
+				  src_row_2={PHOTOS + "img-bourgogne-1.jpg"}
 				/>
 				<Story
 					text={<P2/>}
 				/>
 				<PhotoDuo
-				  src_1={ImagesBourgogne.img_bourgogne_4}
-				  src_2={ImagesBourgogne.img_bourgogne_3}
+				  src_1={PHOTOS + "img-bourgogne-4.jpg"}
+				  src_2={PHOTOS + "img-bourgogne-3.jpg"}
 				/>
 				<Story
 					text={<P3/>}
 				/>
 				<PhotoSingle
-				  src={ImagesBourgogne.img_bourgogne_6}
+				  src={PHOTOS + "img-bourgogne-6.jpg"}
 				/>
 				<Story
 					text={<P4/>}

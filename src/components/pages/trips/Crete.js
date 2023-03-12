@@ -8,13 +8,15 @@ import { PhotoSingle,
          PhotoGallery,
          PhotoT,
          PhotoTSide } from "../../Photos"
-import { ImagesCrete } from "../../../assets/ImagesCrete"
 import CustomLink from '../../CustomLink';
 import SVGLocation from '../../SVGLocation';
+import Consts                 from '../../../consts';
 
 /* CSS */
 import '../../../css/App.css';
 import '../../../css/trips/Trips.css'
+
+const PHOTOS = Consts.AWS_URL + "photos/trips/crete/";
 
 export default class Crete extends ComponentScrollTop {
 	render () {
@@ -52,7 +54,7 @@ export default class Crete extends ComponentScrollTop {
 					}
 					right={
 						<PhotoSingle
-							src={ImagesCrete.img_crete_0}
+							src={PHOTOS + "img-crete-0.jpg"}
 						/>
 					}
 				/>
@@ -64,9 +66,9 @@ export default class Crete extends ComponentScrollTop {
 					text={<P4/>}
 				/>
 				<PhotoGallery list={[
-				  ImagesCrete.img_crete_1,
-				  ImagesCrete.img_crete_2,
-				  ImagesCrete.img_crete_3,
+				  PHOTOS + "img-crete-1.jpg",
+				  PHOTOS + "img-crete-2.jpg",
+				  PHOTOS + "img-crete-3.jpg",
 				]} />
 				<TitleBloc
 					subtitle="Lundi 3 Septembre"
@@ -75,16 +77,16 @@ export default class Crete extends ComponentScrollTop {
 				<Story
 					text={<P5/>}
 				/>
-				<PhotoSingle src={ImagesCrete.img_crete_4} />
+				<PhotoSingle src={PHOTOS + "img-crete-4.jpg"} />
 				<PhotoGallery list={[
-				  ImagesCrete.img_crete_5,
-				  ImagesCrete.img_crete_6,
-				  ImagesCrete.img_crete_12,
+				  PHOTOS + "img-crete-5.jpg",
+				  PHOTOS + "img-crete-6.jpg",
+				  PHOTOS + "img-crete-12.jpg",
 				]} />
 				<PhotoTSide
-				  src_side={ImagesCrete.img_crete_14}
-				  src_col_1={ImagesCrete.img_crete_13}
-				  src_col_2={ImagesCrete.img_crete_15}
+				  src_side={PHOTOS + "img-crete-14.jpg"}
+				  src_col_1={PHOTOS + "img-crete-13.jpg"}
+				  src_col_2={PHOTOS + "img-crete-15.jpg"}
 				/>
 				<TitleBloc
 					subtitle="Mardi 4 Septembre"
@@ -94,14 +96,14 @@ export default class Crete extends ComponentScrollTop {
 					text={<P6/>}
 				/>
 				<PhotoTSide
-				  src_side={ImagesCrete.img_crete_16}
-				  src_col_1={ImagesCrete.img_crete_17}
-				  src_col_2={ImagesCrete.img_crete_18}
+				  src_side={PHOTOS + "img-crete-16.jpg"}
+				  src_col_1={PHOTOS + "img-crete-17.jpg"}
+				  src_col_2={PHOTOS + "img-crete-18.jpg"}
 				/>
 				<PhotoGallery list={[
-				  ImagesCrete.img_crete_19,
-				  ImagesCrete.img_crete_20,
-				  ImagesCrete.img_crete_21,
+				  PHOTOS + "img-crete-19.jpg",
+				  PHOTOS + "img-crete-20.jpg",
+				  PHOTOS + "img-crete-21.jpg",
 				]} />
 				<Split
 					left={
@@ -115,7 +117,7 @@ export default class Crete extends ComponentScrollTop {
 					}
 					right={
 						<PhotoSingle
-							src={ImagesCrete.img_crete_7}
+							src={PHOTOS + "img-crete-7.jpg"}
 						/>
 					}
 				/>
@@ -127,9 +129,9 @@ export default class Crete extends ComponentScrollTop {
 					text={<P8/>}
 				/>
 				<PhotoT
-				  src_large={ImagesCrete.img_crete_8}
-				  src_row_1={ImagesCrete.img_crete_9}
-				  src_row_2={ImagesCrete.img_crete_10}
+				  src_large={PHOTOS + "img-crete-8.jpg"}
+				  src_row_1={PHOTOS + "img-crete-9.jpg"}
+				  src_row_2={PHOTOS + "img-crete-10.jpg"}
 				/>
 				<TitleBloc
 					subtitle="Vendredi 7 Septembre"
@@ -141,7 +143,7 @@ export default class Crete extends ComponentScrollTop {
 				<Story
 					text={<P10/>}
 				/>
-				<PhotoSingle src={ImagesCrete.img_crete_11} />
+				<PhotoSingle src={PHOTOS + "img-crete-11.jpg"} />
 			</div>
 		);
 	}
