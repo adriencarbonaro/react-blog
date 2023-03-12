@@ -11,7 +11,7 @@ import '../css/Banner.css';
 function Banner() {
 	return (
 		<div className='banner-container'>
-			<video className='video-banner' src="https://nid-de-poule.s3.eu-west-3.amazonaws.com/banner.mp4" type="video/mp4" autoPlay loop muted />
+			<video className='video-banner' src="https://nid-de-poule.s3.eu-west-3.amazonaws.com/videos/banner.mp4" type="video/mp4" autoPlay loop muted />
 			<h1>Malte</h1>
 			<p>{Strings.banner_msg}</p>
 			{/* <div className='banner-btns'>
