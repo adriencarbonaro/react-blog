@@ -68,6 +68,7 @@
   text-align: center;
   width: 60vw;
   margin-right: 2rem;
+  overflow: auto;
 }
 
 .nav-item {
