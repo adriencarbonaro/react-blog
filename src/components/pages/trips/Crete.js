@@ -3,7 +3,6 @@ import ComponentScrollTop from '../../ComponentScrollTop';
 import { Component }      from 'react';
 import { Story } from "../../Story"
 import { TitleBloc } from "../../TitleBloc"
-import { Split } from "../../Split"
 import { PhotoSingle,
          PhotoGallery,
          PhotoT,
@@ -40,24 +39,9 @@ export default class Crete extends ComponentScrollTop {
 				<Story
 					text={<P2/>}
 				/>
-				<Split
-					left={
-						<>
-						<TitleBloc
-							subtitle="Samedi 1er Septembre"
-							accent={class_name}
-						/>
-						<Story
-							text={<P3/>}
-						/>
-						</>
-					}
-					right={
-						<PhotoSingle
-							src={PHOTOS + "img-crete-0.jpg"}
-						/>
-					}
-				/>
+				<TitleBloc subtitle="Samedi 1er Septembre" accent={class_name} />
+				<Story text={<P3/>} />
+				<PhotoSingle src={PHOTOS + "img-crete-0.jpg"} />
 				<TitleBloc
 					subtitle="Dimanche 2 Septembre"
 					accent={class_name}
@@ -105,22 +89,9 @@ export default class Crete extends ComponentScrollTop {
 				  PHOTOS + "img-crete-20.jpg",
 				  PHOTOS + "img-crete-21.jpg",
 				]} />
-				<Split
-					left={
-						<>
-						<TitleBloc
-							subtitle="Mercredi 5 Septembre"
-							accent={class_name}
-						/>
-						<Story text={<P7/>} />
-						</>
-					}
-					right={
-						<PhotoSingle
-							src={PHOTOS + "img-crete-7.jpg"}
-						/>
-					}
-				/>
+				<TitleBloc subtitle="Mercredi 5 Septembre" accent={class_name} />
+				<Story text={<P7/>} />
+				<PhotoSingle src={PHOTOS + "img-crete-7.jpg"} />
 				<TitleBloc
 					subtitle="Jeudi 6 Septembre"
 					accent={class_name}

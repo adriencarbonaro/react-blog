@@ -3,7 +3,6 @@ import ComponentScrollTop     from '../../ComponentScrollTop';
 import { Story }              from "../../Story"
 import { TitleBloc }          from "../../TitleBloc"
 import { Component }          from 'react';
-import { Split }              from '../../Split';
 import {
 	PhotoDuo,
 	PhotoGallery,
@@ -33,18 +32,9 @@ export default class Corse extends ComponentScrollTop {
 			  subtitle=""
 			  accent={class_name}
 			/>
-			<Split
-				left={
-					<>
-					<TitleBloc
-						subtitle="Juillet 2021"
-						accent={class_name}
-					/>
-					<Story text={<P1/>} />
-					</>
-				}
-				right={<PhotoSingle src={PHOTOS + "img-corse-13.jpg"} />}
-			/>
+			<TitleBloc subtitle="Juillet 2021" accent={class_name} />
+			<Story text={<P1/>} />
+			<PhotoSingle src={PHOTOS + "img-corse-13.jpg"} />
 			<TitleBloc title="" subtitle="Découverte de Sartène" accent={class_name} />
 			<Story text={<P2/>} />
 			<PhotoGallery list={[
@@ -52,23 +42,15 @@ export default class Corse extends ComponentScrollTop {
 			  PHOTOS + "img-corse-6.jpg",
 			  PHOTOS + "img-corse-7.jpg",
 			]} />
-			<Split
-				left={<Story text={<P3/>} />}
-				right={<PhotoSingle src={PHOTOS + "img-corse-1.jpg"} />}
-			/>
+			<Story text={<P3/>} />
+			<PhotoSingle src={PHOTOS + "img-corse-1.jpg"} />
 			<TitleBloc title="" subtitle="Le lac de l’Ospédale et la plage de Santa-Giulia" accent={class_name} />
 			<Story text={<P4/>} />
 			<PhotoSingle src={PHOTOS + "img-corse-2.jpg"} />
 			<TitleBloc title="" subtitle="Le site archéologique de Cucuruzzu-Capula" accent={class_name} />
-			<Split
-				left={<PhotoSingle src={PHOTOS + "img-corse-4.jpg"} />}
-				right={
-				  <>
-				  <Story text={<P5/>} />
-				  <Story text={<P6/>} />
-				  </>
-				}
-			/>
+			<PhotoSingle src={PHOTOS + "img-corse-4.jpg"} />
+			<Story text={<P5/>} />
+			<Story text={<P6/>} />
 			<TitleBloc title="" subtitle="La tour de Roccapina et la rivière de Baracci" accent={class_name} />
 			<Story text={<P7/>} />
 			<Story text={<P8/>} />
@@ -77,14 +59,10 @@ export default class Corse extends ComponentScrollTop {
 			  src_row_1={PHOTOS + "img-corse-72.jpg"}
 			  src_row_2={PHOTOS + "img-corse-73.jpg"}
 			/>
-			<Split
-				left={<PhotoSingle src={PHOTOS + "img-corse-74.jpg"} />}
-				right={<Story text={<P9/>} />}
-			/>
-			<Split
-				left={<Story text={<P10/>} />}
-				right={<PhotoSingle src={PHOTOS + "img-corse-26.jpg"} />}
-			/>
+			<PhotoSingle src={PHOTOS + "img-corse-74.jpg"} />
+			<Story text={<P9/>} />
+			<Story text={<P10/>} />
+			<PhotoSingle src={PHOTOS + "img-corse-26.jpg"} />
 			<TitleBloc title="" subtitle="Bonifacio et les îles Lavezzi" accent={class_name} />
 			<Story text={<P11/>} />
 			<Story text={<P12/>} />

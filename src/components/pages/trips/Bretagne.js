@@ -3,7 +3,6 @@ import ComponentScrollTop     from '../../ComponentScrollTop';
 import { Story }              from "../../Story"
 import { TitleBloc }          from "../../TitleBloc"
 import { Component }          from 'react';
-import { Split }              from '../../Split';
 import {
 	PhotoGallery,
 	PhotoSingle,
@@ -106,22 +105,12 @@ export default class Bretagne extends ComponentScrollTop {
 				<Story
 					text={<P12/>}
 				/>
-				<Split
-					left={
-						<>
-						<TitleBloc
-							subtitle="Jour 3 : Guérande et le village de Kerhinet"
-							accent={class_name}
-						/>
-						<Story text={<P13/>} />
-						</>
-					}
-					right={
-						<PhotoSingle
-							src={PHOTOS + "img-bretagne-24.jpg"}
-						/>
-					}
+				<TitleBloc
+				  subtitle="Jour 3 : Guérande et le village de Kerhinet"
+				  accent={class_name}
 				/>
+				<Story text={<P13/>} />
+				<PhotoSingle src={PHOTOS + "img-bretagne-24.jpg"} />
 				<PhotoGallery list={[
 				  PHOTOS + "img-bretagne-25.jpg",
 				  PHOTOS + "img-bretagne-26.jpg",

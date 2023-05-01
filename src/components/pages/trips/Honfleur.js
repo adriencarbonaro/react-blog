@@ -2,7 +2,6 @@ import React                  from 'react';
 import ComponentScrollTop     from '../../ComponentScrollTop';
 import { Story }              from "../../Story"
 import { TitleBloc }          from "../../TitleBloc"
-import { Split }              from "../../Split"
 import { Component }          from 'react';
 import {
 	PhotoDuo,
@@ -34,18 +33,8 @@ export default class Honfleur extends ComponentScrollTop {
 				<Story
 					text={<P1/>}
 				/>
-				<Split
-				  right={
-				    <PhotoSingle
-				      src={PHOTOS + "img-honfleur-7.jpg"}
-				    />
-				  }
-				  left={
-				    <Story
-				      text={<P2/>}
-				    />
-				  }
-				/>
+				<PhotoSingle src={PHOTOS + "img-honfleur-7.jpg"} />
+				<Story text={<P2/>} />
 				<TitleBloc
 					subtitle="Que faire à Honfleur"
 					accent={class_name}

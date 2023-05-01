@@ -2,7 +2,6 @@ import React from 'react';
 import ComponentScrollTop from '../../ComponentScrollTop';
 import { Story } from "../../Story"
 import { TitleBloc } from "../../TitleBloc"
-import { Split } from "../../Split"
 import { Component }         from 'react';
 import { PhotoDuo, PhotoGallery, PhotoSingle, PhotoTSide } from '../../Photos';
 import CustomLink from '../../CustomLink';
@@ -30,24 +29,9 @@ export default class Bourges extends ComponentScrollTop {
 				<Story
 					text={<P1/>}
 				/>
-				<Split
-					left={
-						<>
-						<TitleBloc
-							subtitle="Jeudi 13 février"
-							accent={class_name}
-						/>
-						<Story
-							text={<P2/>}
-						/>
-						</>
-					}
-					right={
-						<PhotoSingle
-							src={PHOTOS + "img-bourges-0.jpg"}
-						/>
-					}
-				/>
+				<TitleBloc subtitle="Jeudi 13 février" accent={class_name} />
+				<Story text={<P2/>} />
+				<PhotoSingle src={PHOTOS + "img-bourges-0.jpg"} />
 				<TitleBloc
 					subtitle="Vendredi 14 février"
 					accent={class_name}

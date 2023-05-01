@@ -2,7 +2,6 @@ import React                  from 'react';
 import ComponentScrollTop     from '../../ComponentScrollTop';
 import { Story }              from "../../Story"
 import { TitleBloc }          from "../../TitleBloc"
-import { Split }              from "../../Split"
 import { Component }          from 'react';
 import {
 	PhotoGallery,
@@ -34,16 +33,8 @@ export default class Amsterdam extends ComponentScrollTop {
 					subtitle=""
 					accent={class_name}
 				/>
-				<Split
-				  right={
-				    <PhoneVideo src="https://nid-de-poule.s3.eu-west-3.amazonaws.com/videos/phone/amsterdam.mp4"/>
-				  }
-				  left={
-				    <Story
-				      text={<P1/>}
-				    />
-				  }
-				/>
+				<PhoneVideo src="https://nid-de-poule.s3.eu-west-3.amazonaws.com/videos/phone/amsterdam.mp4"/>
+				<Story text={<P1/>} />
 				<TitleBloc
 					subtitle="Vendredi 17 septembre"
 					accent={class_name}
@@ -51,30 +42,10 @@ export default class Amsterdam extends ComponentScrollTop {
 				<Story
 					text={<P2/>}
 				/>
-				<Split
-				  left={
-				    <PhotoSingle
-				      src={PHOTOS + "img-amsterdam-1.jpg"}
-				    />
-				  }
-				  right={
-				    <Story
-				      text={<P3/>}
-				    />
-				  }
-				/>
-				<Split
-				  left={
-				    <Story
-				      text={<P4/>}
-				    />
-				  }
-				  right={
-				    <PhotoSingle
-				      src={PHOTOS + "img-amsterdam-3.jpg"}
-				    />
-				  }
-				/>
+				<PhotoSingle src={PHOTOS + "img-amsterdam-1.jpg"} />
+				<Story text={<P3/>} />
+				<Story text={<P4/>} />
+				<PhotoSingle src={PHOTOS + "img-amsterdam-3.jpg"} />
 				<PhotoGallery list={[
 				  PHOTOS + "img-amsterdam-3-3.jpg",
 				  PHOTOS + "img-amsterdam-3-2.jpg",
@@ -133,18 +104,8 @@ export default class Amsterdam extends ComponentScrollTop {
 					subtitle="Dimanche 19 septembre"
 					accent={class_name}
 				/>
-				<Split
-				  left={
-				    <Story
-				      text={<P13/>}
-				    />
-				  }
-				  right={
-				    <PhotoSingle
-				      src={PHOTOS + "img-amsterdam-19.jpg"}
-				    />
-				  }
-				/>
+				<Story text={<P13/>} />
+				<PhotoSingle src={PHOTOS + "img-amsterdam-19.jpg"} />
 				<Story
 					text={<P14/>}
 				/>

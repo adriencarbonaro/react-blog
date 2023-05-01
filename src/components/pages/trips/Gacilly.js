@@ -9,7 +9,6 @@ import {
 	PhotoSingle,
 	PhotoT
 }                             from '../../Photos';
-import { Split }              from '../../Split';
 import SVGLocation            from '../../SVGLocation';
 import { PhoneVideo }         from '../../PhoneVideo';
 import Consts                 from '../../../consts';
@@ -27,10 +26,8 @@ export default class Gacilly extends ComponentScrollTop {
 			<h1 className={"banner-title " + class_name}>La Gacilly & Le Mans</h1>
 			<SVGLocation className={class_name}/>
 			<TitleBloc title="Week-end détente : La Gacilly et Le Mans" subtitle="" accent={class_name} />
-			<Split
-				left={<Story text={<P1/>} />}
-				right={<PhoneVideo color_spot="#e8f4ee" color_text="#68bc92" src="https://nid-de-poule.s3.eu-west-3.amazonaws.com/videos/phone/gacilly.mp4" />}
-			/>
+			<Story text={<P1/>} />
+			<PhoneVideo color_spot="#e8f4ee" color_text="#68bc92" src="https://nid-de-poule.s3.eu-west-3.amazonaws.com/videos/phone/gacilly.mp4" />
 			<TitleBloc title="" subtitle="L’Eco-Hôtel Spa Yves Rocher" accent={class_name} />
 			<Story text={<P2/>} />
 			<Story text={<P3/>} />
@@ -61,10 +58,8 @@ export default class Gacilly extends ComponentScrollTop {
 			  src_2={PHOTOS + "img-gacilly-13.jpg"}
 			/>
 			<TitleBloc title="" subtitle="Passage rapide au Mans" accent={class_name} />
-			<Split
-				right={<Story text={<P7/>} />}
-				left={<PhoneVideo color_spot="#ffd7bc" color_text="#c96236" src="https://nid-de-poule.s3.eu-west-3.amazonaws.com/videos/phone/mans.mp4" />}
-			/>
+			<Story text={<P7/>} />
+			<PhoneVideo color_spot="#ffd7bc" color_text="#c96236" src="https://nid-de-poule.s3.eu-west-3.amazonaws.com/videos/phone/mans.mp4" />
 			<PhotoGallery list={[
 				PHOTOS + "img-gacilly-14.jpg",
 				PHOTOS + "img-gacilly-15.jpg",

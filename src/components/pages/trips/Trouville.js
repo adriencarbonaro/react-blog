@@ -8,7 +8,6 @@ import {
 	PhotoSingle,
 	PhotoT,
 }                             from '../../Photos';
-import { Split }              from "../../Split"
 import { Story }              from "../../Story"
 import { TitleBloc }          from "../../TitleBloc"
 import SVGLocation            from '../../SVGLocation';
@@ -33,47 +32,21 @@ export default class Trouville extends ComponentScrollTop {
 					accent={class_name}
 				/>
 				<Story text={<P1/>}/>
-				<Split
-				  left={
-				    <Story
-				      text={<P2/>}
-				    />
-				  }
-				  right={
-				    <PhotoSingle
-				      src={PHOTOS + "img-trouville-20.jpg"}
-				    />
-				  }
-				/>
+				<Story text={<P2/>} />
+				<PhotoSingle src={PHOTOS + "img-trouville-20.jpg"} />
 				<Story text={<P2_2/>}/>
-				<TitleBloc
-					subtitle="Le centre ville"
-					accent={class_name}
-				/>
+				<TitleBloc subtitle="Le centre ville" accent={class_name} />
 				<Story text={<P3/>}/>
 				<PhotoT
 					src_large={PHOTOS + "img-trouville-21.jpg"}
 					src_row_1={PHOTOS + "img-trouville-2.jpg"}
 					src_row_2={PHOTOS + "img-trouville-3.jpg"}
 				/>
-				<Split
-					right={
-						<>
-						<TitleBloc
-							subtitle="Le marché aux poissons"
-							accent={class_name}
-						/>
-						<Story
-							text={<P4/>}
-						/>
-						</>
-					}
-					left={
-						<PhotoSingle
-						src={PHOTOS + "img-trouville-22.jpg"}
-						/>
-					}
+				<TitleBloc
+				  subtitle="Le marché aux poissons" accent={class_name}
 				/>
+				<Story text={<P4/>} />
+				<PhotoSingle src={PHOTOS + "img-trouville-22.jpg"} />
 				<TitleBloc
 					subtitle="Le bord de mer et la plage"
 					accent={class_name}
