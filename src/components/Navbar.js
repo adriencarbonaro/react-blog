@@ -75,9 +75,9 @@ function Navbar() {
 								Monde <i class="fas fa-chevron-down"></i>
 							</div>
 							<ul className={classWithScroll("nav-submenu")}>
-								<li className="submenu-item"><Link to="/amsterdam" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Amsterdam</Link></li>
-								<li className="submenu-item"><Link to="/berlin" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Berlin</Link></li>
-								<li className="submenu-item"><Link to="/crete" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Crète</Link></li>
+								<li className="submenu-item"><Link to="/netherlands" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Amsterdam</Link></li>
+								<li className="submenu-item"><Link to="/germany" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Berlin</Link></li>
+								<li className="submenu-item"><Link to="/greece" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Crète</Link></li>
 							</ul>
 						</li>
 						<li className="nav-item">
