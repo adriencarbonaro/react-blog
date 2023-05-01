@@ -134,24 +134,12 @@
   margin-bottom: 16px;
 }
 
-.twitter:hover {
-  color: #1085bb;
+.fa-instagram {
+  transition: color 0.3s ease-out;
 }
 
-.facebook:hover {
-  color: #1a6385;
-}
-
-.instagram:hover {
+.fa-instagram:hover {
   color: #fa5c5c;
-}
-
-.youtube:hover {
-  color: #df1f1f;
-}
-
-.linkedin:hover {
-  color: #246bc7;
 }
 
 .website-rights {
