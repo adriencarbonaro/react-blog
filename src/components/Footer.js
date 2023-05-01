@@ -1,6 +1,7 @@
 import React, { Component }  from 'react';
 import { Button }            from './Button';
 import { Link }              from 'react-router-dom';
+import { Version }           from './Version';
 
 /* Assets */
 import { Strings }           from '../assets/Strings';
@@ -18,6 +19,7 @@ class Footer extends Component {
 						<a class='social-icon-link' target='_blank' href='https://www.instagram.com/le_petit_bonnet_rose/'>
 							<i class='fab fa-instagram' />
 						</a>
+						<small class='website-version'><Version /></small>
 					</div>
 				</section>
 			</div>

@@ -28,6 +28,9 @@ yarn-error.log*
 /src/assets/svg
 /src/assets/logo
 
+# Version file
+/src/components/Version.js
+
 # user settings
 .vscode
 
