@@ -1,28 +1,35 @@
-.photo_single {
-  display: flex;
-  width: 100%;
-  justify-content: center;
+/* Common class for all photo blocs */
+.photos {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    margin: auto;
 }
 
-.photo_single_img {
-    width: 90%;
-    padding: 25px 20px 25px 20px;
-    object-fit: cover;
-    transition: all 0.2s linear;
+.photo-img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+    .photos {
+        width: 90%;
+    }
+}
+
+.photo {
+    padding: 5px;
+}
+
+.photo-single-img {
+    width: 100%;
 }
 
 .photo-duo {
-    display: flex;
     flex-direction: row;
-    margin: auto;
-    width: 90%;
-    justify-content: center;
-    padding: 25px 20px 25px 20px;
 }
 
 .photo-duo-img {
     width: 50%;
-    padding: 5px;
 }
 
 @media only screen and (max-width: 960px) {
@@ -35,53 +42,30 @@
     }
 }
 
-.photo_gallery {
-    display: block;
-    width: 90%;
-    margin: auto;
-    padding: 25px 20px 25px 20px;
+.photo-gallery {
+    flex-direction: column;
 }
 
-.photo_gallery_items {
+.photo-gallery-items {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
 }
 
-.photo_gallery_item {
+.photo-gallery-item {
+    display: flex;
     width: 30%;
     flex-grow: 1;
     list-style-type: none;
-    padding: 5px;
 }
 
-.photo_gallery_img {
+.photo-gallery-img {
     width: 100%;
 }
 
-@media only screen and (max-width: 960px) {
-    .photo_gallery_items {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .photo_gallery_item {
-        width: 100%;
-        list-style-type: none;
-        padding: 5px;
-    }
-}
-
 .photo-gallery-t {
-    display: flex;
     flex-direction: column;
-    width: 90%;
-    margin: auto;
-    padding: 25px 20px 25px 20px;
 }
 
 /* Photo T */
@@ -104,14 +88,6 @@
 }
 
 /* T Side */
-.photo-gallery-t-side {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    margin: auto;
-    padding: 25px 20px 25px 20px;
-}
-
 .photo-gallery-item-side {
     width: 50%;
     object-fit: cover;
@@ -132,6 +108,10 @@
 }
 
 @media only screen and (max-width: 960px) {
+    .photo-gallery-t {
+        width: 90%;
+    }
+
     .photo-gallery-items-row {
         display: flex;
         flex-direction: column;

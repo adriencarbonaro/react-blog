@@ -3,9 +3,9 @@ import '../css/Photos.css'
 
 export const PhotoSingle = (props) => {
 	return (
-		<div className="photo_single">
+		<div className="photos photo-single">
 			<img
-			  className="photo_single_img"
+			  className="photo photo-single-img"
 			  src={props.src}
 			  alt="alt"
 			/>
@@ -15,14 +15,14 @@ export const PhotoSingle = (props) => {
 
 export const PhotoDuo = (props) => {
 	return (
-		<div className="photo-duo">
+		<div className="photos photo-duo">
 			<img
-				className="photo-duo-img"
+				className="photo photo-duo-img"
 				src={props.src_1}
 				alt="alt"
 			/>
 			<img
-				className="photo-duo-img"
+				className="photo photo-duo-img"
 				src={props.src_2}
 				alt="alt"
 			/>
@@ -35,8 +35,8 @@ export const PhotoGallery = (props) => {
 		const elem = [];
 		for (let img of list) {
 			elem.push(
-				<li className="photo_gallery_item">
-					<img className="photo_gallery_img" src={img} alt='alt' />
+				<li className="photo-gallery-item">
+					<img className="photo photo-gallery-img" src={img} alt='alt' />
 				</li>
 			)
 		}
@@ -53,7 +53,7 @@ export const PhotoGallery = (props) => {
 		const newUl = (list) => {
 			return (
 				<>
-				<ul className="photo_gallery_items">
+				<ul className="photo-gallery-items">
 					{createLi(list)}
 				</ul>
 				</>
@@ -74,7 +74,7 @@ export const PhotoGallery = (props) => {
 	const createDiv = (list) => {
 		return (
 			<>
-			<div className="photo_gallery">
+			<div className="photos photo-gallery">
 				{createUl(list)}
 			</div>
 			</>
@@ -93,7 +93,7 @@ export const PhotoTSide = (props) => {
 		return (
 			<>
 				<img
-					className="photo-gallery-item-side"
+					className="photo photo-gallery-item-side"
 					src={src_side}
 					alt="alt"
 				/>
@@ -105,12 +105,12 @@ export const PhotoTSide = (props) => {
 			<>
 				<div className="photo-gallery-items-col">
 					<img
-						className="photo-gallery-item-col"
+						className="photo photo-gallery-item-col"
 						src={src_col_1}
 						alt="alt"
 					/>
 					<img
-						className="photo-gallery-item-col"
+						className="photo photo-gallery-item-col"
 						src={src_col_2}
 						alt="alt"
 					/>
@@ -134,7 +134,7 @@ export const PhotoTSide = (props) => {
 		)
 	}
 	return (
-		<div className="photo-gallery-t-side">
+		<div className="photos photo-gallery-t-side">
 			{elem}
 		</div>
 	)
@@ -157,12 +157,12 @@ export const PhotoT = (props) => {
 			<>
 				<div className="photo-gallery-items-row">
 					<img
-						className="photo-gallery-item-row"
+						className="photo photo-gallery-item-row"
 						src={src_row_1}
 						alt="alt"
 					/>
 					<img
-						className="photo-gallery-item-row"
+						className="photo photo-gallery-item-row"
 						src={src_row_2}
 						alt="alt"
 					/>
@@ -186,7 +186,7 @@ export const PhotoT = (props) => {
 		)
 	}
 	return (
-		<div className="photo-gallery-t">
+		<div className="photos photo-gallery-t">
 			{elem}
 		</div>
 	)
