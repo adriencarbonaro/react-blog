@@ -19,7 +19,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "postversion": "node scripts/postversion.js",
     "eject": "react-scripts eject",
     "deploy": "yarn firebase deploy",
     "deploy-beta": "yarn firebase hosting:channel:deploy beta"
