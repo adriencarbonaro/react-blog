@@ -27,4 +27,12 @@ function CustomLink (props) {
 	);
 }
 
+export function TripAdvisorLink (props) {
+	return CustomLink({ ...props, type: "tripadvisor" });
+}
+
+export function AirBnbLink (props) {
+	return CustomLink({ ...props, type: "airbnb" });
+}
+
 export default CustomLink;

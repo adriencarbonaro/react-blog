@@ -55,13 +55,12 @@
 
 .photo-gallery-item {
     display: flex;
-    width: 30%;
-    flex-grow: 1;
     list-style-type: none;
 }
 
 .photo-gallery-img {
     width: 100%;
+    object-fit: cover;
 }
 
 .photo-gallery-t {

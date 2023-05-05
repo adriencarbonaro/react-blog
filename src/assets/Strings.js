@@ -3,7 +3,8 @@ export const Strings = {
 	navbar_title:                      "Camille & Adrien",
 
 	/* Banner */
-	banner_msg:                        "Prochain voyage",
+	banner_msg:                        "Notre dernier voyage",
+	banner_btn:                        "LIRE L'ARTICLE",
 
 	/* Cards */
 	cards_header_title:                "Nos autres voyages",
@@ -35,5 +36,6 @@ export const Trips = {
 export const Countries = {
 	germany                             : "Allemagne",
 	netherlands                         : "Pays-Bas",
+	malta                               : "Malte",
 	greece                              : "Grèce",
 }

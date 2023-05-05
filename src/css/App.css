@@ -59,6 +59,10 @@
   background-image: linear-gradient(#00000000, #00000030, #00000000), url('https://nid-de-poule.s3.eu-west-3.amazonaws.com/photos/cards/img-honfleur.jpg');
 }
 
+.malta {
+  background-image: linear-gradient(#00000000, #00000030, #00000000), url('https://nid-de-poule.s3.eu-west-3.amazonaws.com/photos/cards/img-malta.jpg');
+}
+
 .perche {
   background-image: linear-gradient(#00000000, #00000030, #00000000), url('https://nid-de-poule.s3.eu-west-3.amazonaws.com/photos/cards/img-perche.jpg');
 }

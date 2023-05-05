@@ -18,6 +18,7 @@ import Corse                 from './components/pages/trips/Corse'
 import Etretat               from './components/pages/trips/Etretat'
 import Gacilly               from './components/pages/trips/Gacilly';
 import Honfleur              from './components/pages/trips/Honfleur';
+import Malta                 from './components/pages/trips/Malta';
 import Perche                from './components/pages/trips/Perche'
 import Trouville             from './components/pages/trips/Trouville'
 
@@ -41,6 +42,7 @@ class App extends Component {
 				<Route path={Paths.gacilly}     component={Gacilly} />
 				<Route path={Paths.honfleur}    component={Honfleur} />
 				<Route path={Paths.mans}        component={Gacilly} />
+				<Route path={Paths.malta}       component={Malta} />
 				<Route path={Paths.perche}      component={Perche} />
 				<Route path={Paths.trouville}   component={Trouville} />
 				<Route path={Paths.home}        component={Home} />

@@ -10,6 +10,7 @@ export const Paths = {
 	gacilly                   : "/gacilly",
 	honfleur                  : "/honfleur",
 	mans                      : "/mans",
+	malta                     : "/malta",
 	perche                    : "/perche",
 	trouville                 : "/trouville",
 	home                      : "/",
