@@ -102,7 +102,7 @@ class P4 extends Component {
 	render () {
 		return (
 			<>
-La région vaut également le détour. Nous avons déjeuner le midi au <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g6214983-d11857739-Reviews-Cafe_Du_Chasseur-Saint_Verain_Nievre_Bourgogne_Franche_Comte.html" name="Café du chasseur"/> situé à Saint-Vérain que nous recommandons les yeux fermés. C’est un petit café plein de vie au milieu du village. L’accueil est chaleureux et la carte proposée est petite ce qui est gage de très bonne qualité. Les produits sont excellents et les quantités sont généreuses. Un excellent rapport qualité/prix. Pour digérer nous avons été nous promener jusqu’aux ruines du château situées un peu plus haut.
+La région vaut également le détour. Nous avons déjeuné le midi au <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g6214983-d11857739-Reviews-Cafe_Du_Chasseur-Saint_Verain_Nievre_Bourgogne_Franche_Comte.html" name="Café du chasseur"/> situé à Saint-Vérain que nous recommandons les yeux fermés. C’est un petit café plein de vie au milieu du village. L’accueil est chaleureux et la carte proposée est petite ce qui est gage de très bonne qualité. Les produits sont excellents et les quantités sont généreuses. Un excellent rapport qualité/prix. Pour digérer nous avons été nous promener jusqu’aux ruines du château situées un peu plus haut.
 <br/><br/>
 Un week-end dont nous gardons de magnifiques souvenirs, nous avons déjà envie d’y retourner !
 			</>

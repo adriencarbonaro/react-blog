@@ -100,7 +100,7 @@ class P2 extends Component {
 			<>
 Nous sommes arrivés le jeudi tard dans la soirée.
 Nous avions réservé un <CustomLink type="airbnb" link="https://www.airbnb.fr/rooms/33706928?federated_search_id=2bda034b-5679-4d44-bd7d-927781971dd6&source_impression_id=p3_1619963841_ApCGt76QNIYTbSrF&guests=1&adults=1" name="Airbnb"/> idéalement situé juste derrière la cathédrale.
-Il était était vraiment parfait. Si on retourne dans la région on reprendra le même c’est sûr !
+Il était vraiment parfait. Si on retourne dans la région on reprendra le même c’est sûr !
 			</>
 		)
 	}
@@ -140,8 +140,8 @@ Nous avons dégusté de succulentes tartines de chèvre chaud au <CustomLink typ
 Pour digérer nous avons fait le tour du village en suivant la ligne rouge sur les pavés, qui nous permet de visiter toute la cité.
 Puis nous avons repris la voiture pour rentrer et nous avons fait un petit détour sur les collines voisines pour avoir une vue de Sancerre.
 <br/><br/>De retour à Bourges nous avons tenté d’aller prendre un café dans l’un des nombreux coffee shop de la rue Bourbonnoux.
-Après plusieurs tentatives, les cafés étant très prisés pour l’heure de goûter, nous avons dégoté une petite table chez <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g187120-d8658555-Reviews-Delichou_Tarterie_Espresso_Bar-Bourges_Cher_Berry_Centre_Val_de_Loire.html " name="Délichou !" /> une tarterie beaucoup trop mignonne.
-Et deuxième coup de bol, ils leur restaient une table de deux pour le brunch du dimanche !
+Après plusieurs tentatives, les cafés étant très prisés pour l’heure du goûter, nous avons dégoté une petite table chez <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g187120-d8658555-Reviews-Delichou_Tarterie_Espresso_Bar-Bourges_Cher_Berry_Centre_Val_de_Loire.html " name="Délichou !" /> une tarterie beaucoup trop mignonne.
+Et deuxième coup de bol, il leur restait une table de deux pour le brunch du dimanche !
 <br/><br/>Nous nous sommes ensuite baladés dans la ville afin de voir la cathédrale illuminée ainsi que le palais Jacques Coeur, un ancien marchand français qui fut nommé Grand Argentier du royaume de France et aida Charles VII à reconquérir le territoire occupé par les anglais.
 L’endroit est vraiment très beau et très bien illuminé.
 			</>
@@ -155,7 +155,7 @@ class P5 extends Component {
 			<>
 Rangement du Airbnb puis direction <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g187120-d8658555-Reviews-Delichou_Tarterie_Espresso_Bar-Bourges_Cher_Berry_Centre_Val_de_Loire.html " name="Délichou !"/> pour un brunch incroyable.
 Puis nous avons décidé de rentrer tranquillement en passant par les petites routes.
-Nous avons ainsi découvert la cité médiévale de Yèvre-le-Châtel située non loin d’Orléan.
+Nous avons ainsi découvert la cité médiévale de Yèvre-le-Châtel située non loin d’Orléans.
 			</>
 		)
 	}

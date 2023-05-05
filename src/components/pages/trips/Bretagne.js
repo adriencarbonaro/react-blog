@@ -106,7 +106,7 @@ export default class Bretagne extends ComponentScrollTop {
 					text={<P12/>}
 				/>
 				<TitleBloc
-				  subtitle="Jour 3 : Guérande et le village de Kerhinet"
+				  subtitle="Jour 4 : Guérande et le village de Kerhinet"
 				  accent={class_name}
 				/>
 				<Story text={<P13/>} />
@@ -120,7 +120,7 @@ export default class Bretagne extends ComponentScrollTop {
 				  PHOTOS + "img-bretagne-32.jpg",
 				]} />
 				<TitleBloc
-					subtitle="Jour 4 : Retour en passant par La Roche Bernard"
+					subtitle="Jour 5 : Retour en passant par La Roche Bernard"
 					accent={class_name}
 				/>
 				<Story
@@ -260,7 +260,7 @@ Une fois arrivé dans la ville, le mieux est de se garer sur le parking qui fait
 Il est à l’entrée de la vieille ville.
 La pointe du Croisic a pour particularité que la partie sud de la presqu’île est constituée principalement de falaises de granites, tandis que le nord a pu accueillir le port et la vieille ville.
 Le matin nous nous sommes baladés dans la vieille ville que nous avons trouvé très mignonne et également le long du port qui est très animé.
-Nous y avons déjeuner le midi, mais les touristes étant très nombreux nous avons été là où il restait de la place.
+Nous y avons déjeuné le midi, mais les touristes étant très nombreux nous avons été là où il restait de la place.
 En haute saison, il ne faut pas hésiter à réserver à l’avance.
 		</>
 		)

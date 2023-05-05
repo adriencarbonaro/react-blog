@@ -88,7 +88,7 @@ class P2 extends Component {
 		return (
 			<>
 Pour cette première journée nous avons été découvrir la petite ville de Bellême.
-Nous en avions beaucoup entendu parlé et nous n’avons pas été déçus : ses petites ruelles ont beaucoup de charme et les commerçants sont d’une grande gentillesse.
+Nous en avions beaucoup entendu parler et nous n’avons pas été déçus : ses petites ruelles ont beaucoup de charme et les commerçants sont d’une grande gentillesse.
 Nous avons été boire un verre sur la place de la République au bar à vin <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g1231381-d7210085-Reviews-La_Verticale-Belleme_Orne_Basse_Normandie_Normandy.html" name="La Verticale"/>. Sur cette même place se trouve le marché bien connu de la ville.
 Nous y sommes passés pour faire le plein de produits locaux pour le week-end et tout était délicieux !
 			</>
@@ -115,7 +115,7 @@ class P4 extends Component {
 		return (
 			<>
 Aujourd’hui direction la Ferté Vidame, un joli village doté notamment d’un ancien château datant de la fin du 18ème siècle.
-Il est notamment connu pour avoir été habité durant un temps par Saint-Simon, un célèbre historiographe de la cour de Versaille.
+Il est notamment connu pour avoir été habité durant un temps par Saint-Simon, un célèbre historiographe de la cour de Versailles.
 Il n’en reste à ce jour que des ruines mais qui restent très belles.
 L’accès aux ruines se fait par l’entrée du parc et la promenade autour des vestiges est très agréable et de nombreuses familles viennent y passer l’après-midi.
 			</>
@@ -139,7 +139,7 @@ class P6 extends Component {
 		return (
 			<>
 Le samedi nous n’avons pas fait grand chose car il ne faisait pas très beau.
-Nous nous sommes seulement rendu le matin au marché de Nogent-le-Rotrou qui était aussi très sympa.
+Nous nous sommes seulement rendus le matin au marché de Nogent-le-Rotrou qui était aussi très sympa.
 Cette ville dispose d’un riche patrimoine architectural avec son château, ses églises et ses manoirs.
 			</>
 		)

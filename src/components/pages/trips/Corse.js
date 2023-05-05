@@ -95,7 +95,7 @@ export default class Corse extends ComponentScrollTop {
 			/>
 			<Story text={<P19/>} />
 			<Story text={<P20/>} />
-			<TitleBloc title="" subtitle="Balade le long du sentier du littorale jusqu’au phare de Senetosa" accent={class_name} />
+			<TitleBloc title="" subtitle="Balade le long du sentier du littoral jusqu’au phare de Senetosa" accent={class_name} />
 			<Story text={<P21/>} />
 			<PhotoSingle src={PHOTOS + "img-corse-75.jpg"} />
 			<Story text={<P22/>} />
@@ -284,7 +284,7 @@ class P17 extends Component {
 	render () {
 		return (
 			<>
-Aujourd’hui nous avons mis le réveil tôt afin de nous rendre aux cascades de Purcaraccia. L’objectif était d’arriver vers 9h aux cascades avant que le lieu soit rempli. Nous avions trouvé cette randonnée sur le blog amoureux-du-monde.com qui indique exactement comme se rendre au spot des cascades. Voici le lieu exact du départ de la <CustomLink type="maps" link="https://www.google.com/maps/place/Rando+bassin+eau+Purcaraccia+polischellu+p.261/@41.8353194,9.2645184,15z/data=!4m5!3m4!1s0x12d98b0b2611fb69:0x12ddc7d07dda1fbe!8m2!3d41.8310496!4d9.2723717" name="randonnée"/>.
+Aujourd’hui nous avons mis le réveil tôt afin de nous rendre aux cascades de Purcaraccia. L’objectif était d’arriver vers 9h aux cascades avant que le lieu soit rempli. Nous avions trouvé cette randonnée sur le blog amoureux-du-monde.com qui indique exactement comment se rendre au spot des cascades. Voici le lieu exact du départ de la <CustomLink type="maps" link="https://www.google.com/maps/place/Rando+bassin+eau+Purcaraccia+polischellu+p.261/@41.8353194,9.2645184,15z/data=!4m5!3m4!1s0x12d98b0b2611fb69:0x12ddc7d07dda1fbe!8m2!3d41.8310496!4d9.2723717" name="randonnée"/>.
 
 			</>
 		)
@@ -295,7 +295,7 @@ class P18 extends Component {
 	render () {
 		return (
 			<>
-Par la suite, la randonnée dure environ 1h en marchant à bonne allure. Attention, cette randonnée n’est pas très longue mais bien que certains avis sur Google disent le contraire, elle n’est pas accessible à tout le monde. Il faut avoir de bonnes chaussures et être assez agile. Si vous la faite avec des enfants en bas âge, il faudra les porter par moment. Les cascades ont une couleur bleu magnifique et l’endroit est très calme et reposant lorsqu’il y a peu de monde. Lorsque le lieu commence à se remplir, il ne faut pas hésiter à passer entre les deux premières cuves et grimper un peu au-dessus … quand il n’y en a plus il y en a encore !
+Par la suite, la randonnée dure environ 1h en marchant à bonne allure. Attention, cette randonnée n’est pas très longue mais bien que certains avis sur Google disent le contraire, elle n’est pas accessible à tout le monde. Il faut avoir de bonnes chaussures et être assez agile. Si vous la faites avec des enfants en bas âge, il faudra les porter par moment. Les cascades ont une couleur bleu magnifique et l’endroit est très calme et reposant lorsqu’il y a peu de monde. Lorsque le lieu commence à se remplir, il ne faut pas hésiter à passer entre les deux premières cuves et grimper un peu au-dessus … quand il n’y en a plus il y en a encore !
 			</>
 		)
 	}
@@ -325,7 +325,7 @@ class P21 extends Component {
 	render () {
 		return (
 			<>
-Pour cette dernière journée complète en Corse nous nous sommes rendus sur le sentier du littorale près de Tizzano pour suivre le chemin qui mène au phare de Senetosa. Nous conseillons de ne pas y aller trop tard dans la matinée car la promenade est en plein soleil et il fait très chaud. Il faut compter environ 2h pour arriver au phare et 2h pour revenir au parking. L’idéal est de se garer sur le parking le plus proche du sentier pour éviter de rajouter de la marche en plus. Pour notre part nous nous sommes garés sur ce <CustomLink type="maps" link="https://www.google.com/maps/place/Parking/@41.5471677,8.8281059,20.41z/data=!4m13!1m7!3m6!1s0x0:0xc82c5675d7ac0bed!2zNDHCsDMyJzQ5LjkiTiA4wrA0OSc0MS43IkU!3b1!8m2!3d41.547181!4d8.828246!3m4!1s0x12dbb57bb4c5968b:0x282d341b26e1ea22!8m2!3d41.5471879!4d8.8280541" name="parking"/> et nous avons suivi les panneaux de la balade qui partent du parking. Le sentier est assez bien fléché, sinon nous avons également suivi le chemin tracé sur l'application Visorando de la balade qui s’appelle “Le phare de Senetosa”.
+Pour cette dernière journée complète en Corse nous nous sommes rendus sur le sentier du littoral près de Tizzano pour suivre le chemin qui mène au phare de Senetosa. Nous conseillons de ne pas y aller trop tard dans la matinée car la promenade est en plein soleil et il fait très chaud. Il faut compter environ 2h pour arriver au phare et 2h pour revenir au parking. L’idéal est de se garer sur le parking le plus proche du sentier pour éviter de rajouter de la marche en plus. Pour notre part nous nous sommes garés sur ce <CustomLink type="maps" link="https://www.google.com/maps/place/Parking/@41.5471677,8.8281059,20.41z/data=!4m13!1m7!3m6!1s0x0:0xc82c5675d7ac0bed!2zNDHCsDMyJzQ5LjkiTiA4wrA0OSc0MS43IkU!3b1!8m2!3d41.547181!4d8.828246!3m4!1s0x12dbb57bb4c5968b:0x282d341b26e1ea22!8m2!3d41.5471879!4d8.8280541" name="parking"/> et nous avons suivi les panneaux de la balade qui partent du parking. Le sentier est assez bien fléché, sinon nous avons également suivi le chemin tracé sur l'application Visorando de la balade qui s’appelle “Le phare de Senetosa”.
 			</>
 		)
 	}
@@ -335,7 +335,7 @@ class P22 extends Component {
 	render () {
 		return (
 			<>
-Pour le déjeuner nous avons regardé les restaurants à Tizzano mais il était déjà tard dans l’après-midi et les seuls qui servaient encore étant assez cher nous avons repris la route vers Sartène. Nous nous sommes à nouveau arrêtés chez <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g644100-d4444594-Reviews-U_Sirenu-Sartene_Corse_du_Sud_Corsica.html" name="U Sirenu"/>. Nous avons goûté de nouveau plats qui ont confirmé notre coup de cœur et nous avons fini l'après-midi à profiter de la piscine de l’hôtel.
+Pour le déjeuner nous avons regardé les restaurants à Tizzano mais il était déjà tard dans l’après-midi et les seuls qui servaient encore étant assez cher nous avons repris la route vers Sartène. Nous nous sommes à nouveau arrêtés chez <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g644100-d4444594-Reviews-U_Sirenu-Sartene_Corse_du_Sud_Corsica.html" name="U Sirenu"/>. Nous avons goûté de nouveaux plats qui ont confirmé notre coup de cœur et nous avons fini l'après-midi à profiter de la piscine de l’hôtel.
 			</>
 		)
 	}

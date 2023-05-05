@@ -88,7 +88,7 @@ class P1 extends Component {
 	render () {
 		return (
 			<>
-Non loin de Trouville et Deauville se trouve la célèbre petite ville de Honfleur. Vous y trouverez un port de pêche très mignon et une vieille ville pleine de charme. C’est ici que de nombreux artistes venait se ressourcer et chercher de l’inspiration à partir du 18e siècle. On distingue parmi eux notamment les peintres Eugène Boudin et Monet mais également l’écrivain Charles Baudelaire.
+Non loin de Trouville et Deauville se trouve la célèbre petite ville de Honfleur. Vous y trouverez un port de pêche très mignon et une vieille ville pleine de charme. C’est ici que de nombreux artistes venaient se ressourcer et chercher de l’inspiration à partir du 18e siècle. On distingue parmi eux notamment les peintres Eugène Boudin et Claude Monet mais également l’écrivain Charles Baudelaire.
 			</>
 		)
 	}
@@ -108,7 +108,7 @@ class P3 extends Component {
 	render () {
 		return (
 			<>
-Typique de la ville d’Honfleur, c’est ce que l’on voit en premier en arrivant dans la ville. Le port et les vieilles maisons pittoresques toutes accolées les unes aux autres offre un charme indéniable.
+Typique de la ville d’Honfleur, c’est ce que l’on voit en premier en arrivant dans la ville. Le port et les vieilles maisons pittoresques toutes accolées les unes aux autres offrent un charme indéniable.
 			</>
 		)
 	}
@@ -148,7 +148,7 @@ class P7 extends Component {
 	render () {
 		return (
 			<>
-Assez excentré de la vieille ville, ce jardin très reposant se trouve juste à côté de la plage. On y croise des bustes de personnalités ayant marqué l’histoire de Honfleur (peintre, écrivain, navigateur). Plusieurs animations y sont organisées durant l’année. Après une ballade dans le jardin, nous avons fini cette matinée sur la plage qui offre une belle vue sur le Pont de Normandie.
+Assez excentré de la vieille ville, ce jardin très reposant se trouve juste à côté de la plage. On y croise des bustes de personnalités ayant marqué l’histoire de Honfleur (peintres, écrivains, navigateurs). Plusieurs animations y sont organisées durant l’année. Après une ballade dans le jardin, nous avons fini cette matinée sur la plage qui offre une belle vue sur le Pont de Normandie.
 			</>
 		)
 	}

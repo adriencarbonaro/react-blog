@@ -80,7 +80,7 @@ class P1 extends Component {
 			<>
 Trouville-Sur-Mer est l’une des nombreuses stations balnéaires qu’offre la Normandie.
 Sa grande plage et son centre ville permettent une parenthèse détente et un bol d’air frais loin des grandes villes agitées.
-Trouville doit sa réputation grâce à son port de pêche typique et à sa richesse architecturale.
+Trouville doit sa réputation à son port de pêche typique et à sa richesse architecturale.
 Surnommée “La Reine des Plages” et c’est la plus vieille station balnéaire de Normandie.
 Étant accolée à Deauville, il est également possible de visiter cette ville lors de votre séjour !
 			</>
@@ -140,7 +140,7 @@ La plage de Trouville s’étend sur 1200m.
 Elle offre donc un terrain parfait pour une balade les pieds dans le sable ou pour s’adonner à des loisirs pour tous les âges.
 Les plus petits pourront y faire du mini-golf ou encore des balades à poney quand les plus grands pourront s’essayer à des tournois de volley-ball ou de tennis.
 Plusieurs restaurants font face à la mer le long de la plage et offrent un service en continu.
-Les restaurants étant tous pris d’assaut rapidement pour le déjeuner, nous avons réussi à trouver une table au <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g187187-d1838774-Reviews-Bistrot_le_Vivier-Trouville_sur_Mer_Deauville_Calvados_Basse_Normandie_Normandy.html" name="Bistrot Le Vivier"/> bien mais pas incroybale.
+Les restaurants étant tous pris d’assaut rapidement pour le déjeuner, nous avons réussi à trouver une table au <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g187187-d1838774-Reviews-Bistrot_le_Vivier-Trouville_sur_Mer_Deauville_Calvados_Basse_Normandie_Normandy.html" name="Bistrot Le Vivier"/> bien mais pas incroyable.
 Néanmoins si l’on veut manger au bord de la plage il n’y a pas beaucoup de choix.
 Durant l’après-midi nous avons été boire un verre avec des amis à <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g187187-d14939213-Reviews-Cabane_Perchee-Trouville_sur_Mer_Deauville_Calvados_Basse_Normandie_Normandy.html" name="La Cabane Perchée"/>, un bar-restaurant très sympa sur le toit de la piscine qui offre une très belle vue sur la plage.
 Si vous voulez y aller pour déjeuner, pensez à réserver à l’avance car l’endroit est très prisé.
