@@ -25,7 +25,7 @@ export default class Malta extends ComponentScrollTop {
 				<h1 className={"banner-title " + class_name}>Malte</h1>
 				<SVGLocation className={class_name}/>
 				<TitleBloc
-					title="Que faire lors d'un séjour à Malte ?"
+					title="Un séjour à Malte"
 					accent={class_name}
 				/>
 				<Story text={<P1/>} />
@@ -74,10 +74,10 @@ export default class Malta extends ComponentScrollTop {
 				<Story text={<P9/>} />
 				<Story text={<P10/>} />
 				<PhotoGallery list={[
-				  PHOTOS + "Malte-33.jpg",
 				  PHOTOS + "Malte-24.jpg",
-				  PHOTOS + "Malte-25.jpg",
 				  PHOTOS + "Malte-26.jpg",
+				  PHOTOS + "Malte-25.jpg",
+				  PHOTOS + "Malte-33.jpg",
 				  PHOTOS + "Malte-45.jpg",
 				  PHOTOS + "Malte-48.jpg",
 				]} />
@@ -189,12 +189,10 @@ export default class Malta extends ComponentScrollTop {
 					accent={class_name}
 				/>
 				<Story text={<P28/>} />
+				<Story text={<P29/>} />
 				<PhotoGallery list={[
 				  PHOTOS + "Malte-97.jpg",
 				  PHOTOS + "Malte-99.jpg",
-				]} />
-				<Story text={<P29/>} />
-				<PhotoGallery list={[
 				  PHOTOS + "Malte-102.jpg",
 				]} />
 				<TitleBloc
