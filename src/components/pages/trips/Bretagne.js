@@ -44,11 +44,11 @@ export default class Bretagne extends ComponentScrollTop {
 				<Story
 					text={<P3/>}
 				/>
-				<PhotoGallery list={[
+				<PhotoGallery list={[[
 				  PHOTOS + "img-bretagne-2.jpg",
 				  PHOTOS + "img-bretagne-1.jpg",
 				  PHOTOS + "img-bretagne-3.jpg",
-				]} />
+				]]} />
 				<Story
 					text={<P4/>}
 				/>
@@ -78,11 +78,11 @@ export default class Bretagne extends ComponentScrollTop {
 				<Story
 					text={<P8/>}
 				/>
-				<PhotoGallery list={[
+				<PhotoGallery list={[[
 				  PHOTOS + "img-bretagne-12.jpg",
 				  PHOTOS + "img-bretagne-14.jpg",
 				  PHOTOS + "img-bretagne-15.jpg",
-				]} />
+				]]} />
 				<TitleBloc
 					subtitle="Jour 3 : Le Croisic et La Baule"
 					accent={class_name}
@@ -111,14 +111,14 @@ export default class Bretagne extends ComponentScrollTop {
 				/>
 				<Story text={<P13/>} />
 				<PhotoSingle src={PHOTOS + "img-bretagne-24.jpg"} />
-				<PhotoGallery list={[
+				<PhotoGallery list={[[
 				  PHOTOS + "img-bretagne-25.jpg",
 				  PHOTOS + "img-bretagne-26.jpg",
 				  PHOTOS + "img-bretagne-27.jpg",
 				  PHOTOS + "img-bretagne-29.jpg",
 				  PHOTOS + "img-bretagne-30.jpg",
 				  PHOTOS + "img-bretagne-32.jpg",
-				]} />
+				]]} />
 				<TitleBloc
 					subtitle="Jour 5 : Retour en passant par La Roche Bernard"
 					accent={class_name}

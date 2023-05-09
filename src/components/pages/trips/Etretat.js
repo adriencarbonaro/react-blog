@@ -39,11 +39,11 @@ export default class Etretat extends ComponentScrollTop {
 				<Story
 					text={<P2/>}
 				/>
-				<PhotoGallery list={[
+				<PhotoGallery list={[[
 					PHOTOS + "img-etretat-3.jpg",
 					PHOTOS + "img-etretat-2.jpg",
 					PHOTOS + "img-etretat-4.jpg",
-				]} />
+				]]} />
 				<Story
 					text={<P3/>}
 				/>

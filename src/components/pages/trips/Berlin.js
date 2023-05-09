@@ -48,14 +48,14 @@ export default class Berlin extends ComponentScrollTop {
 				<Story
 					text={<P4/>}
 				/>
-				<PhotoGallery list={[
+				<PhotoGallery list={[[
 				  PHOTOS + "img-berlin-1.jpg",
 				  PHOTOS + "img-berlin-2.jpg",
 				  PHOTOS + "img-berlin-3.jpg",
 				  PHOTOS + "img-berlin-4.jpg",
 				  PHOTOS + "img-berlin-5.jpg",
 				  PHOTOS + "img-berlin-6.jpg",
-				]} />
+				]]} />
 				<TitleBloc
 					subtitle="Vendredi 2 Novembre"
 					accent={class_name}

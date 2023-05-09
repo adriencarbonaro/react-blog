@@ -46,11 +46,11 @@ export default class Amsterdam extends ComponentScrollTop {
 				<Story text={<P3/>} />
 				<Story text={<P4/>} />
 				<PhotoSingle src={PHOTOS + "img-amsterdam-3.jpg"} />
-				<PhotoGallery list={[
+				<PhotoGallery list={[[
 				  PHOTOS + "img-amsterdam-3-3.jpg",
 				  PHOTOS + "img-amsterdam-3-2.jpg",
 				  PHOTOS + "img-amsterdam-3-4.jpg",
-				]} />
+				]]} />
 				<Story
 					text={<P5/>}
 				/>

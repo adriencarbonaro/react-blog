@@ -1,4 +1,5 @@
 /* CSS */
+import '../css/Gallery.css'
 import '../css/Photos.css'
 
 export const PhotoSingle = (props) => {
@@ -35,7 +36,7 @@ export const PhotoGallery = (props) => {
 		const elem = [];
 		for (let img of list) {
 			elem.push(
-				<li className="photo-gallery-item">
+				<li className="gallery-item">
 					<img className="photo photo-gallery-img" src={img} alt='alt' />
 				</li>
 			)
@@ -47,22 +48,20 @@ export const PhotoGallery = (props) => {
 		)
 	}
 
-	const createUl = (list) => {
+	const createUl = (rows) => {
 		const uls = [];
 
 		const newUl = (list) => {
 			return (
 				<>
-				<ul className="photo-gallery-items">
+				<ul className="gallery-items">
 					{createLi(list)}
 				</ul>
 				</>
 			)
 		}
-		const DIVIDER = 3;
-		for (let i = 0; i < (list.length / DIVIDER); i++) {
-			let sub = list.slice(DIVIDER * i, DIVIDER * (i + 1));
-			uls.push(newUl(sub));
+		for (const row of rows) {
+			uls.push(newUl(row));
 		}
 		return (
 			<>
@@ -71,11 +70,11 @@ export const PhotoGallery = (props) => {
 		)
 	}
 
-	const createDiv = (list) => {
+	const createDiv = (rows) => {
 		return (
 			<>
-			<div className="photos photo-gallery">
-				{createUl(list)}
+			<div className="gallery">
+				{createUl(rows)}
 			</div>
 			</>
 		)

@@ -49,11 +49,11 @@ export default class Crete extends ComponentScrollTop {
 				<Story
 					text={<P4/>}
 				/>
-				<PhotoGallery list={[
+				<PhotoGallery list={[[
 				  PHOTOS + "img-crete-1.jpg",
 				  PHOTOS + "img-crete-2.jpg",
 				  PHOTOS + "img-crete-3.jpg",
-				]} />
+				]]} />
 				<TitleBloc
 					subtitle="Lundi 3 Septembre"
 					accent={class_name}
@@ -62,11 +62,11 @@ export default class Crete extends ComponentScrollTop {
 					text={<P5/>}
 				/>
 				<PhotoSingle src={PHOTOS + "img-crete-4.jpg"} />
-				<PhotoGallery list={[
+				<PhotoGallery list={[[
 				  PHOTOS + "img-crete-5.jpg",
 				  PHOTOS + "img-crete-6.jpg",
 				  PHOTOS + "img-crete-12.jpg",
-				]} />
+				]]} />
 				<PhotoTSide
 				  src_side={PHOTOS + "img-crete-14.jpg"}
 				  src_col_1={PHOTOS + "img-crete-13.jpg"}
@@ -84,11 +84,11 @@ export default class Crete extends ComponentScrollTop {
 				  src_col_1={PHOTOS + "img-crete-17.jpg"}
 				  src_col_2={PHOTOS + "img-crete-18.jpg"}
 				/>
-				<PhotoGallery list={[
+				<PhotoGallery list={[[
 				  PHOTOS + "img-crete-19.jpg",
 				  PHOTOS + "img-crete-20.jpg",
 				  PHOTOS + "img-crete-21.jpg",
-				]} />
+				]]} />
 				<TitleBloc subtitle="Mercredi 5 Septembre" accent={class_name} />
 				<Story text={<P7/>} />
 				<PhotoSingle src={PHOTOS + "img-crete-7.jpg"} />

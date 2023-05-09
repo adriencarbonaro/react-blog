@@ -37,14 +37,14 @@ export default class Gacilly extends ComponentScrollTop {
 			  src_row_2={PHOTOS + "img-gacilly-2.jpg"}
 			/>
 			<Story text={<P4/>} />
-			<PhotoGallery list={[
+			<PhotoGallery list={[[
 				PHOTOS + "img-gacilly-4.jpg",
 				PHOTOS + "img-gacilly-5.jpg",
 				PHOTOS + "img-gacilly-6.jpg",
 				PHOTOS + "img-gacilly-7.jpg",
 				PHOTOS + "img-gacilly-8.jpg",
 				PHOTOS + "img-gacilly-9.jpg",
-			]}
+			]]}
 			/>
 			<TitleBloc title="" subtitle="Le village de La Gacilly" accent={class_name} />
 			<Story text={<P5/>} />
@@ -60,11 +60,11 @@ export default class Gacilly extends ComponentScrollTop {
 			<TitleBloc title="" subtitle="Passage rapide au Mans" accent={class_name} />
 			<Story text={<P7/>} />
 			<PhoneVideo color_spot="#ffd7bc" color_text="#c96236" src="https://nid-de-poule.s3.eu-west-3.amazonaws.com/videos/phone/mans.mp4" />
-			<PhotoGallery list={[
+			<PhotoGallery list={[[
 				PHOTOS + "img-gacilly-14.jpg",
 				PHOTOS + "img-gacilly-15.jpg",
 				PHOTOS + "img-gacilly-16.jpg",
-			]}
+			]]}
 			/>
 		</div>
 		)

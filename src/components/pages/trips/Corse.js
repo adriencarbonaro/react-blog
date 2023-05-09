@@ -37,11 +37,11 @@ export default class Corse extends ComponentScrollTop {
 			<PhotoSingle src={PHOTOS + "img-corse-13.jpg"} />
 			<TitleBloc title="" subtitle="Découverte de Sartène" accent={class_name} />
 			<Story text={<P2/>} />
-			<PhotoGallery list={[
+			<PhotoGallery list={[[
 			  PHOTOS + "img-corse-5.jpg",
 			  PHOTOS + "img-corse-6.jpg",
 			  PHOTOS + "img-corse-7.jpg",
-			]} />
+			]]} />
 			<Story text={<P3/>} />
 			<PhotoSingle src={PHOTOS + "img-corse-1.jpg"} />
 			<TitleBloc title="" subtitle="Le lac de l’Ospédale et la plage de Santa-Giulia" accent={class_name} />
