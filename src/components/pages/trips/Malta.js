@@ -286,7 +286,7 @@ class P8 extends Component {
 	render () {
 		return (
 			<>
-Il y a beaucoup d'églises et de chapelles sur l'île mais la basilique Notre-Dame Ta' Pinu de Gharb est l'une des églises les plus connues de Gozo. Située au bord de la route, l'édifice dégage une force impressionnante. Autrefois une simple chapelle, selon la légende, une habitante de l'île y aurait entendu la vierge Marie. Depuis, l'édifice a pris de l'ampleur et on dit que des miracles y ont été vus ce qui en fait aujourd'hui un haut lieu de pèlerinage.
+Il y a beaucoup d'églises et de chapelles sur l'île mais la basilique Notre-Dame Ta' Pinu de Gharb est l'une des églises les plus connues de Gozo. Situé au bord de la route, l'édifice dégage une force impressionnante. Autrefois une simple chapelle, selon la légende, une habitante de l'île y aurait entendu la vierge Marie. Depuis, l'édifice a pris de l'ampleur et on dit que des miracles y ont été vus ce qui en fait aujourd'hui un haut lieu de pèlerinage.
 			</>
 		)
 	}
@@ -306,7 +306,7 @@ class P10 extends Component {
 	render () {
 		return (
 			<>
-Nous avons débuté notre parcours par Wied Il-Mielaħ, une arche naturelle située au-dessus de la mer. Une fois arrivé sur le lieu, il suffit de descendre quelques marches d'escaliers afin de se retrouver au plus près de l'arche et des vagues. Par la suite, vous pouvez longer la côte pour arriver au deuxième spot : Wied Il-Għasri, une calanque aux eaux turquoises et peu profondes. Ce petit coin est accessible facilement par des escaliers taillés dans la roche. Une atmosphère très calme et reposante s'y dégage. Et enfin pour finir cette balade en beauté, rendez-vous aux marais salants de Marsalforn pour y admirer le coucher du soleil. Ces salines sont très fréquentées par les locaux qui y récoltent le sel de la mer que l'on peut acheter directement là bas !
+Nous avons débuté notre parcours par Wied Il-Mielaħ, une arche naturelle située au-dessus de la mer. Une fois arrivé sur le lieu, il suffit de descendre quelques marches d'escalier afin de se retrouver au plus près de l'arche et des vagues. Par la suite, vous pouvez longer la côte pour arriver au deuxième spot : Wied Il-Għasri, une calanque aux eaux turquoises et peu profondes. Ce petit coin est accessible facilement par des escaliers taillés dans la roche. Une atmosphère très calme et reposante s'en dégage. Et enfin pour finir cette balade en beauté, rendez-vous aux marais salants de Marsalforn pour y admirer le coucher du soleil. Ces salines sont très fréquentées par les locaux qui y récoltent le sel de la mer que l'on peut acheter directement là bas !
 			</>
 		)
 	}
@@ -376,7 +376,7 @@ class P17 extends Component {
 	render () {
 		return (
 			<>
-<TripAdvisorLink name="Taste" link="https://www.tripadvisor.fr/Restaurant_Review-g190328-d19601510-Reviews-Taste-Valletta_Island_of_Malta.html"/> : Découvert par hasard dans une petite ruelle aux décorations atypiques de la ville, ce restaurant aux allures de cave à vin offre des plats élaborés très bons dans un cadre magnifique.
+<TripAdvisorLink name="Taste" link="https://www.tripadvisor.fr/Restaurant_Review-g190328-d19601510-Reviews-Taste-Valletta_Island_of_Malta.html"/> : Découvert par hasard dans une petite ruelle de la ville aux décorations atypiques, ce restaurant aux allures de cave à vin offre des plats élaborés très bons dans un cadre magnifique.
 			</>
 		)
 	}
@@ -506,7 +506,7 @@ class P30 extends Component {
 	render () {
 		return (
 			<>
-Pour notre dernier jour sur l'archipel, nous nous sommes rendus sur Comino. A la différence de Gozo, l'île de Comino est beaucoup plus petite et il n'est pas possible d'y aller en voiture. On y accède par des petits bâteaux et pour la journée uniquement (un seul hôtel est présent sur l'île). Le point fort de cette île est son lagon aux couleurs bleu turquoises. Nous avons beaucoup hésité à nous y rendre car la foule estivale très importante sur l'île la journée rend les lieux beaucoup moins authentiques. Nous avons finalement fait le choix d'y aller mais très tôt le matin (nous avons pris le premier bâteau) et le spectacle était au rendez-vous. Notre conseil est donc d'y aller très tôt car en fin de matinée l'ambiance n'est pas du tout la même et le lieu ne vaut selon nous plus vraiment le détour.
+Pour notre dernier jour sur l'archipel, nous nous sommes rendus sur Comino. A la différence de Gozo, l'île de Comino est beaucoup plus petite et il n'est pas possible d'y aller en voiture. On y accède par des petits bâteaux et pour la journée uniquement (un seul hôtel est présent sur l'île). Le point fort de cette île est son lagon aux couleurs bleu turquoise. Nous avons beaucoup hésité à nous y rendre car la foule estivale très importante sur l'île la journée rend les lieux beaucoup moins authentiques. Nous avons finalement fait le choix d'y aller mais très tôt le matin (nous avons pris le premier bâteau) et le spectacle était au rendez-vous. Notre conseil est donc d'y aller très tôt car en fin de matinée l'ambiance n'est pas du tout la même et le lieu ne vaut selon nous plus vraiment le détour.
 			</>
 		)
 	}

@@ -151,7 +151,7 @@ class P3 extends Component {
 Pour notre premier jour sur l’île, nous avons choisi d’aller passer la journée au lagon d’Elafonissi, un petit paradis à 2h de route de Réthymnon.
 Pour éviter la foule, nous nous sommes levés assez tôt, l’endroit étant très prisé par les touristes.
 Une fois arrivés, nous avons traversé le lagon à pied pour pouvoir atteindre la presqu’île de l’autre côté et ainsi trouver un endroit calme et éloigné de la foule pour se poser.
-Les couleurs du sable blanc du lagon tirent sur le rose, l’eau est d’un bleu turquoise intense, c’est un magnifique endroit à voir.
+La couleur du sable blanc du lagon tire sur le rose, l'eau est d'un bleu turquoise intense, c'est un magnifique endroit à voir.
 			</>
 		)
 	}
@@ -166,7 +166,7 @@ Pour y aller nous sommes passés dans le canyon de Kourtaliotiko.
 Une route sinueuse dans la roche qui contraste beaucoup avec le paysage paradisiaque de la veille.
 On y a d’ailleurs découvert une petite chapelle construite dans la pierre qui vaut le détour.
 Le monastère, en lui-même, n’a rien de très exceptionnel mais la vue sur la mer est tout de même sublime.
-En rentrant sur Rethymnon le soir nous avons été nous poser à la plage qui pour le coup est à chaque fois totalement déserte, on avait la mer pour nous !
+En rentrant sur Réthymnon le soir nous avons été nous poser à la plage qui pour le coup est à chaque fois totalement déserte, on avait la mer pour nous !
 			</>
 		)
 	}
@@ -193,12 +193,12 @@ class P6 extends Component {
 	render () {
 		return (
 			<>
-Pour continuer dans notre lancée, nous avons été voir la grotte Gérondospilios le mardi matin, située à moins d’une heure en voiture de Réthymnon à côté du village de Mélidoni.
+Pour continuer sur notre lancée, nous avons été voir la grotte Gérondospilios le mardi matin, située à moins d’une heure en voiture de Réthymnon à côté du village de Mélidoni.
 Celle-ci est pour le coup très facile d’accès. Elle n’est composée que d’une seule grande chambre, appelée la “Chambre des héros” avec en son centre un imposant monument aux morts.
 En effet, bien que selon la mythologie elle représente un sanctuaire en l’honneur du géant Talos, elle est surtout connue pour le drame qui s’y est produit en 1824.
 Alors que l’armée turque gagnait du terrain durant la révolution, des centaines de villageois s’y réfugièrent pour se cacher.
 L’armée trouva leur cachette et mit le feu à la grotte où ils périrent tous enfumés. La salle est très bien éclairée et se visite selon un circuit tracé.
-Pour le déjeuner nous sommes retournés sur Rethymnon et nous nous sommes rendus chez <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g189421-d6581263-Reviews-To_Parastratima-Rethymnon_Rethymnon_Prefecture_Crete.html" name="To Parastratima"/>, notre coup de cœur culinaire des vacances.
+Pour le déjeuner nous sommes retournés sur Réthymnon et nous nous sommes rendus chez <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g189421-d6581263-Reviews-To_Parastratima-Réthymnon_Réthymnon_Prefecture_Crete.html" name="To Parastratima"/>, notre coup de cœur culinaire des vacances.
 Un tout petit restaurant situé dans la ruelle à côté de la fontaine proposant une cuisine locale et peu chère.
 Puis l’après-midi nous nous sommes baladés dans le port de la vieille ville.
 			</>
@@ -214,8 +214,8 @@ Pour changer des grottes et des villes, nous avons décidé d’aller faire la r
 Le circuit est très sympa, il descend le long des gorges parfois à l’aide de corde ou d’échelle, un petit parcours aventure en pleine nature c’est très sympa.
 Il faut compter 1 à 2h pour descendre selon sa vitesse.
 Une fois arrivé au lac, on peut soit faire le chemin inverse soit passer par la route qui contourne les gorges.
-Celle-ci étant en plein soleil, nous avons pour notre part fait du stop et deux grecs très sympa nous ont ramenés jusqu’au point de départ.
-Nous en avons profité pour déjeuner dans la taverne <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g8391638-d2464240-Reviews-Taverna_Drimos-Patsos_Rethymnon_Prefecture_Crete.html" name="Drimos"/> située à côté du parking. Ambiance familiale et plats locaux, c’était très bon !
+Celle-ci étant en plein soleil, nous avons pour notre part fait du stop et deux grecs très sympas nous ont ramenés jusqu’au point de départ.
+Nous en avons profité pour déjeuner dans la taverne <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g8391638-d2464240-Reviews-Taverna_Drimos-Patsos_Réthymnon_Prefecture_Crete.html" name="Drimos"/> située à côté du parking. Ambiance familiale et plats locaux, c’était très bon !
 			</>
 		)
 	}
@@ -237,11 +237,11 @@ class P9 extends Component {
 	render () {
 		return (
 			<>
-Après avoir rendu le Airbnb et déposé les valises à la voiture, direction la petite place de Rethymnon pour un brunch au restaurant <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g189421-d4580478-Reviews-Cul_De_Sac-Rethymnon_Rethymnon_Prefecture_Crete.html" name="Cul de sac"/>.
+Après avoir rendu le Airbnb et déposé les valises à la voiture, direction la petite place de Réthymnon pour un brunch au restaurant <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g189421-d4580478-Reviews-Cul_De_Sac-Réthymnon_Réthymnon_Prefecture_Crete.html" name="Cul de sac"/>.
 Pour le coup la cuisine est moins locale mais cela change et c’était une tuerie !
 Nous avons fait nos derniers achats de souvenirs pour ramener des épices et des produits locaux puis pris la route pour visiter La Canée sur la route de l’aéroport.
 La vieille ville est très sympa et nous avons déjeuné sur le port.
-Cela nous a beaucoup fait pensé à Réthymnon en plus grand.
+Cela nous a beaucoup fait penser à Réthymnon en plus grand.
 Puis direction l'aéroport pour reprendre l’avion en fin d'après-midi.
 			</>
 		)

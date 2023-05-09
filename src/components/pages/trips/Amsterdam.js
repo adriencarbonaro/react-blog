@@ -191,7 +191,7 @@ class P6 extends Component {
 Nous nous sommes donc rendus par la suite à la <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Attraction_Review-g188590-d190555-Reviews-Anne_Frank_House-Amsterdam_North_Holland_Province.html" name="Maison d’Anne Frank"/>.
 Il est très important de penser à réserver les billets quelques jours (voir semaines) à l’avance sur leur site car c’est un musée très fréquenté.
 Des audio-guides sont remis gratuitement à l’arrivée et les entrées se font par créneaux de 15 min ce qui permet de ne pas être trop nombreux dans les pièces et de vraiment s’imprégner de l’ambiance des lieux.
-Nous recommandons énormément ce musée qui est riche en émotions et qui nous immerge dans le quotidien d’Anne Frank durant sa cachette.
+Ce musée est riche en émotions et nous immerge dans le quotidien d'Anne Frank à l'endroit même où elle a du se cacher avec toute sa famille pendant la guerre.
 Un moment saisissant. N’hésitez pas à vous rendre également sur la place du clocher juste à côté où l’on peut voir la statue d’Anne Frank.
 			</>
 		)
