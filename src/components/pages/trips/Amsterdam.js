@@ -105,7 +105,10 @@ export default class Amsterdam extends ComponentScrollTop {
 					accent={class_name}
 				/>
 				<Story text={<P13/>} />
-				<PhotoSingle src={PHOTOS + "img-amsterdam-19.jpg"} />
+				<PhotoGallery list={[[
+				  PHOTOS + "img-amsterdam-19.jpg",
+				  PHOTOS + "img-amsterdam-20.jpg",
+				]]} />
 				<Story
 					text={<P14/>}
 				/>
