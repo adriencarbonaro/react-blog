@@ -51,16 +51,22 @@ export default class Bourges extends ComponentScrollTop {
 				<Story
 					text={<P4/>}
 				/>
-				<PhotoTSide
-					inverted={true}
-					src_side={PHOTOS + "img-bourges-4.jpg"}
-					src_col_1={PHOTOS + "img-bourges-3.jpg"}
-					src_col_2={PHOTOS + "img-bourges-5.jpg"}
-				/>
 				<PhotoGallery list={[[
+					PHOTOS + "img-bourges-4.jpg",
+					PHOTOS + "img-bourges-3.jpg",
+					PHOTOS + "img-bourges-5.jpg",
+				], [
 					PHOTOS + "img-bourges-6.jpg",
 					PHOTOS + "img-bourges-7.jpg",
 					PHOTOS + "img-bourges-8.jpg",
+				]]} />
+				<Story
+					text={<P4_2/>}
+				/>
+				<PhotoGallery list={[[
+					PHOTOS + "img-bourges-12.jpg",
+					PHOTOS + "img-bourges-11.jpg",
+					PHOTOS + "img-bourges-13.jpg",
 				]]} />
 				<TitleBloc
 					subtitle="Dimanche 16 février"
@@ -72,10 +78,10 @@ export default class Bourges extends ComponentScrollTop {
 				<Story
 					text={<P6/>}
 				/>
-				<PhotoDuo
-					src_1={PHOTOS + "img-bourges-9.jpg"}
-					src_2={PHOTOS + "img-bourges-10.jpg"}
-				/>
+				<PhotoGallery list={[[
+					PHOTOS + "img-bourges-9.jpg",
+					PHOTOS + "img-bourges-10.jpg",
+				]]} />
 			</div>
 		)
 	}
@@ -139,7 +145,16 @@ Nous avons poursuivi notre périple jusqu’à la vieille ville de Sancerre, une
 Nous avons dégusté de succulentes tartines de chèvre chaud au <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g580139-d2340264-Reviews-Cafe_des_Arts-Sancerre_Cher_Berry_Centre_Val_de_Loire.html" name="Café des Arts"/> situé sur la petite place.
 Pour digérer nous avons fait le tour du village en suivant la ligne rouge sur les pavés, qui nous permet de visiter toute la cité.
 Puis nous avons repris la voiture pour rentrer et nous avons fait un petit détour sur les collines voisines pour avoir une vue de Sancerre.
-<br/><br/>De retour à Bourges nous avons tenté d’aller prendre un café dans l’un des nombreux coffee shop de la rue Bourbonnoux.
+			</>
+		)
+	}
+}
+
+class P4_2 extends Component {
+	render () {
+		return (
+			<>
+De retour à Bourges nous avons tenté d’aller prendre un café dans l’un des nombreux coffee shop de la rue Bourbonnoux.
 Après plusieurs tentatives, les cafés étant très prisés pour l’heure du goûter, nous avons dégoté une petite table chez <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g187120-d8658555-Reviews-Delichou_Tarterie_Espresso_Bar-Bourges_Cher_Berry_Centre_Val_de_Loire.html " name="Délichou !" /> une tarterie beaucoup trop mignonne.
 Et deuxième coup de bol, il leur restait une table de deux pour le brunch du dimanche !
 <br/><br/>Nous nous sommes ensuite baladés dans la ville afin de voir la cathédrale illuminée ainsi que le palais Jacques Coeur, un ancien marchand français qui fut nommé Grand Argentier du royaume de France et aida Charles VII à reconquérir le territoire occupé par les anglais.
