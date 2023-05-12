@@ -45,8 +45,9 @@ export default class Amsterdam extends ComponentScrollTop {
 				<PhotoSingle src={PHOTOS + "img-amsterdam-1.jpg"} />
 				<Story text={<P3/>} />
 				<Story text={<P4/>} />
-				<PhotoSingle src={PHOTOS + "img-amsterdam-3.jpg"} />
 				<PhotoGallery list={[[
+				  PHOTOS + "img-amsterdam-3.jpg",
+				], [
 				  PHOTOS + "img-amsterdam-3-3.jpg",
 				  PHOTOS + "img-amsterdam-3-2.jpg",
 				  PHOTOS + "img-amsterdam-3-4.jpg",
@@ -54,11 +55,12 @@ export default class Amsterdam extends ComponentScrollTop {
 				<Story
 					text={<P5/>}
 				/>
-				<PhotoT
-					src_large={PHOTOS + "img-amsterdam-4.jpg"}
-					src_row_1={PHOTOS + "img-amsterdam-5.jpg"}
-					src_row_2={PHOTOS + "img-amsterdam-6.jpg"}
-				/>
+				<PhotoGallery list={[[
+				  PHOTOS + "img-amsterdam-4.jpg",
+				], [
+				  PHOTOS + "img-amsterdam-5.jpg",
+				  PHOTOS + "img-amsterdam-6.jpg",
+				]]} />
 				<Story
 					text={<P6/>}
 				/>
@@ -92,11 +94,12 @@ export default class Amsterdam extends ComponentScrollTop {
 				<Story
 					text={<P11/>}
 				/>
-				<PhotoT
-					src_large={PHOTOS + "img-amsterdam-13.jpg"}
-					src_row_1={PHOTOS + "img-amsterdam-15.jpg"}
-					src_row_2={PHOTOS + "img-amsterdam-17.jpg"}
-				/>
+				<PhotoGallery list={[[
+				  PHOTOS + "img-amsterdam-13.jpg",
+				], [
+				  PHOTOS + "img-amsterdam-15.jpg",
+				  PHOTOS + "img-amsterdam-17.jpg",
+				]]} />
 				<Story
 					text={<P12/>}
 				/>
