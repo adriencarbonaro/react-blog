@@ -22,7 +22,7 @@ export default class Corse extends ComponentScrollTop {
 		const class_name = "corse";
 		return (
 		<div>
-			<h1 className={"banner-title " + class_name}>Corse</h1>;
+			<h1 className={"banner-title " + class_name}>Corse</h1>
 			<SVGLocation className={class_name}/>
 			<Title text="Vacances en Corse" />
 			<Subtitle text="Juillet 2021" accent={class_name} />
