@@ -2,13 +2,8 @@ import React, { Component }   from 'react';
 import ComponentScrollTop     from '../../ComponentScrollTop';
 import CustomLink             from '../../CustomLink';
 import { Story }              from '../../Story';
-import { TitleBloc }          from '../../TitleBloc';
-import {
-	PhotoGallery,
-	PhotoDuo,
-	PhotoSingle,
-	PhotoT
-}                             from '../../Photos';
+import { Title, Subtitle }    from '../../Titles';
+import { PhotoGallery }       from '../../Photos';
 import SVGLocation            from '../../SVGLocation';
 import { PhoneVideo }         from '../../PhoneVideo';
 import Consts                 from '../../../consts';
@@ -25,39 +20,41 @@ export default class Gacilly extends ComponentScrollTop {
 		<div>
 			<h1 className={"banner-title " + class_name}>La Gacilly & Le Mans</h1>
 			<SVGLocation className={class_name}/>
-			<TitleBloc title="Week-end détente : La Gacilly et Le Mans" subtitle="" accent={class_name} />
+			<Title title="Week-end détente : La Gacilly et Le Mans" />
 			<Story text={<P1/>} />
 			<PhoneVideo color_spot="#e8f4ee" color_text="#68bc92" src="https://nid-de-poule.s3.eu-west-3.amazonaws.com/videos/phone/gacilly.mp4" />
-			<TitleBloc title="" subtitle="L’Eco-Hôtel Spa Yves Rocher" accent={class_name} />
+			<Subtitle text="L’Eco-Hôtel Spa Yves Rocher" accent={class_name} />
 			<Story text={<P2/>} />
 			<Story text={<P3/>} />
-			<PhotoT
-			  src_large={PHOTOS + "img-gacilly-3.jpg"}
-			  src_row_1={PHOTOS + "img-gacilly-1.jpg"}
-			  src_row_2={PHOTOS + "img-gacilly-2.jpg"}
-			/>
+			<PhotoGallery list={[[
+				PHOTOS + "img-gacilly-3.jpg",
+			], [
+				PHOTOS + "img-gacilly-1.jpg",
+				PHOTOS + "img-gacilly-2.jpg",
+			]]} />
 			<Story text={<P4/>} />
 			<PhotoGallery list={[[
 				PHOTOS + "img-gacilly-4.jpg",
 				PHOTOS + "img-gacilly-5.jpg",
 				PHOTOS + "img-gacilly-6.jpg",
+			], [
 				PHOTOS + "img-gacilly-7.jpg",
 				PHOTOS + "img-gacilly-8.jpg",
 				PHOTOS + "img-gacilly-9.jpg",
 			]]}
 			/>
-			<TitleBloc title="" subtitle="Le village de La Gacilly" accent={class_name} />
+			<Subtitle text="Le village de La Gacilly" accent={class_name} />
 			<Story text={<P5/>} />
-			<PhotoDuo
-			  src_1={PHOTOS + "img-gacilly-10.jpg"}
-			  src_2={PHOTOS + "img-gacilly-11.jpg"}
-			/>
+			<PhotoGallery list={[[
+				PHOTOS + "img-gacilly-10.jpg",
+				PHOTOS + "img-gacilly-11.jpg",
+			]]} />
 			<Story text={<P6/>} />
-			<PhotoDuo
-			  src_1={PHOTOS + "img-gacilly-12.jpg"}
-			  src_2={PHOTOS + "img-gacilly-13.jpg"}
-			/>
-			<TitleBloc title="" subtitle="Passage rapide au Mans" accent={class_name} />
+			<PhotoGallery list={[[
+				PHOTOS + "img-gacilly-12.jpg",
+				PHOTOS + "img-gacilly-13.jpg",
+			]]} />
+			<Subtitle text="Passage rapide au Mans" accent={class_name} />
 			<Story text={<P7/>} />
 			<PhoneVideo color_spot="#ffd7bc" color_text="#c96236" src="https://nid-de-poule.s3.eu-west-3.amazonaws.com/videos/phone/mans.mp4" />
 			<PhotoGallery list={[[

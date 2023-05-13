@@ -1,12 +1,11 @@
 import React                  from 'react';
 import ComponentScrollTop     from '../../ComponentScrollTop';
 import { Story }              from "../../Story"
-import { TitleBloc }          from "../../TitleBloc"
+import { Subtitle, Title }    from "../../Titles"
 import { Component }          from 'react';
 import {
 	PhotoGallery,
 	PhotoSingle,
-	PhotoT,
 	PhotoTSide,
 }                             from '../../Photos';
 import { PhoneVideo }         from '../../PhoneVideo';
@@ -28,17 +27,10 @@ export default class Amsterdam extends ComponentScrollTop {
 			<div>
 				<h1 className={"banner-title " + class_name}>Amsterdam</h1>
 				<SVGLocation className={class_name}/>
-				<TitleBloc
-					title="Trois jours à Amsterdam"
-					subtitle=""
-					accent={class_name}
-				/>
+				<Title text="Trois jours à Amsterdam" />
 				<PhoneVideo src="https://nid-de-poule.s3.eu-west-3.amazonaws.com/videos/phone/amsterdam.mp4"/>
 				<Story text={<P1/>} />
-				<TitleBloc
-					subtitle="Vendredi 17 septembre"
-					accent={class_name}
-				/>
+				<Subtitle text="Vendredi 17 septembre" accent={class_name} />
 				<Story
 					text={<P2/>}
 				/>
@@ -73,10 +65,7 @@ export default class Amsterdam extends ComponentScrollTop {
 					src_col_1={PHOTOS + "img-amsterdam-8.jpg"}
 					src_col_2={PHOTOS + "img-amsterdam-7.jpg"}
 				/>
-				<TitleBloc
-					subtitle="Samedi 18 septembre"
-					accent={class_name}
-				/>
+				<Subtitle text="Samedi 18 septembre" accent={class_name} />
 				<Story
 					text={<P8/>}
 				/>
@@ -103,10 +92,7 @@ export default class Amsterdam extends ComponentScrollTop {
 				<Story
 					text={<P12/>}
 				/>
-				<TitleBloc
-					subtitle="Dimanche 19 septembre"
-					accent={class_name}
-				/>
+				<Subtitle text="Dimanche 19 septembre" accent={class_name} />
 				<Story text={<P13/>} />
 				<PhotoGallery list={[[
 				  PHOTOS + "img-amsterdam-19.jpg",

@@ -1,12 +1,10 @@
 import React                  from 'react';
 import ComponentScrollTop     from '../../ComponentScrollTop';
 import { Story }              from "../../Story"
-import { TitleBloc }          from "../../TitleBloc"
+import { Title, Subtitle }    from "../../Titles"
 import { Component }          from 'react';
 import {
-	PhotoDuo,
 	PhotoGallery,
-	PhotoSingle,
 }                             from '../../Photos';
 import CustomLink             from '../../CustomLink';
 import SVGLocation            from '../../SVGLocation'
@@ -25,60 +23,43 @@ export default class Honfleur extends ComponentScrollTop {
 			<div>
 				<h1 className={"banner-title " + class_name}>Honfleur</h1>
 				<SVGLocation className={class_name}/>
-				<TitleBloc
-					title="Petite pause à Honfleur"
-					subtitle=""
-					accent={class_name}
-				/>
-				<Story
-					text={<P1/>}
-				/>
-				<PhotoSingle src={PHOTOS + "img-honfleur-7.jpg"} />
-				<Story text={<P2/>} />
-				<TitleBloc
-					subtitle="Que faire à Honfleur"
-					accent={class_name}
-				/>
-				<TitleBloc
-					subtitle="Flâner autour du Vieux Bassin"
-					accent={class_name}
-				/>
-				<Story
-					text={<P3/>}
-				/>
-				<PhotoDuo
-					src_1={PHOTOS + "img-honfleur-3.jpg"}
-					src_2={PHOTOS + "img-honfleur-5.jpg"}
-				/>
-				<TitleBloc
-					subtitle="Se balader dans la vieille ville"
-					accent={class_name}
-				/>
-				<Story
-					text={<P4/>}
-				/>
-				<Story
-					text={<P5/>}
-				/>
+				<Title text="Petite pause à Honfleur" />
+				<Story text={<P1/>} />
 				<PhotoGallery list={[[
-					PHOTOS + "img-honfleur-2.jpg",
-					PHOTOS + "img-honfleur-4.jpg",
-					PHOTOS + "img-honfleur-6.jpg",
+				  PHOTOS + "img-honfleur-7.jpg",
 				]]} />
-				<TitleBloc
-					subtitle="Visiter le Musée Eugène Boudin"
-					accent={class_name}
+				<Story text={<P2/>} />
+				<Subtitle text="Que faire à Honfleur" accent={class_name} />
+				<Subtitle
+				  text="Flâner autour du Vieux Bassin"
+				  accent={class_name}
 				/>
-				<Story
-					text={<P6/>}
+				<Story text={<P3/>} />
+				<PhotoGallery list={[[
+				  PHOTOS + "img-honfleur-3.jpg",
+				  PHOTOS + "img-honfleur-5.jpg",
+				]]} />
+				<Subtitle
+				  text="Se balader dans la vieille ville"
+				  accent={class_name}
 				/>
-				<TitleBloc
-					subtitle="Se promener dans le Jardin des Personnalités"
-					accent={class_name}
+				<Story text={<P4/>} />
+				<Story text={<P5/>} />
+				<PhotoGallery list={[[
+				  PHOTOS + "img-honfleur-2.jpg",
+				  PHOTOS + "img-honfleur-4.jpg",
+				  PHOTOS + "img-honfleur-6.jpg",
+				]]} />
+				<Subtitle
+				  text="Visiter le Musée Eugène Boudin"
+				  accent={class_name}
 				/>
-				<Story
-					text={<P7/>}
+				<Story text={<P6/>} />
+				<Subtitle
+				  text="Se promener dans le Jardin des Personnalités"
+				  accent={class_name}
 				/>
+				<Story text={<P7/>} />
 			</div>
 		)
 	}

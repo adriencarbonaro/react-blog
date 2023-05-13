@@ -4,6 +4,7 @@
     width: 60%;
     justify-content: center;
     margin: auto;
+    gap: 10px;
 }
 
 .photo-img {
@@ -51,7 +52,6 @@
 .photo-gallery-item-top {
     width: 100%;
     object-fit: contain;
-    padding: 5px;
 }
 
 .photo-gallery-items-row {
@@ -69,19 +69,18 @@
 .photo-gallery-item-side {
     width: 50%;
     object-fit: cover;
-    padding: 5px;
 }
 
 .photo-gallery-items-col {
     display: flex;
     flex-direction: column;
     width: 50%;
+    gap: 10px;
 }
 
 .photo-gallery-item-col {
     object-fit: cover;
     height: 50%;
-    padding: 5px;
     width: 100%;
 }
 
@@ -99,7 +98,6 @@
     .photo-gallery-item-row {
         object-fit: cover;
         width: 100%;
-        padding: 5px;
     }
 
     /* T Side */

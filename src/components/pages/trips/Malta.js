@@ -1,7 +1,7 @@
 import React                  from 'react';
 import ComponentScrollTop     from '../../ComponentScrollTop';
 import { Story }              from "../../Story"
-import { TitleBloc }          from "../../TitleBloc"
+import { Subtitle, Title }    from "../../Titles"
 import { Component }          from 'react';
 import { PhotoGallery }       from '../../Photos';
 import {
@@ -24,52 +24,46 @@ export default class Malta extends ComponentScrollTop {
 			<div>
 				<h1 className={"banner-title " + class_name}>Malte</h1>
 				<SVGLocation className={class_name}/>
-				<TitleBloc
-					title="Un séjour à Malte"
-					accent={class_name}
-				/>
+				<Title text="Un séjour à Malte" />
 				<Story text={<P1/>} />
 				<Story text={<P2/>} />
 				<Story text={<P3/>} />
 				<PhotoGallery list={[[
 				  PHOTOS + "Malte-63.jpg"
 				]]}/>
-				<TitleBloc
-					title="Que faire et voir à Gozo ?"
-					accent={class_name}
-				/>
+				<Title text="Que faire et voir à Gozo ?" />
 				<Story text={<P4/>} />
 				<Story text={<P5/>} />
-				<TitleBloc
-					subtitle="La plage de Ramla et sa grotte"
-					accent={class_name}
+				<Subtitle
+				  text="La plage de Ramla et sa grotte"
+				  accent={class_name}
 				/>
 				<Story text={<P6/>} />
 				<PhotoGallery list={[[
 				  PHOTOS + "Malte-02.jpg",
 				  PHOTOS + "Malte-03.jpg",
 				]]} />
-				<TitleBloc
-					subtitle="Les falaises de Ta' Ċenċ"
-					accent={class_name}
+				<Subtitle
+				  text="Les falaises de Ta' Ċenċ"
+				  accent={class_name}
 				/>
 				<Story text={<P7/>} />
 				<PhotoGallery list={[[
 				  PHOTOS + "Malte-06.jpg",
 				  PHOTOS + "Malte-10.jpg",
 				]]} />
-				<TitleBloc
-					subtitle="La basilique Ta' Pinu de Gharb"
-					accent={class_name}
+				<Subtitle
+				  text="La basilique Ta' Pinu de Gharb"
+				  accent={class_name}
 				/>
 				<Story text={<P8/>} />
 				<PhotoGallery list={[[
 				  PHOTOS + "Malte-11.jpg",
 				  PHOTOS + "Malte-22.jpg",
 				]]} />
-				<TitleBloc
-					subtitle="Wied Il-Mielaħ, Wied il-Għasri et les salines"
-					accent={class_name}
+				<Subtitle
+				  text="Wied Il-Mielaħ, Wied il-Għasri et les salines"
+				  accent={class_name}
 				/>
 				<Story text={<P9/>} />
 				<Story text={<P10/>} />
@@ -82,10 +76,7 @@ export default class Malta extends ComponentScrollTop {
 				  PHOTOS + "Malte-45.jpg",
 				  PHOTOS + "Malte-48.jpg",
 				]]} />
-				<TitleBloc
-					subtitle="La citadelle"
-					accent={class_name}
-				/>
+				<Subtitle text="La citadelle" accent={class_name} />
 				<Story text={<P11/>} />
 				<PhotoGallery list={[[
 				  PHOTOS + "Malte-54.jpg",
@@ -96,11 +87,8 @@ export default class Malta extends ComponentScrollTop {
 				<PhotoGallery list={[[
 				  PHOTOS + "Malte-23.jpg",
 				]]} />
-				<TitleBloc
-					title="Que voir et que faire à Malte ?"
-					subtitle="La Valette et les Trois Cités"
-					accent={class_name}
-				/>
+				<Title text="Que voir et que faire à Malte ?" />
+				<Subtitle text="La Valette et les Trois Cités" accent={class_name} />
 				<Story text={<P13/>} />
 				<PhotoGallery list={[[
 				  PHOTOS + "Malte-65.jpg",
@@ -113,24 +101,15 @@ export default class Malta extends ComponentScrollTop {
 				],[
 				  PHOTOS + "Malte-60.jpg",
 				]]} />
-				<TitleBloc
-					subtitle="Où manger et boire un verre à La Valette ?"
-					accent={class_name}
-				/>
+				<Subtitle text="Où manger et boire un verre à La Valette ?" accent={class_name} />
 				<Story text={<P15/>} />
 				<Story text={<P16/>} />
 				<Story text={<P17/>} />
-				<TitleBloc
-					subtitle="Où manger et boire un verre sur les Trois Cités ?"
-					accent={class_name}
-				/>
+				<Subtitle text="Où manger et boire un verre sur les Trois Cités ?" accent={class_name} />
 				<Story text={<P18/>} />
 				<Story text={<P19/>} />
 				<Story text={<P20/>} />
-				<TitleBloc
-					subtitle="Le village de Popeye"
-					accent={class_name}
-				/>
+				<Subtitle text="Le village de Popeye" accent={class_name} />
 				<Story text={<P21/>} />
 				<PhotoGallery list={[[
 				  PHOTOS + "Malte-70.jpg",
@@ -138,31 +117,21 @@ export default class Malta extends ComponentScrollTop {
 				  PHOTOS + "Malte-72.jpg",
 				  PHOTOS + "Malte-73.jpg",
 				]]} />
-				<TitleBloc
-					subtitle="Les plages : Golden Bay et Ghajn Tuffieha"
-					accent={class_name}
-				/>
+				<Subtitle text="Les plages : Golden Bay et Ghajn Tuffieha" accent={class_name} />
 				<Story text={<P22/>} />
 				<Story text={<P23/>} />
 				<Story text={<P24/>} />
 				<PhotoGallery list={[[
 				  PHOTOS + "Malte-103.jpg",
 				]]} />
-				<TitleBloc
-					title=""
-					subtitle="Marsaxlokk"
-					accent={class_name}
-				/>
+				<Subtitle subtitle="Marsaxlokk" accent={class_name} />
 				<Story text={<P25/>} />
 				<PhotoGallery list={[[
 				  PHOTOS + "Malte-74.jpg",
 				  PHOTOS + "Malte-76.jpg",
 				  PHOTOS + "Malte-75.jpg",
 				]]} />
-				<TitleBloc
-					subtitle="St Peter's Pool"
-					accent={class_name}
-				/>
+				<Subtitle text="St Peter's Pool" accent={class_name} />
 				<Story text={<P26/>} />
 				<PhotoGallery list={[[
 				  PHOTOS + "Malte-78.jpg",
@@ -170,10 +139,7 @@ export default class Malta extends ComponentScrollTop {
 				], [
 				  PHOTOS + "Malte-83.jpg",
 				]]} />
-				<TitleBloc
-					subtitle="Dingli cliffs"
-					accent={class_name}
-				/>
+				<Subtitle text="Dingli cliffs" accent={class_name} />
 				<Story text={<P27/>} />
 				<PhotoGallery list={[[
 				  PHOTOS + "Malte-85.jpg",
@@ -181,10 +147,7 @@ export default class Malta extends ComponentScrollTop {
 				], [
 				  PHOTOS + "Malte-90.jpg",
 				]]} />
-				<TitleBloc
-					subtitle="L-Imdina"
-					accent={class_name}
-				/>
+				<Subtitle text="L-Imdina" accent={class_name} />
 				<Story text={<P28/>} />
 				<Story text={<P29/>} />
 				<PhotoGallery list={[[
@@ -192,11 +155,8 @@ export default class Malta extends ComponentScrollTop {
 				  PHOTOS + "Malte-99.jpg",
 				  PHOTOS + "Malte-102.jpg",
 				]]} />
-				<TitleBloc
-					title="Que voir à Comino ?"
-					subtitle="Le Blue lagoon"
-					accent={class_name}
-				/>
+				<Title text="Que voir à Comino ?" />
+				<Subtitle text="Le Blue lagoon" accent={class_name} />
 				<Story text={<P30/>} />
 				<PhotoGallery list={[[
 				  PHOTOS + "Malte-93.jpg",

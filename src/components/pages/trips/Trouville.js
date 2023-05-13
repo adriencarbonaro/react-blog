@@ -3,13 +3,11 @@ import { Component }          from 'react';
 import ComponentScrollTop     from '../../ComponentScrollTop';
 import CustomLink             from '../../CustomLink';
 import {
-	PhotoDuo,
 	PhotoGallery,
 	PhotoSingle,
-	PhotoT,
 }                             from '../../Photos';
 import { Story }              from "../../Story"
-import { TitleBloc }          from "../../TitleBloc"
+import { Title, Subtitle }    from "../../Titles"
 import SVGLocation            from '../../SVGLocation';
 import Consts                 from '../../../consts';
 
@@ -26,49 +24,43 @@ export default class Trouville extends ComponentScrollTop {
 			<div>
 				<h1 className={"banner-title " + class_name}>Trouville</h1>
 				<SVGLocation className={class_name}/>
-				<TitleBloc
-					title="Week-end Normand"
-					subtitle="Un amour à la plage"
-					accent={class_name}
-				/>
+				<Title text="Week-end Normand" />
+				<Subtitle text="Un amour à la plage" accent={class_name} />
 				<Story text={<P1/>}/>
 				<Story text={<P2/>} />
 				<PhotoSingle src={PHOTOS + "img-trouville-20.jpg"} />
 				<Story text={<P2_2/>}/>
-				<TitleBloc subtitle="Le centre ville" accent={class_name} />
+				<Subtitle text="Le centre ville" accent={class_name} />
 				<Story text={<P3/>}/>
-				<PhotoT
-					src_large={PHOTOS + "img-trouville-21.jpg"}
-					src_row_1={PHOTOS + "img-trouville-2.jpg"}
-					src_row_2={PHOTOS + "img-trouville-3.jpg"}
-				/>
-				<TitleBloc
-				  subtitle="Le marché aux poissons" accent={class_name}
-				/>
+				<PhotoGallery list={[[
+				  PHOTOS + "img-trouville-21.jpg",
+				], [
+				  PHOTOS + "img-trouville-2.jpg",
+				  PHOTOS + "img-trouville-3.jpg",
+				]]} />
+				<Subtitle text="Le marché aux poissons" accent={class_name} />
 				<Story text={<P4/>} />
 				<PhotoSingle src={PHOTOS + "img-trouville-22.jpg"} />
-				<TitleBloc
-					subtitle="Le bord de mer et la plage"
-					accent={class_name}
+				<Subtitle
+				  text="Le bord de mer et la plage"
+				  accent={class_name}
 				/>
 				<Story text={<P5/>}/>
-				<PhotoDuo
-					src_1={PHOTOS + "img-trouville-23.jpg"}
-					src_2={PHOTOS + "img-trouville-19.jpg"}
-				/>
-				<TitleBloc
-					subtitle="Le casino"
-					accent={class_name}
-				/>
+				<PhotoGallery list={[[
+				  PHOTOS + "img-trouville-23.jpg",
+				  PHOTOS + "img-trouville-19.jpg",
+				]]} />
+				<Subtitle text="Le casino" accent={class_name} />
 				<Story text={<P6/>}/>
-				<PhotoGallery list={[
+				<PhotoGallery list={[[
 				  PHOTOS + "img-trouville-12.jpg",
 				  PHOTOS + "img-trouville-13.jpg",
 				  PHOTOS + "img-trouville-14.jpg",
+				],[
 				  PHOTOS + "img-trouville-15.jpg",
 				  PHOTOS + "img-trouville-16.jpg",
 				  PHOTOS + "img-trouville-17.jpg",
-				]} />
+				]]} />
 			</div>
 		)
 	}

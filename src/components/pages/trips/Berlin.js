@@ -1,7 +1,7 @@
 import React from 'react';
 import ComponentScrollTop from '../../ComponentScrollTop';
 import { Story } from "../../Story"
-import { TitleBloc } from "../../TitleBloc"
+import { Subtitle, Title }    from "../../Titles"
 import { Component }         from 'react';
 import {
 	PhotoGallery,
@@ -24,27 +24,21 @@ export default class Berlin extends ComponentScrollTop {
 			<div>
 				<h1 className={"banner-title " + class_name}>Berlin</h1>
 				<SVGLocation className={class_name}/>
-				<TitleBloc
-					title="Trois jours à Berlin"
-					subtitle="Escapade dans la capitale allemande"
-					accent={class_name}
+				<Title text="Trois jours à Berlin" />
+				<Subtitle
+				  text="Escapade dans la capitale allemande"
+				  accent={class_name}
 				/>
 				<Story
 					text={<P1/>}
 				/>
-				<TitleBloc
-					subtitle="Mercredi 31 octobre"
-					accent={class_name}
-				/>
+				<Subtitle text="Mercredi 31 octobre" accent={class_name} />
 				<Story
 					text={<P2/>}
 				/>
 				<Story text={<P3/>} />
 				<PhotoSingle src={PHOTOS + "img-berlin-0.jpg"} />
-				<TitleBloc
-					subtitle="Jeudi 1er Novembre"
-					accent={class_name}
-				/>
+				<Subtitle text="Jeudi 1er Novembre" accent={class_name} />
 				<Story
 					text={<P4/>}
 				/>
@@ -52,14 +46,12 @@ export default class Berlin extends ComponentScrollTop {
 				  PHOTOS + "img-berlin-1.jpg",
 				  PHOTOS + "img-berlin-2.jpg",
 				  PHOTOS + "img-berlin-3.jpg",
+				],[
 				  PHOTOS + "img-berlin-4.jpg",
 				  PHOTOS + "img-berlin-5.jpg",
 				  PHOTOS + "img-berlin-6.jpg",
 				]]} />
-				<TitleBloc
-					subtitle="Vendredi 2 Novembre"
-					accent={class_name}
-				/>
+				<Subtitle text="Vendredi 2 Novembre" accent={class_name} />
 				<Story
 					text={<P5/>}
 				/>

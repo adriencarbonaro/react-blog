@@ -125,12 +125,12 @@ function Phone(id) {
 }
 
 export function PhoneVideo(props) {
-	const [id, setId] = useState(uuidv4());
+	const [ id ] = useState(uuidv4());
 
 	useEffect(() => {
 		if (props.color_spot) applyFill('.spot', props.color_spot);
 		if (props.color_text) applyFill('.text', props.color_text);
-	}, []);
+	});
 
 	const applyFill = (class_name, color) => {
 		let svg = document.getElementById(id)

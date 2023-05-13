@@ -1,12 +1,10 @@
 import React                  from 'react';
 import ComponentScrollTop     from '../../ComponentScrollTop';
 import { Story }              from "../../Story"
-import { TitleBloc }          from "../../TitleBloc"
+import { Title, Subtitle }    from "../../Titles"
 import { Component }          from 'react';
 import {
 	PhotoGallery,
-	PhotoSingle,
-	PhotoT,
 	PhotoTSide,
 }                             from '../../Photos';
 import CustomLink             from '../../CustomLink';
@@ -26,112 +24,85 @@ export default class Bretagne extends ComponentScrollTop {
 			<div>
 				<h1 className={"banner-title " + class_name}>Bretagne</h1>
 				<SVGLocation className={class_name}/>
-				<TitleBloc
-					title="Escapade bretonne durant l’été"
-					subtitle=""
-					accent={class_name}
+				<Title text="Escapade bretonne durant l'été" />
+				<Story text={<P1/>} />
+				<Subtitle
+				  text="Jour 1 : Vannes et la presqu'île de Quiberon"
+				  accent={class_name}
 				/>
-				<Story
-					text={<P1/>}
-				/>
-				<TitleBloc
-					subtitle="Jour 1 : Vannes et la presqu’île de Quiberon"
-					accent={class_name}
-				/>
-				<Story
-					text={<P2/>}
-				/>
-				<Story
-					text={<P3/>}
-				/>
+				<Story text={<P2/>} />
+				<Story text={<P3/>} />
 				<PhotoGallery list={[[
 				  PHOTOS + "img-bretagne-2.jpg",
 				  PHOTOS + "img-bretagne-1.jpg",
 				  PHOTOS + "img-bretagne-3.jpg",
 				]]} />
-				<Story
-					text={<P4/>}
+				<Story text={<P4/>} />
+				<PhotoGallery list={[[
+				  PHOTOS + "img-bretagne-5.jpg",
+				], [
+				  PHOTOS + "img-bretagne-6.jpg",
+				  PHOTOS + "img-bretagne-7.jpg",
+				]]} />
+				<Story text={<P5/>} />
+				<Subtitle
+				  text="Jour 2 : Dégustation d'huîtres, Damgan"
+				  accent={class_name}
 				/>
-				<PhotoT
-					src_large={PHOTOS + "img-bretagne-5.jpg"}
-					src_row_1={PHOTOS + "img-bretagne-6.jpg"}
-					src_row_2={PHOTOS + "img-bretagne-7.jpg"}
-				/>
-				<Story
-					text={<P5/>}
-				/>
-				<TitleBloc
-					subtitle="Jour 2 : Dégustation d’huîtres, Damgan"
-					accent={class_name}
-				/>
-				<Story
-					text={<P6/>}
-				/>
-				<Story
-					text={<P7/>}
-				/>
+				<Story text={<P6/>} />
+				<Story text={<P7/>} />
 				<PhotoTSide
 					src_side={PHOTOS + "img-bretagne-9.jpg"}
 					src_col_1={PHOTOS + "img-bretagne-10.jpg"}
 					src_col_2={PHOTOS + "img-bretagne-11.jpg"}
 				/>
-				<Story
-					text={<P8/>}
-				/>
+				<Story text={<P8/>} />
 				<PhotoGallery list={[[
 				  PHOTOS + "img-bretagne-12.jpg",
 				  PHOTOS + "img-bretagne-14.jpg",
 				  PHOTOS + "img-bretagne-15.jpg",
 				]]} />
-				<TitleBloc
-					subtitle="Jour 3 : Le Croisic et La Baule"
-					accent={class_name}
+				<Subtitle
+				  text="Jour 3 : Le Croisic et La Baule"
+				  accent={class_name}
 				/>
-				<Story
-					text={<P9/>}
-				/>
-				<Story
-					text={<P10/>}
-				/>
-				<Story
-					text={<P11/>}
-				/>
-				<PhotoT
-					inverted
-					src_large={PHOTOS + "img-bretagne-16.jpg"}
-					src_row_1={PHOTOS + "img-bretagne-19.jpg"}
-					src_row_2={PHOTOS + "img-bretagne-20.jpg"}
-				/>
-				<Story
-					text={<P12/>}
-				/>
-				<TitleBloc
-				  subtitle="Jour 4 : Guérande et le village de Kerhinet"
+				<Story text={<P9/>} />
+				<Story text={<P10/>} />
+				<Story text={<P11/>} />
+				<PhotoGallery list={[[
+				  PHOTOS + "img-bretagne-19.jpg",
+				  PHOTOS + "img-bretagne-20.jpg",
+				], [
+				  PHOTOS + "img-bretagne-16.jpg",
+				]]} />
+				<Story text={<P12/>} />
+				<Subtitle
+				  text="Jour 4 : Guérande et le village de Kerhinet"
 				  accent={class_name}
 				/>
 				<Story text={<P13/>} />
-				<PhotoSingle src={PHOTOS + "img-bretagne-24.jpg"} />
 				<PhotoGallery list={[[
+				  PHOTOS + "img-bretagne-24.jpg",
+				], [
 				  PHOTOS + "img-bretagne-25.jpg",
 				  PHOTOS + "img-bretagne-26.jpg",
 				  PHOTOS + "img-bretagne-27.jpg",
+				], [
 				  PHOTOS + "img-bretagne-29.jpg",
 				  PHOTOS + "img-bretagne-30.jpg",
 				  PHOTOS + "img-bretagne-32.jpg",
 				]]} />
-				<TitleBloc
-					subtitle="Jour 5 : Retour en passant par La Roche Bernard"
-					accent={class_name}
+				<Subtitle
+				  text="Jour 5 : Retour en passant par La Roche Bernard"
+				  accent={class_name}
 				/>
-				<Story
-					text={<P14/>}
-				/>
-				<PhotoT
-					inverted
-					src_large={PHOTOS + "img-bretagne-33.jpg"}
-					src_row_1={PHOTOS + "img-bretagne-34.jpg"}
-					src_row_2={PHOTOS + "img-bretagne-35.jpg"}
-				/>
+				<Story text={<P14/>} />
+				<PhotoGallery list={[[
+				  PHOTOS + "img-bretagne-34.jpg",
+				  PHOTOS + "img-bretagne-35.jpg",
+				], [
+				  PHOTOS + "img-bretagne-33.jpg",
+				]]} />
 			</div>
 		)
 	}

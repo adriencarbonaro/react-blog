@@ -6,9 +6,11 @@
 	--accent-etretat: #87d769;
 	--accent-gacilly: #68bc92;
 	--accent-honfleur: #4fd6f8;
+	--accent-malta: #ed9167;
 	--accent-trouville: #f8714f;
 	--accent-corse: #2996df;
 	--accent-crete: #2996df;
+	--accent-perche: #6d7c46;
 
 	--airbnb: #ec385a;
 	--airbnb-hover: #8a2034;
@@ -170,6 +172,14 @@ a.wine:hover {
 
 .subtitle-honfleur {
 	color: var(--accent-honfleur);
+}
+
+.subtitle-malta {
+	color: var(--accent-malta);
+}
+
+.subtitle-perche {
+	color: var(--accent-perche);
 }
 
 .subtitle-trouville {

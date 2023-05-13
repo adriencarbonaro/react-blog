@@ -2,12 +2,9 @@ import React, { Component }   from 'react';
 import ComponentScrollTop     from '../../ComponentScrollTop';
 import CustomLink             from '../../CustomLink';
 import { Story }              from '../../Story';
-import { TitleBloc }          from '../../TitleBloc';
+import { Title, Subtitle }    from '../../Titles';
 import {
 	PhotoGallery,
-	PhotoDuo,
-	PhotoSingle,
-	PhotoT
 }                             from '../../Photos';
 import SVGLocation            from '../../SVGLocation';
 import Consts                 from '../../../consts';
@@ -24,46 +21,63 @@ export default class Perche extends ComponentScrollTop {
 		<div>
 			<h1 className={"banner-title " + class_name}>Perche</h1>;
 			<SVGLocation className={class_name}/>
-			<TitleBloc title="Quelques jours dans le Perche au printemps" subtitle="" accent={class_name} />
-			<TitleBloc title="" subtitle="Mercredi 29 mai : Arrivée en fin de journée" accent={class_name} />
-			<Story text={<P1/>} />
-			<TitleBloc title="" subtitle="Jeudi 30 mai : Marché de Bélème et les jardins de La Petite Rochelle" accent={class_name} />
-			<Story text={<P2/>} />
-			<PhotoDuo
-			  src_1={PHOTOS + "img-perche-1.jpg"}
-			  src_2={PHOTOS + "img-perche-2.jpg"}
+			<Title text="Quelques jours dans le Perche au printemps" />
+			<Subtitle
+			  text="Mercredi 29 mai : Arrivée en fin de journée"
+			  accent={class_name}
 			/>
+			<Story text={<P1/>} />
+			<Subtitle
+			  text="Jeudi 30 mai : Marché de Bélème et les jardins de La Petite Rochelle"
+			  accent={class_name}
+			/>
+			<Story text={<P2/>} />
+			<PhotoGallery list={[[
+				PHOTOS + "img-perche-1.jpg",
+				PHOTOS + "img-perche-2.jpg",
+			]]} />
 			<Story text={<P3/>} />
-			<PhotoSingle src={PHOTOS + "img-perche-3.jpg"} />
-			<PhotoGallery list={[
+			<PhotoGallery list={[[
+				PHOTOS + "img-perche-3.jpg",
+			], [
 				PHOTOS + "img-perche-4.jpg",
 				PHOTOS + "img-perche-5.jpg",
 				PHOTOS + "img-perche-6.jpg",
+			], [
 				PHOTOS + "img-perche-8.jpg",
 				PHOTOS + "img-perche-7.jpg",
 				PHOTOS + "img-perche-9.jpg",
+			], [
 				PHOTOS + "img-perche-11.jpg",
 				PHOTOS + "img-perche-13.jpg",
 				PHOTOS + "img-perche-12.jpg",
+			], [
 				PHOTOS + "img-perche-14.jpg",
 				PHOTOS + "img-perche-10.jpg",
 				PHOTOS + "img-perche-15.jpg",
-			]} />
-			<TitleBloc title="" subtitle="Vendredi 31 mai : Le château de la Ferté Vidame et balade dans la forêt de Senonche" accent={class_name} />
-			<Story text={<P4/>} />
-			<PhotoT
-			  src_large={PHOTOS + "img-perche-16.jpg"}
-			  src_row_1={PHOTOS + "img-perche-17.jpg"}
-			  src_row_2={PHOTOS + "img-perche-18.jpg"}
+			]]} />
+			<Subtitle
+			  text="Vendredi 31 mai : Le château de la Ferté Vidame et balade dans la forêt de Senonche"
+			  accent={class_name}
 			/>
+			<Story text={<P4/>} />
+			<PhotoGallery list={[[
+				PHOTOS + "img-perche-16.jpg",
+			], [
+				PHOTOS + "img-perche-17.jpg",
+				PHOTOS + "img-perche-18.jpg",
+			]]} />
 			<Story text={<P5/>} />
-			<TitleBloc title="" subtitle="Samedi 1er et dimanche 2 juin : Nogent-Le-Rotrou et La Ferté Bernard" accent={class_name} />
+			<Subtitle
+			  text="Samedi 1er et dimanche 2 juin : Nogent-Le-Rotrou et La Ferté Bernard"
+			  accent={class_name}
+			/>
 			<Story text={<P6/>} />
 			<Story text={<P7/>} />
-			<PhotoDuo
-			  src_1={PHOTOS + "img-perche-19.jpg"}
-			  src_2={PHOTOS + "img-perche-20.jpg"}
-			/>
+			<PhotoGallery list={[[
+				PHOTOS + "img-perche-19.jpg",
+				PHOTOS + "img-perche-20.jpg",
+			]]} />
 		</div>
 		)
 	}

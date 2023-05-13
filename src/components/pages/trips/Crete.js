@@ -1,14 +1,15 @@
-import React from 'react';
-import ComponentScrollTop from '../../ComponentScrollTop';
-import { Component }      from 'react';
-import { Story } from "../../Story"
-import { TitleBloc } from "../../TitleBloc"
-import { PhotoSingle,
-         PhotoGallery,
-         PhotoT,
-         PhotoTSide } from "../../Photos"
-import CustomLink from '../../CustomLink';
-import SVGLocation from '../../SVGLocation';
+import React                  from 'react';
+import ComponentScrollTop     from '../../ComponentScrollTop';
+import { Component }          from 'react';
+import { Story }              from "../../Story"
+import { Title, Subtitle }    from "../../Titles"
+import {
+	PhotoSingle,
+	PhotoGallery,
+	PhotoTSide
+}                             from "../../Photos"
+import CustomLink             from '../../CustomLink';
+import SVGLocation            from '../../SVGLocation';
 import Consts                 from '../../../consts';
 
 /* CSS */
@@ -24,96 +25,63 @@ export default class Crete extends ComponentScrollTop {
 			<div>
 				<h1 className={"banner-title " + class_name}>Crète</h1>
 				<SVGLocation className={class_name}/>
-				<TitleBloc
-					title="Une semaine en Crète"
-					subtitle="Le berceaux des Dieux"
-					accent={class_name}
-				/>
-				<Story
-					text={<P1/>}
-				/>
-				<TitleBloc
-					subtitle="Vendredi 31 Août"
-					accent={class_name}
-				/>
-				<Story
-					text={<P2/>}
-				/>
-				<TitleBloc subtitle="Samedi 1er Septembre" accent={class_name} />
+				<Title text="Une semaine en Crète" />
+				<Subtitle text="Le berceaux des Dieux" accent={class_name} />
+				<Story text={<P1/>} />
+				<Subtitle text="Vendredi 31 Août" accent={class_name} />
+				<Story text={<P2/>} />
+				<Subtitle text="Samedi 1er Septembre" accent={class_name} />
 				<Story text={<P3/>} />
 				<PhotoSingle src={PHOTOS + "img-crete-0.jpg"} />
-				<TitleBloc
-					subtitle="Dimanche 2 Septembre"
-					accent={class_name}
-				/>
-				<Story
-					text={<P4/>}
-				/>
+				<Subtitle text="Dimanche 2 Septembre" accent={class_name} />
+				<Story text={<P4/>} />
 				<PhotoGallery list={[[
 				  PHOTOS + "img-crete-1.jpg",
 				  PHOTOS + "img-crete-2.jpg",
 				  PHOTOS + "img-crete-3.jpg",
 				]]} />
-				<TitleBloc
-					subtitle="Lundi 3 Septembre"
-					accent={class_name}
-				/>
-				<Story
-					text={<P5/>}
-				/>
-				<PhotoSingle src={PHOTOS + "img-crete-4.jpg"} />
+				<Subtitle text="Lundi 3 Septembre" accent={class_name} />
+				<Story text={<P5/>} />
 				<PhotoGallery list={[[
+				  PHOTOS + "img-crete-4.jpg",
+				], [
 				  PHOTOS + "img-crete-5.jpg",
 				  PHOTOS + "img-crete-6.jpg",
 				  PHOTOS + "img-crete-12.jpg",
 				]]} />
+				<Story text={<P5_2/>} />
 				<PhotoTSide
 				  src_side={PHOTOS + "img-crete-14.jpg"}
 				  src_col_1={PHOTOS + "img-crete-13.jpg"}
 				  src_col_2={PHOTOS + "img-crete-15.jpg"}
 				/>
-				<TitleBloc
-					subtitle="Mardi 4 Septembre"
-					accent={class_name}
-				/>
-				<Story
-					text={<P6/>}
-				/>
+				<Subtitle text="Mardi 4 Septembre" accent={class_name} />
+				<Story text={<P6/>} />
 				<PhotoTSide
 				  src_side={PHOTOS + "img-crete-16.jpg"}
 				  src_col_1={PHOTOS + "img-crete-17.jpg"}
 				  src_col_2={PHOTOS + "img-crete-18.jpg"}
 				/>
+				<Story text={<P6_2/>} />
 				<PhotoGallery list={[[
 				  PHOTOS + "img-crete-19.jpg",
 				  PHOTOS + "img-crete-20.jpg",
 				  PHOTOS + "img-crete-21.jpg",
 				]]} />
-				<TitleBloc subtitle="Mercredi 5 Septembre" accent={class_name} />
+				<Subtitle text="Mercredi 5 Septembre" accent={class_name} />
 				<Story text={<P7/>} />
 				<PhotoSingle src={PHOTOS + "img-crete-7.jpg"} />
-				<TitleBloc
-					subtitle="Jeudi 6 Septembre"
-					accent={class_name}
-				/>
-				<Story
-					text={<P8/>}
-				/>
-				<PhotoT
-				  src_large={PHOTOS + "img-crete-8.jpg"}
-				  src_row_1={PHOTOS + "img-crete-9.jpg"}
-				  src_row_2={PHOTOS + "img-crete-10.jpg"}
-				/>
-				<TitleBloc
-					subtitle="Vendredi 7 Septembre"
-					accent={class_name}
-				/>
-				<Story
-					text={<P9/>}
-				/>
-				<Story
-					text={<P10/>}
-				/>
+				<Subtitle text="Jeudi 6 Septembre" accent={class_name} />
+				<Story text={<P8/>} />
+				<PhotoGallery list={[[
+				  PHOTOS + "img-crete-8.jpg",
+				], [
+				  PHOTOS + "img-crete-9.jpg",
+				  PHOTOS + "img-crete-10.jpg",
+				]]} />
+				<Subtitle text="Vendredi 7 Septembre" accent={class_name} />
+				<Story text={<P9/>} />
+				<Story text={<P10/>} />
 				<PhotoSingle src={PHOTOS + "img-crete-11.jpg"} />
 			</div>
 		);
@@ -181,6 +149,15 @@ Nous avons donc roulé jusqu’à Plaka, station balnéaire située en face de l
 Il s’agit d’une forteresse vénitienne où fut installé au début du XXe siècle un village de lépreux en attendant de trouver un remède pour éviter que la maladie se propage.
 Cette léproserie n’a été fermée qu’en 1950. Bien que l’île soit totalement à l’abandon depuis et que la plupart des bâtiments aient été détruits, il est encore possible de voir certaines habitations qui ont été reconstruites par la suite pour en faire un musée.
 Pour le déjeuner, nous sommes retournés sur Plaka où nous avons mangé chez <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g6754342-d21206508-Reviews-Ta_Kymata-Plaka_Elounda_Lasithi_Prefecture_Crete.html" name="Ta Kymata"/>, un restaurant sur le bord de mer en face de l’île.
+			</>
+		)
+	}
+}
+
+class P5_2 extends Component {
+	render () {
+		return (
+			<>
 L’après-midi, nous avons été voir la grotte de Dikti où selon la légende, Zeus fut caché par sa mère lorsqu’il était bébé pour échapper à son père qui mangeait ses enfants.
 Pour atteindre la grotte il faut grimper un peu, la visite se fait très rapidement mais une fois en haut, on a une superbe vue sur tout le plateau du Lassithi.
 Nous en avons d’ailleurs profité en repartant pour aller voir les ruines des fameux moulins à vent qui furent construits le long de la crête tout autour du plateau.
@@ -198,6 +175,15 @@ Celle-ci est pour le coup très facile d’accès. Elle n’est composée que d�
 En effet, bien que selon la mythologie elle représente un sanctuaire en l’honneur du géant Talos, elle est surtout connue pour le drame qui s’y est produit en 1824.
 Alors que l’armée turque gagnait du terrain durant la révolution, des centaines de villageois s’y réfugièrent pour se cacher.
 L’armée trouva leur cachette et mit le feu à la grotte où ils périrent tous enfumés. La salle est très bien éclairée et se visite selon un circuit tracé.
+			</>
+		)
+	}
+}
+
+class P6_2 extends Component {
+	render () {
+		return (
+			<>
 Pour le déjeuner nous sommes retournés sur Réthymnon et nous nous sommes rendus chez <CustomLink type="tripadvisor" link="https://www.tripadvisor.fr/Restaurant_Review-g189421-d6581263-Reviews-To_Parastratima-Réthymnon_Réthymnon_Prefecture_Crete.html" name="To Parastratima"/>, notre coup de cœur culinaire des vacances.
 Un tout petit restaurant situé dans la ruelle à côté de la fontaine proposant une cuisine locale et peu chère.
 Puis l’après-midi nous nous sommes baladés dans le port de la vieille ville.

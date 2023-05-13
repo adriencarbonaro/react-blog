@@ -1,11 +1,15 @@
-import React from 'react';
-import ComponentScrollTop from '../../ComponentScrollTop';
-import { Story } from "../../Story"
-import { TitleBloc } from "../../TitleBloc"
-import { Component }         from 'react';
-import { PhotoDuo, PhotoGallery, PhotoSingle, PhotoTSide } from '../../Photos';
-import CustomLink from '../../CustomLink';
-import SVGLocation from '../../SVGLocation';
+import React                  from 'react';
+import ComponentScrollTop     from '../../ComponentScrollTop';
+import { Story }              from "../../Story"
+import { Subtitle, Title }    from "../../Titles"
+import { Component }          from 'react';
+import {
+	PhotoGallery,
+	PhotoSingle,
+	PhotoTSide
+}                             from '../../Photos';
+import CustomLink             from '../../CustomLink';
+import SVGLocation            from '../../SVGLocation';
 import Consts                 from '../../../consts';
 
 /* CSS */
@@ -21,21 +25,15 @@ export default class Bourges extends ComponentScrollTop {
 			<div>
 				<h1 className={"banner-title " + class_name}>Bourges</h1>
 				<SVGLocation className={class_name}/>
-				<TitleBloc
-					title="Week-end dans le Berry"
-					subtitle="Terroir de Sancerre"
-					accent={class_name}
-				/>
+				<Title text="Week-end dans le Berry" />
+				<Subtitle text="Terroir de Sancerre" accent={class_name} />
 				<Story
 					text={<P1/>}
 				/>
-				<TitleBloc subtitle="Jeudi 13 février" accent={class_name} />
+				<Subtitle text="Jeudi 13 février" accent={class_name} />
 				<Story text={<P2/>} />
 				<PhotoSingle src={PHOTOS + "img-bourges-0.jpg"} />
-				<TitleBloc
-					subtitle="Vendredi 14 février"
-					accent={class_name}
-				/>
+				<Subtitle text="Vendredi 14 février" accent={class_name} />
 				<Story
 					text={<P3/>}
 				/>
@@ -44,10 +42,7 @@ export default class Bourges extends ComponentScrollTop {
 					src_col_1={PHOTOS + "img-bourges-2.jpg"}
 					src_col_2={PHOTOS + "img-bourges-3.jpg"}
 				/>
-				<TitleBloc
-					subtitle="Samedi 15 février"
-					accent={class_name}
-				/>
+				<Subtitle text="Samedi 15 février" accent={class_name} />
 				<Story
 					text={<P4/>}
 				/>
@@ -68,10 +63,7 @@ export default class Bourges extends ComponentScrollTop {
 					PHOTOS + "img-bourges-11.jpg",
 					PHOTOS + "img-bourges-13.jpg",
 				]]} />
-				<TitleBloc
-					subtitle="Dimanche 16 février"
-					accent={class_name}
-				/>
+				<Subtitle text="Dimanche 16 février" accent={class_name} />
 				<Story
 					text={<P5/>}
 				/>

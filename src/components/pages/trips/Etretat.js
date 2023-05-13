@@ -1,11 +1,10 @@
 import React                  from 'react';
 import ComponentScrollTop     from '../../ComponentScrollTop';
 import { Story }              from "../../Story"
-import { TitleBloc }          from "../../TitleBloc"
+import { Title, Subtitle }    from "../../Titles"
 import { Component }          from 'react';
 import {
 	PhotoGallery,
-	PhotoSingle,
 }                             from '../../Photos';
 import CustomLink             from '../../CustomLink';
 import SVGLocation            from '../../SVGLocation'
@@ -24,45 +23,25 @@ export default class Etretat extends ComponentScrollTop {
 			<div>
 				<h1 className={"banner-title " + class_name}>Etretat</h1>
 				<SVGLocation className={class_name}/>
-				<TitleBloc
-					title="Quelques jours entre Fecamp et Etretat"
-					subtitle=""
-					accent={class_name}
-				/>
-				<Story
-					text={<P1/>}
-				/>
-				<TitleBloc
-					subtitle="Jour 1 : Etretat"
-					accent={class_name}
-				/>
-				<Story
-					text={<P2/>}
-				/>
+				<Title text="Quelques jours entre Fecamp et Etretat" />
+				<Story text={<P1/>} />
+				<Subtitle subtitle="Jour 1 : Etretat" accent={class_name} />
+				<Story text={<P2/>} />
 				<PhotoGallery list={[[
 					PHOTOS + "img-etretat-3.jpg",
 					PHOTOS + "img-etretat-2.jpg",
 					PHOTOS + "img-etretat-4.jpg",
 				]]} />
-				<Story
-					text={<P3/>}
-				/>
-				<PhotoSingle
-					src={PHOTOS + "img-etretat-8.jpg"}
-				/>
-				<TitleBloc
-					subtitle="Jour 2 : Fecamp"
-					accent={class_name}
-				/>
-				<Story
-					text={<P4/>}
-				/>
-				<Story
-					text={<P5/>}
-				/>
-				<PhotoSingle
-					src={PHOTOS + "img-etretat-6.jpg"}
-				/>
+				<Story text={<P3/>} />
+				<PhotoGallery list={[[
+					PHOTOS + "img-etretat-8.jpg",
+				]]} />
+				<Subtitle subtitle="Jour 2 : Fecamp" accent={class_name} />
+				<Story text={<P4/>} />
+				<Story text={<P5/>} />
+				<PhotoGallery list={[[
+					PHOTOS + "img-etretat-6.jpg",
+				]]} />
 			</div>
 		)
 	}

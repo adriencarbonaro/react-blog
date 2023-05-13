@@ -1,11 +1,11 @@
-import React from 'react';
-import ComponentScrollTop from '../../ComponentScrollTop';
-import { Component }      from 'react';
-import CustomLink from '../../CustomLink';
-import { Story } from "../../Story"
-import { TitleBloc } from '../../TitleBloc';
-import SVGLocation from '../../SVGLocation';
-import { PhotoDuo, PhotoSingle, PhotoT } from '../../Photos';
+import React                  from 'react';
+import ComponentScrollTop     from '../../ComponentScrollTop';
+import { Component }          from 'react';
+import CustomLink             from '../../CustomLink';
+import { Story }              from "../../Story"
+import { Title, Subtitle }    from '../../Titles';
+import SVGLocation            from '../../SVGLocation';
+import { PhotoGallery }       from '../../Photos';
 import Consts                 from '../../../consts';
 
 /* CSS */
@@ -21,32 +21,30 @@ export default class Bourgogne extends ComponentScrollTop {
 			<>
 				<h1 className={"banner-title " + class_name}>Bourgogne</h1>
 				<SVGLocation className={class_name}/>
-				<TitleBloc
-				  title="Une nuit sous les étoiles"
-				  subtitle="Escapade insolite"
-				  accent={class_name}
-				/>
+				<Title text="Une nuit sous les étoiles" />
+				<Subtitle text="Escapade insolite" accent={class_name} />
 				<Story
 					text={<P1/>}
 				/>
-				<PhotoT
-				  src_large={PHOTOS + "img-bourgogne-5.jpg"}
-				  src_row_1={PHOTOS + "img-bourgogne-2.jpg"}
-				  src_row_2={PHOTOS + "img-bourgogne-1.jpg"}
-				/>
+				<PhotoGallery list={[[
+				  PHOTOS + "img-bourgogne-5.jpg",
+				], [
+				  PHOTOS + "img-bourgogne-2.jpg",
+				  PHOTOS + "img-bourgogne-1.jpg",
+				]]} />
 				<Story
 					text={<P2/>}
 				/>
-				<PhotoDuo
-				  src_1={PHOTOS + "img-bourgogne-4.jpg"}
-				  src_2={PHOTOS + "img-bourgogne-3.jpg"}
-				/>
+				<PhotoGallery list={[[
+				  PHOTOS + "img-bourgogne-4.jpg",
+				  PHOTOS + "img-bourgogne-3.jpg",
+				]]} />
 				<Story
 					text={<P3/>}
 				/>
-				<PhotoSingle
-				  src={PHOTOS + "img-bourgogne-6.jpg"}
-				/>
+				<PhotoGallery list={[[
+				  PHOTOS + "img-bourgogne-6.jpg",
+				]]} />
 				<Story
 					text={<P4/>}
 				/>
