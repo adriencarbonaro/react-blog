@@ -7,6 +7,7 @@ import {
 	PhotoSingle,
 }                             from '../../Photos';
 import { Story }              from "../../Story"
+import { BannerTitle }        from '../../BannerTitle';
 import { Title, Subtitle }    from "../../Titles"
 import SVGLocation            from '../../SVGLocation';
 import Consts                 from '../../../consts';
@@ -22,7 +23,7 @@ export default class Trouville extends ComponentScrollTop {
 		const class_name = "trouville";
 		return (
 			<div>
-				<h1 className={"banner-title " + class_name}>Trouville</h1>
+				<BannerTitle title="Trouville" class={class_name} />
 				<SVGLocation className={class_name}/>
 				<Title text="Week-end Normand" />
 				<Subtitle text="Un amour à la plage" accent={class_name} />

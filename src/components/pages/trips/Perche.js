@@ -2,6 +2,7 @@ import React, { Component }   from 'react';
 import ComponentScrollTop     from '../../ComponentScrollTop';
 import CustomLink             from '../../CustomLink';
 import { Story }              from '../../Story';
+import { BannerTitle }        from '../../BannerTitle';
 import { Title, Subtitle }    from '../../Titles';
 import {
 	PhotoGallery,
@@ -19,7 +20,7 @@ export default class Perche extends ComponentScrollTop {
 		const class_name = "perche";
 		return (
 		<div>
-			<h1 className={"banner-title " + class_name}>Perche</h1>;
+			<BannerTitle title="Perche" class={class_name} />
 			<SVGLocation className={class_name}/>
 			<Title text="Quelques jours dans le Perche au printemps" />
 			<Subtitle

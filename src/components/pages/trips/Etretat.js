@@ -1,6 +1,7 @@
 import React                  from 'react';
 import ComponentScrollTop     from '../../ComponentScrollTop';
 import { Story }              from "../../Story"
+import { BannerTitle }        from '../../BannerTitle';
 import { Title, Subtitle }    from "../../Titles"
 import { Component }          from 'react';
 import {
@@ -21,7 +22,7 @@ export default class Etretat extends ComponentScrollTop {
 		const class_name = "etretat";
 		return (
 			<div>
-				<h1 className={"banner-title " + class_name}>Etretat</h1>
+				<BannerTitle title="Etretat" class={class_name} />
 				<SVGLocation className={class_name}/>
 				<Title text="Quelques jours entre Fecamp et Etretat" />
 				<Story text={<P1/>} />

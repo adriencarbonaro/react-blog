@@ -2,6 +2,7 @@ import React, { Component }   from 'react';
 import ComponentScrollTop     from '../../ComponentScrollTop';
 import CustomLink             from '../../CustomLink';
 import { Story }              from '../../Story';
+import { BannerTitle }        from '../../BannerTitle';
 import { Title, Subtitle }    from '../../Titles';
 import { PhotoGallery }       from '../../Photos';
 import SVGLocation            from '../../SVGLocation';
@@ -18,7 +19,7 @@ export default class Gacilly extends ComponentScrollTop {
 		const class_name = "gacilly";
 		return (
 		<div>
-			<h1 className={"banner-title " + class_name}>La Gacilly & Le Mans</h1>
+			<BannerTitle title="La Gacilly & Le Mans" class={class_name} />
 			<SVGLocation className={class_name}/>
 			<Title title="Week-end détente : La Gacilly et Le Mans" />
 			<Story text={<P1/>} />

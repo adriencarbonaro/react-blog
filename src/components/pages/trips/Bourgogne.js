@@ -3,6 +3,7 @@ import ComponentScrollTop     from '../../ComponentScrollTop';
 import { Component }          from 'react';
 import CustomLink             from '../../CustomLink';
 import { Story }              from "../../Story"
+import { BannerTitle }        from '../../BannerTitle';
 import { Title, Subtitle }    from '../../Titles';
 import SVGLocation            from '../../SVGLocation';
 import { PhotoGallery }       from '../../Photos';
@@ -19,7 +20,7 @@ export default class Bourgogne extends ComponentScrollTop {
 		const class_name = "bourgogne";
 		return (
 			<>
-				<h1 className={"banner-title " + class_name}>Bourgogne</h1>
+				<BannerTitle title="Bourgogne" class={class_name} />
 				<SVGLocation className={class_name}/>
 				<Title text="Une nuit sous les étoiles" />
 				<Subtitle text="Escapade insolite" accent={class_name} />

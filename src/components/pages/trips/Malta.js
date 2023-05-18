@@ -5,7 +5,7 @@ import { Subtitle, Title }    from "../../Titles"
 import { Component }          from 'react';
 import { PhotoGallery }       from '../../Photos';
 import {
-	AirBnbLink,
+	AirbnbLink,
 	TripAdvisorLink
 }                             from '../../CustomLink';
 import SVGLocation            from '../../SVGLocation'
@@ -14,6 +14,7 @@ import Consts                 from '../../../consts';
 /* CSS */
 import '../../../css/App.css';
 import '../../../css/trips/Trips.css'
+import { BannerTitle } from '../../BannerTitle';
 
 const PHOTOS = Consts.AWS_URL + "photos/trips/malta/";
 
@@ -22,7 +23,7 @@ export default class Malta extends ComponentScrollTop {
 		const class_name = "malta";
 		return (
 			<div>
-				<h1 className={"banner-title " + class_name}>Malte</h1>
+				<BannerTitle title="Malte" class={class_name} />
 				<SVGLocation className={class_name}/>
 				<Title text="Un séjour à Malte" />
 				<Story text={<P1/>} />
@@ -211,7 +212,7 @@ class P5 extends Component {
 	render () {
 		return (
 			<>
-Il n'y a pas de lieu “idéal” pour loger car tout est très accessible. Nous avons logé dans cet <AirBnbLink name="Airbnb" link="https://www.airbnb.fr/trips/v1/bdb952d8-7644-4734-82d4-9cb2c9382914/ro/RESERVATION2_CHECKIN/HMKD3D3E2R"/> que nous recommandons vivement. Il est situé dans un quartier tranquille et l'hôte qui habite à côté est adorable. Les deux nuits que nous avons passées sur l'île étaient suffisantes pour visiter les lieux incontournables des environs. La fréquentation étant plus élevée en été, il ne faut pas hésiter à se lever tôt pour éviter la foule, mais également la chaleur en pleine journée.
+Il n'y a pas de lieu “idéal” pour loger car tout est très accessible. Nous avons logé dans cet <AirbnbLink name="Airbnb" link="https://www.airbnb.fr/trips/v1/bdb952d8-7644-4734-82d4-9cb2c9382914/ro/RESERVATION2_CHECKIN/HMKD3D3E2R"/> que nous recommandons vivement. Il est situé dans un quartier tranquille et l'hôte qui habite à côté est adorable. Les deux nuits que nous avons passées sur l'île étaient suffisantes pour visiter les lieux incontournables des environs. La fréquentation étant plus élevée en été, il ne faut pas hésiter à se lever tôt pour éviter la foule, mais également la chaleur en pleine journée.
 			</>
 		)
 	}

@@ -2,6 +2,7 @@ import React                  from 'react';
 import ComponentScrollTop     from '../../ComponentScrollTop';
 import { Component }          from 'react';
 import { Story }              from "../../Story"
+import { BannerTitle }        from '../../BannerTitle';
 import { Title, Subtitle }    from "../../Titles"
 import {
 	PhotoSingle,
@@ -23,7 +24,7 @@ export default class Crete extends ComponentScrollTop {
 		const class_name = "crete";
 		return (
 			<div>
-				<h1 className={"banner-title " + class_name}>Crète</h1>
+				<BannerTitle title="Crète" class={class_name} />
 				<SVGLocation className={class_name}/>
 				<Title text="Une semaine en Crète" />
 				<Subtitle text="Le berceaux des Dieux" accent={class_name} />

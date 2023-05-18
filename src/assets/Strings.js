@@ -7,7 +7,7 @@ export const Strings = {
 	banner_btn:                        "LIRE L'ARTICLE",
 
 	/* Cards */
-	cards_header_title:                "Nos autres voyages",
+	cards_header_title:                "Nos voyages",
 
 	/* About Us */
 	about_us_title:                    "A propos de nous",

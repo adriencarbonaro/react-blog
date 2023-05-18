@@ -3,6 +3,7 @@ import ComponentScrollTop     from '../../ComponentScrollTop';
 import { Story }              from "../../Story"
 import { Subtitle, Title }    from "../../Titles"
 import { Component }          from 'react';
+import { BannerTitle }        from "../../BannerTitle"
 import {
 	PhotoGallery,
 	PhotoSingle,
@@ -14,7 +15,6 @@ import SVGLocation            from '../../SVGLocation'
 import Consts                 from '../../../consts';
 
 /* CSS */
-import '../../../css/App.css';
 import '../../../css/trips/Trips.css'
 import '../../../css/PhoneVideo.css'
 
@@ -24,8 +24,8 @@ export default class Amsterdam extends ComponentScrollTop {
 	render () {
 		const class_name = "amsterdam";
 		return (
-			<div>
-				<h1 className={"banner-title " + class_name}>Amsterdam</h1>
+			<>
+				<BannerTitle title="Amsterdam" class={class_name} />
 				<SVGLocation className={class_name}/>
 				<Title text="Trois jours à Amsterdam" />
 				<PhoneVideo src="https://nid-de-poule.s3.eu-west-3.amazonaws.com/videos/phone/amsterdam.mp4"/>
@@ -101,7 +101,7 @@ export default class Amsterdam extends ComponentScrollTop {
 				<Story
 					text={<P14/>}
 				/>
-			</div>
+			</>
 		)
 	}
 }
