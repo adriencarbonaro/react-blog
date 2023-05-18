@@ -1,5 +1,7 @@
 import React                 from 'react';
 
+import '../css/CustomLink.css';
+
 function CustomLink (props) {
 	const icon_classes = {
 		"tripadvisor"  : "fa  fa-search",
@@ -16,7 +18,7 @@ function CustomLink (props) {
 
 	return (
 		<a
-		  class={props.type}
+		  className={"custom-link " + props.type}
 		  target="_blank"
 		  rel="noreferrer"
 		  href={props.link}
@@ -31,8 +33,12 @@ export function TripAdvisorLink (props) {
 	return CustomLink({ ...props, type: "tripadvisor" });
 }
 
-export function AirBnbLink (props) {
+export function AirbnbLink (props) {
 	return CustomLink({ ...props, type: "airbnb" });
+}
+
+export function MapsLink (props) {
+	return CustomLink({ ...props, type: "maps" });
 }
 
 export default CustomLink;

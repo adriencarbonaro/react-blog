@@ -70,6 +70,20 @@ function Cards() {
 					<SVGLocation className={classWithScroll(scroll_state_france, "france")}/>
 					<ul className='cards__items'>
 						<CardItem
+							src={photos + "img-auvergne.jpg"}
+							text={Trips.auvergne}
+							label='Vacances'
+							path={Paths.auvergne}
+						/>
+					</ul>
+					<ul className='cards__items'>
+						<CardItem
+							src={photos + "img-corse.jpg"}
+							text={Trips.corse}
+							label='Vacances'
+							path={Paths.corse}
+						/>
+						<CardItem
 							src={photos + "img-trouville.jpg"}
 							text={Trips.trouville}
 							label='Weekend'
@@ -81,14 +95,14 @@ function Cards() {
 							label='Insolite'
 							path={Paths.bourgogne}
 						/>
+					</ul>
+					<ul className='cards__items'>
 						<CardItem
 							src={photos + "img-bretagne.jpg"}
 							text={Trips.bretagne}
 							label='Weekend'
 							path={Paths.bretagne}
 						/>
-					</ul>
-					<ul className='cards__items'>
 						<CardItem
 							src={photos + "img-perche.jpg"}
 							text={Trips.perche}
@@ -101,14 +115,14 @@ function Cards() {
 							label='Weekend'
 							path={Paths.bourges}
 						/>
+					</ul>
+					<ul className='cards__items'>
 						<CardItem
 							src={photos + "img-etretat.jpg"}
 							text={Trips.etretat}
 							label='Weekend'
 							path={Paths.etretat}
 						/>
-					</ul>
-					<ul className='cards__items'>
 						<CardItem
 							src={photos + "img-gacilly.jpg"}
 							text={Trips.gacilly + " & " + Trips.mans}
@@ -120,12 +134,6 @@ function Cards() {
 							text={Trips.honfleur}
 							label='Weekend'
 							path={Paths.honfleur}
-						/>
-						<CardItem
-							src={photos + "img-corse.jpg"}
-							text={Trips.corse}
-							label='Vacances'
-							path={Paths.corse}
 						/>
 					</ul>
 				</div>

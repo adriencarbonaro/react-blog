@@ -1,4 +1,5 @@
 export const Paths = {
+	auvergne                  : "/auvergne",
 	germany                   : "/germany",
 	netherlands               : "/netherlands",
 	greece                    : "/greece",

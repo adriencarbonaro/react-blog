@@ -54,6 +54,7 @@ function Navbar() {
 								France <i class="fas fa-chevron-down"></i>
 							</div>
 							<ul className={classWithScroll("nav-submenu")}>
+								<li className="submenu-item"><Link to="/auvergne" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Auvergne</Link></li>
 								<li className="submenu-item"><Link to="/bourgogne" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Bourgogne</Link></li>
 								<li className="submenu-item"><Link to="/bourges" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Bourges</Link></li>
 								<li className="submenu-item"><Link to="/bretagne" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Bretagne</Link></li>

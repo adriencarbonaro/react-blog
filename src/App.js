@@ -9,6 +9,7 @@ import Home                  from './components/pages/Home'
 
 /* Trips */
 import Amsterdam             from './components/pages/trips/Amsterdam'
+import Auvergne              from './components/pages/trips/Auvergne'
 import Berlin                from './components/pages/trips/Berlin'
 import Bourges               from './components/pages/trips/Bourges'
 import Bourgogne             from './components/pages/trips/Bourgogne'
@@ -31,6 +32,7 @@ class App extends Component {
 		<>
 			<Navbar />
 			<Switch>
+				<Route path={Paths.auvergne}    component={Auvergne} />
 				<Route path={Paths.netherlands} component={Amsterdam} />
 				<Route path={Paths.germany}     component={Berlin} />
 				<Route path={Paths.bourges}     component={Bourges} />

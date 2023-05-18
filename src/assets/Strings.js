@@ -17,6 +17,7 @@ export const Strings = {
 }
 
 export const Trips = {
+	auvergne:                          "Auvergne",
 	amsterdam:                         "Amsterdam",
 	crete:                             "Crète",
 	corse:                             "Corse",
