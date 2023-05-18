@@ -125,7 +125,7 @@ function Phone(id) {
 }
 
 export function PhoneVideo(props) {
-	const [ id ] = useState(uuidv4());
+	const [ id, setId ] = useState(uuidv4());
 
 	useEffect(() => {
 		if (props.color_spot) applyFill('.spot', props.color_spot);
