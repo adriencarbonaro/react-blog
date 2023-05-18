@@ -1,0 +1,19 @@
+.banner-hero-desc {
+    font-family               : 'Yeseva One', serif;
+    font-size                 : 35px;
+}
+
+.banner-hero-btns {
+    margin                    : 20px 0;
+}
+
+.banner-hero-video {
+    overflow                  : hidden;
+}
+
+@media only screen and (max-width: 960px) {
+    .banner-hero-desc {
+        font-size             : 20px;
+    }
+}
+
