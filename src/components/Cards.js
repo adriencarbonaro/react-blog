@@ -1,143 +1,80 @@
 import React from 'react';
-import { useState } from 'react';
-import CardItem from './CardItem';
-import SVGLocation from './SVGLocation';
-
-/* Assets */
-import { Paths }              from '../assets/Paths';
-import {
-	Countries,
-	Strings,
-	Trips
-}                             from '../assets/Strings';
-import Consts                 from '../consts';
+import { Link }               from 'react-router-dom';
 
 /* CSS */
 import '../css/Cards.css';
 
+export const CardGallery = ({ list }) => {
+	const createLi = (list) => {
+		const elem = [];
+		for (let { name, title } of list) {
+			elem.push(
+				<Link to={name} className="trip-card-gallery-item">
+					<div className="trip-card-elem trip-card-title">{title}</div>
+					<div className="trip-card-elem trip-card-overlay"></div>
+					<img className="trip-card-elem trip-card-img" alt="Travel" src={`https://nid-de-poule.s3.eu-west-3.amazonaws.com/photos/cards/img-${name}.jpg`}/>
+				</Link>
+			)
+		}
+		return (<>{elem}</>)
+	}
+
+	const createRows = (rows) => {
+		const uls = [];
+
+		const newUl = (list) => {
+			return (
+				<>
+				<ul className="trip-card-gallery-row">
+					{createLi(list)}
+				</ul>
+				</>
+			)
+		}
+		for (const row of rows) {
+			uls.push(newUl(row));
+		}
+		return (<>{uls}</>)
+	}
+
+	const createGallery = (rows) => {
+		return (
+			<>
+			<div className="trip-card-gallery">
+				{createRows(rows)}
+			</div>
+			</>
+		)
+	}
+
+	return (<>{createGallery(list)}</>)
+}
+
 function Cards() {
-	const [scroll_state_globe,  setScrollStateGlobe]   = useState(false);
-	const [scroll_state_france, setScrollStateFrance]  = useState(false);
-
-	const photos = Consts.AWS_URL + "photos/cards/";
-
-	const handleScroll = () => {
-		let scrollY = window.scrollY;
-		setScrollStateGlobe(scrollY > (window.innerHeight * 0.95))
-		setScrollStateFrance(scrollY > (window.innerHeight * 0.95) + 300)
-	}
-
-	const classWithScroll = (scroll_state, classname) => {
-		return scroll_state ? classname + " scrolled" : classname
-	}
-
-	window.addEventListener('scroll', handleScroll)
-
 	return (
 		<div className='cards'>
-			<h1>{Strings.cards_header_title}</h1>
-			<div className='cards__container'>
-				<div className='cards__wrapper'>
-					<SVGLocation className={classWithScroll(scroll_state_globe, "globe")}/>
-					<ul className='cards__items'>
-						<CardItem
-							src={photos + "img-malta.jpg"}
-							text={Countries.malta}
-							label='Holiday'
-							path={Paths.malta}
-						/>
-						<CardItem
-							src={photos + "img-amsterdam.jpg"}
-							text={Countries.netherlands}
-							label='Holiday'
-							path={Paths.netherlands}
-						/>
-					</ul>
-					<ul className='cards__items'>
-						<CardItem
-							src={photos + "img-crete.jpg"}
-							text={Countries.greece}
-							label='Holiday'
-							path={Paths.greece}
-						/>
-						<CardItem
-							src={photos + "img-berlin.jpg"}
-							text={Countries.germany}
-							label='Holiday'
-							path={Paths.germany}
-						/>
-					</ul>
-					<SVGLocation className={classWithScroll(scroll_state_france, "france")}/>
-					<ul className='cards__items'>
-						<CardItem
-							src={photos + "img-auvergne.jpg"}
-							text={Trips.auvergne}
-							label='Vacances'
-							path={Paths.auvergne}
-						/>
-					</ul>
-					<ul className='cards__items'>
-						<CardItem
-							src={photos + "img-corse.jpg"}
-							text={Trips.corse}
-							label='Vacances'
-							path={Paths.corse}
-						/>
-						<CardItem
-							src={photos + "img-trouville.jpg"}
-							text={Trips.trouville}
-							label='Weekend'
-							path={Paths.trouville}
-						/>
-						<CardItem
-							src={photos + "img-bourgogne.jpg"}
-							text={Trips.bourgogne}
-							label='Insolite'
-							path={Paths.bourgogne}
-						/>
-					</ul>
-					<ul className='cards__items'>
-						<CardItem
-							src={photos + "img-bretagne.jpg"}
-							text={Trips.bretagne}
-							label='Weekend'
-							path={Paths.bretagne}
-						/>
-						<CardItem
-							src={photos + "img-perche.jpg"}
-							text={Trips.perche}
-							label='Weekend'
-							path={Paths.perche}
-						/>
-						<CardItem
-							src={photos + "img-bourges.jpg"}
-							text={Trips.bourges}
-							label='Weekend'
-							path={Paths.bourges}
-						/>
-					</ul>
-					<ul className='cards__items'>
-						<CardItem
-							src={photos + "img-etretat.jpg"}
-							text={Trips.etretat}
-							label='Weekend'
-							path={Paths.etretat}
-						/>
-						<CardItem
-							src={photos + "img-gacilly.jpg"}
-							text={Trips.gacilly + " & " + Trips.mans}
-							label='Weekend'
-							path={Paths.gacilly}
-						/>
-						<CardItem
-							src={photos + "img-honfleur.jpg"}
-							text={Trips.honfleur}
-							label='Weekend'
-							path={Paths.honfleur}
-						/>
-					</ul>
-				</div>
-			</div>
+			<CardGallery list={[[
+			  { name: "auvergne", title: "Auvergne" },
+			  { name: "bourgogne", title: "Bourgogne" },
+			], [
+			  { name: "bourges", title: "Bourges" },
+			  { name: "bretagne", title: "Bretagne" },
+			], [
+			  { name: "corse", title: "Corse" },
+			  { name: "etretat", title: "Etretat" },
+			], [
+			  { name: "gacilly", title: "Gacilly" },
+			  { name: "honfleur", title: "Honfleur" },
+			], [
+			  { name: "perche", title: "Perche" },
+			  { name: "trouville", title: "Trouville" },
+			], [
+			  { name: "amsterdam", title: "Amsterdam" },
+			  { name: "berlin", title: "Berlin" },
+			], [
+			  { name: "crete", title: "Greece" },
+			  { name: "malta", title: "Malte" },
+			]]}/>
 		</div>
 	);
 }

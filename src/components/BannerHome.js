@@ -13,7 +13,7 @@ import '../css/BannerHome.css';
 export default function BannerHome(props) {
     return (
         <Banner
-          colorKey="home"
+          tripKey="home"
           title={props.title}
           back={
             <>

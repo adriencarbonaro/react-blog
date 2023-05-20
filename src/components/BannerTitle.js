@@ -8,7 +8,7 @@ import '../css/BannerTitle.css';
 export function BannerTitle(props) {
     return (
         <Banner
-          colorKey={props.class}
+          tripKey={props.class}
           title={props.title}
           back={
             <>

@@ -1,32 +1,73 @@
-export const DefaultColors = {
-    title                     : "#dbc7ae",
-    overlay                   : "#00000033",
+export const DefaultDocument = {
+    color                     : "#ffffff",
+    overlay                   : "#00000050",
 }
 
-export const Colors = {
+export const TripDocument = {
     /* Home page */
     home: {
+        color                 : "#dbc7ae",
         overlay               : "#5a422a33",
     },
     /* Trips */
     amsterdam: {
-        title                 : "#f9ceff",
-        overlay               : "#52284160",
+        color                 : "#f9ceff",
+    },
+    auvergne: {
+        color                 : "#dbc7ae",
+    },
+    berlin: {
+        color                 : "#e1b885",
+    },
+    bretagne: {
+        color                 : "#ccdbae",
+    },
+    bourges: {
+        color                 : "#dbb9ae",
     },
     bourgogne: {
-        title                 : "#86d2ff",
-        overlay               : "#4c586040",
+        color                 : "#abe0ff",
+    },
+    corse: {
+        color                 : "#aed2db",
+    },
+    crete: {
+        color                 : "#a0e7e1",
+    },
+    etretat: {
+        color                 : "#d4ffe8",
+    },
+    gacilly: {
+        color                 : "#d8dbae",
+    },
+    honfleur: {
+        color                 : "#a9d9e5",
     },
     malta: {
-        title                 : "#ffbc9d",
-        overlay               : "#0a153e50",
+        color                 : "#ffbc9d",
     },
     perche: {
-        title                 : "#a8baff",
-        overlay               : "#27325a70",
+        color                 : "#bdcbff",
     },
     trouville: {
-        title                 : "#ffad9a",
-        overlay               : "#2a181360",
+        color                 : "#ffad9a",
     }
 }
+
+function getElem (elem, class_name) {
+    const trip = TripDocument[class_name];
+    if (trip) {
+        const res = trip[elem];
+        if (res) return res;
+    }
+    return DefaultDocument[elem];
+}
+
+export function getTitleColor (class_name) {
+    return getElem("color", class_name);
+}
+
+export function getOverlayColor (class_name) {
+    return getElem("overlay", class_name);
+}
+
