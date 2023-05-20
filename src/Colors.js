@@ -14,8 +14,8 @@ export const Colors = {
         overlay               : "#52284160",
     },
     bourgogne: {
-        title                 : "#8fcbb6",
-        overlay               : "#34786140",
+        title                 : "#86d2ff",
+        overlay               : "#4c586040",
     },
     malta: {
         title                 : "#ffbc9d",
@@ -27,6 +27,6 @@ export const Colors = {
     },
     trouville: {
         title                 : "#ffad9a",
-        overlay               : "#6c413730",
+        overlay               : "#2a181360",
     }
 }
