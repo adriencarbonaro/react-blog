@@ -36,7 +36,7 @@ export const PhotoGallery = (props) => {
 		const elem = [];
 		for (let img of list) {
 			elem.push(
-				<li className="gallery-item">
+				<li key={img} className="gallery-item">
 					<img className="photo photo-gallery-img" src={img} alt='alt' />
 				</li>
 			)

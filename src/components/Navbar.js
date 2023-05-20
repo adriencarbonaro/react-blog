@@ -1,7 +1,6 @@
 import React                 from 'react';
 import { useState }          from 'react';
 import { Link }              from 'react-router-dom';
-import { Button }            from './Button';
 import SVGLogo               from './SVGLogo';
 
 /* Assets */
@@ -51,7 +50,7 @@ function Navbar() {
 					<ul className={click_menu ? "nav-menu active" : "nav-menu"}>
 						<li className={click_submenu_1 ? "nav-item active" : "nav-item"} onClick={(e) => handleClickSubMenu("click_submenu_1")}>
 							<div className={classWithScroll("nav-links")}>
-								France <i class="fas fa-chevron-down"></i>
+								France <i className="fas fa-chevron-down"></i>
 							</div>
 							<ul className={classWithScroll("nav-submenu")}>
 								<li className="submenu-item"><Link to="/auvergne" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Auvergne</Link></li>
@@ -68,7 +67,7 @@ function Navbar() {
 						</li>
 						<li className={click_submenu_2 ? "nav-item active" : "nav-item"} onClick={(e) => handleClickSubMenu("click_submenu_2")}>
 							<div to="/products" className={classWithScroll("nav-links")}>
-								Monde <i class="fas fa-chevron-down"></i>
+								Monde <i className="fas fa-chevron-down"></i>
 							</div>
 							<ul className={classWithScroll("nav-submenu")}>
 								<li className="submenu-item"><Link to="/netherlands" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Amsterdam</Link></li>
@@ -76,11 +75,6 @@ function Navbar() {
 								<li className="submenu-item"><Link to="/greece" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Crète</Link></li>
 								<li className="submenu-item"><Link to="/malta" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Malte</Link></li>
 							</ul>
-						</li>
-						<li className="nav-item">
-							<Link to="/sign-up" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>
-								<Button buttonBaseStyle={classWithScroll("btn-navbar")} buttonStyle='btn-outline'>SIGN UP</Button>
-							</Link>
 						</li>
 					</ul>
 				</div>

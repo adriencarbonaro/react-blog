@@ -10,13 +10,13 @@ class Footer extends Component {
 			<>
 			<div className='footer-margin'></div>
 			<div className='footer-container'>
-				<section class='social-media'>
-					<div class='social-media-wrap'>
-						<small class='website-rights'>Fait avec <i className="fa fa-heart"></i> par Camille & Adrien</small>
-						<a class='social-icon-link' rel="noopener noreferrer" target='_blank' href='https://www.instagram.com/le_petit_bonnet_rose/'>
-							<i class='fab fa-instagram' />
+				<section className='social-media'>
+					<div className='social-media-wrap'>
+						<small className='website-rights'>Fait avec <i className="fa fa-heart"></i> par Camille & Adrien</small>
+						<a className='social-icon-link' rel="noopener noreferrer" target='_blank' href='https://www.instagram.com/le_petit_bonnet_rose/'>
+							<i className='fab fa-instagram' />
 						</a>
-						<small class='website-version'><Version /></small>
+						<small className='website-version'><Version /></small>
 					</div>
 				</section>
 			</div>

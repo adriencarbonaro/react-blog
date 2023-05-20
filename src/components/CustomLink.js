@@ -23,7 +23,7 @@ function CustomLink (props) {
 		  rel="noreferrer"
 		  href={props.link}
 		>
-			<i class={icon_classes[props.type]}/>
+			<i className={icon_classes[props.type]}/>
 			{' ' + props.name}
 		</a>
 	);
