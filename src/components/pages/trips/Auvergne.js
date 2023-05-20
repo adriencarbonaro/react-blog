@@ -92,6 +92,14 @@ export default class Auvergne extends ComponentScrollTop {
 					PHOTOS + "auvergne_063.jpg",
 					PHOTOS + "auvergne_070.jpg",
 				]]}/>
+				<Subtitle text="Les Roches Tuilière et Sanadoire" accent={class_name} />
+				<Story text={<P9/>} />
+				<PhotoGallery list={[[
+					PHOTOS + "auvergne_047.jpg",
+				], [
+					PHOTOS + "auvergne_048.jpg",
+					PHOTOS + "auvergne_049.jpg",
+				]]}/>
 			</div>
 		)
 	}
@@ -172,6 +180,16 @@ class P8 extends Component {
 		return (
 			<>
 Pour finir notre week-end nous nous sommes rendus à Mont-Dore. De là part une <MapsLink name="promenade" link="https://www.visorando.com/randonnee-acces-direct-a-la-grande-cascade/"/> dans les hauteurs de la ville qui se poursuit dans la forêt. La montée peut être rude mais le résultat en vaut la peine : la Grande Cascade. Il s'agit de la plus grande d'Auvergne et elle offre également un beau point de vue sur la vallée.
+			</>
+		)
+	}
+}
+
+class P9 extends Component {
+	render () {
+		return (
+			<>
+En venant de Clermont-Ferrand, la route qui mène à la ville de Mont-Dore passe par les Roches Tuilière et Sanadoire. Il s'agit de deux volcans se faisant face dans la vallée de Fontsalade et qui offrent un magnifique spectacle. Il suffit de s'arrêter sur le parking afin de les admirer grâce à un point de vue aménagé. De très belles balades partent également de ce point. Un peu plus bas se trouve le lac du Guéry qui vaut également le détour.
 			</>
 		)
 	}
