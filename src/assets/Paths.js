@@ -1,8 +1,8 @@
 export const Paths = {
 	auvergne                  : "/auvergne",
-	germany                   : "/germany",
-	netherlands               : "/netherlands",
-	greece                    : "/greece",
+	berlin                    : "/berlin",
+	amsterdam                 : "/amsterdam",
+	crete                     : "/crete",
 	bourges                   : "/bourges",
 	bourgogne                 : "/bourgogne",
 	bretagne                  : "/bretagne",

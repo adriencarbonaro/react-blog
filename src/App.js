@@ -33,12 +33,12 @@ class App extends Component {
 			<Navbar />
 			<Switch>
 				<Route path={Paths.auvergne}    component={Auvergne} />
-				<Route path={Paths.netherlands} component={Amsterdam} />
-				<Route path={Paths.germany}     component={Berlin} />
+				<Route path={Paths.amsterdam}   component={Amsterdam} />
+				<Route path={Paths.berlin}      component={Berlin} />
 				<Route path={Paths.bourges}     component={Bourges} />
 				<Route path={Paths.bourgogne}   component={Bourgogne} />
 				<Route path={Paths.bretagne}    component={Bretagne} />
-				<Route path={Paths.greece}      component={Crete} />
+				<Route path={Paths.crete}       component={Crete} />
 				<Route path={Paths.corse}       component={Corse} />
 				<Route path={Paths.etretat}     component={Etretat} />
 				<Route path={Paths.gacilly}     component={Gacilly} />

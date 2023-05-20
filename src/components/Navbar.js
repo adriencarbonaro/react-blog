@@ -2,6 +2,7 @@ import React                 from 'react';
 import { useState }          from 'react';
 import { Link }              from 'react-router-dom';
 import SVGLogo               from './SVGLogo';
+import { Paths }             from '../assets/Paths';
 
 /* Assets */
 import '../css/logo.css'
@@ -53,16 +54,16 @@ function Navbar() {
 								France <i className="fas fa-chevron-down"></i>
 							</div>
 							<ul className={classWithScroll("nav-submenu")}>
-								<li className="submenu-item"><Link to="/auvergne" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Auvergne</Link></li>
-								<li className="submenu-item"><Link to="/bourgogne" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Bourgogne</Link></li>
-								<li className="submenu-item"><Link to="/bourges" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Bourges</Link></li>
-								<li className="submenu-item"><Link to="/bretagne" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Bretagne</Link></li>
-								<li className="submenu-item"><Link to="/corse" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Corse</Link></li>
-								<li className="submenu-item"><Link to="/etretat" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Etretat</Link></li>
-								<li className="submenu-item"><Link to="/gacilly" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Gacilly</Link></li>
-								<li className="submenu-item"><Link to="/honfleur" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Honfleur</Link></li>
-								<li className="submenu-item"><Link to="/perche" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Perche</Link></li>
-								<li className="submenu-item"><Link to="/trouville" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Trouville</Link></li>
+								<li className="submenu-item"><Link to={Paths.auvergne} className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Auvergne</Link></li>
+								<li className="submenu-item"><Link to={Paths.bourgogne} className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Bourgogne</Link></li>
+								<li className="submenu-item"><Link to={Paths.bourges} className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Bourges</Link></li>
+								<li className="submenu-item"><Link to={Paths.bretagne} className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Bretagne</Link></li>
+								<li className="submenu-item"><Link to={Paths.corse} className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Corse</Link></li>
+								<li className="submenu-item"><Link to={Paths.etretat} className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Etretat</Link></li>
+								<li className="submenu-item"><Link to={Paths.gacilly} className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Gacilly</Link></li>
+								<li className="submenu-item"><Link to={Paths.honfleur} className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Honfleur</Link></li>
+								<li className="submenu-item"><Link to={Paths.perche} className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Perche</Link></li>
+								<li className="submenu-item"><Link to={Paths.trouville} className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Trouville</Link></li>
 							</ul>
 						</li>
 						<li className={click_submenu_2 ? "nav-item active" : "nav-item"} onClick={(e) => handleClickSubMenu("click_submenu_2")}>
@@ -70,10 +71,10 @@ function Navbar() {
 								Monde <i className="fas fa-chevron-down"></i>
 							</div>
 							<ul className={classWithScroll("nav-submenu")}>
-								<li className="submenu-item"><Link to="/netherlands" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Amsterdam</Link></li>
-								<li className="submenu-item"><Link to="/germany" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Berlin</Link></li>
-								<li className="submenu-item"><Link to="/greece" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Crète</Link></li>
-								<li className="submenu-item"><Link to="/malta" className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Malte</Link></li>
+								<li className="submenu-item"><Link to={Paths.amsterdam} className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Amsterdam</Link></li>
+								<li className="submenu-item"><Link to={Paths.berlin} className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Berlin</Link></li>
+								<li className="submenu-item"><Link to={Paths.crete} className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Crète</Link></li>
+								<li className="submenu-item"><Link to={Paths.malta} className={classWithScroll("nav-links")} onClick={closeMobileMenu}>Malte</Link></li>
 							</ul>
 						</li>
 					</ul>

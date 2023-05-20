@@ -15,28 +15,3 @@ export const Strings = {
 	/* Promo */
 	promo_title:                       "Codes Promo",
 }
-
-export const Trips = {
-	auvergne:                          "Auvergne",
-	amsterdam:                         "Amsterdam",
-	crete:                             "Crète",
-	corse:                             "Corse",
-	berlin:                            "Berlin",
-	bourgogne:                         "Bourgogne",
-	bourges:                           "Bourges",
-	bretagne:                          "Bretagne",
-	etretat:                           "Etretat",
-	gacilly:                           "La Gacilly",
-	honfleur:                          "Honfleur",
-	mans:                              "Le Mans",
-	nantes:                            "Nantes",
-	perche:                            "Perche",
-	trouville:                         "Trouville"
-}
-
-export const Countries = {
-	germany                             : "Allemagne",
-	netherlands                         : "Pays-Bas",
-	malta                               : "Malte",
-	greece                              : "Grèce",
-}
