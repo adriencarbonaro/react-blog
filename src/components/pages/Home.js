@@ -12,6 +12,19 @@ export default class Home extends ComponentScrollTop {
         <>
             <BannerHome title="Auvergne" video="banner_auvergne_3" />
             <Cards
+              title="Monde"
+              background="#f5f9f5"
+              color="#5f765f"
+              list={[[
+                ], [
+                  { name: "amsterdam", title: "Amsterdam" },
+                  { name: "berlin", title: "Berlin" },
+                ], [
+                  { name: "crete", title: "Greece" },
+                  { name: "malta", title: "Malte" },
+              ]]}
+            />
+            <Cards
               title="France"
               background="#ffffff"
               color="#61829b"
@@ -30,19 +43,6 @@ export default class Home extends ComponentScrollTop {
                 ], [
                   { name: "perche", title: "Perche" },
                   { name: "trouville", title: "Trouville" },
-              ]]}
-            />
-            <Cards
-              title="Monde"
-              background="#f5f9f5"
-              color="#5f765f"
-              list={[[
-                ], [
-                  { name: "amsterdam", title: "Amsterdam" },
-                  { name: "berlin", title: "Berlin" },
-                ], [
-                  { name: "crete", title: "Greece" },
-                  { name: "malta", title: "Malte" },
               ]]}
             />
         </>
