@@ -21,8 +21,9 @@ export default class Etretat extends ComponentScrollTop {
 	render () {
 		const class_name = "etretat";
 		return (
-			<div>
+			<>
 				<BannerTitle title="Etretat" class={class_name} />
+				<div class="trip-content">
 				<SVGLocation className={class_name}/>
 				<Title text="Quelques jours entre Fecamp et Etretat" />
 				<Story text={<P1/>} />
@@ -43,7 +44,8 @@ export default class Etretat extends ComponentScrollTop {
 				<PhotoGallery list={[[
 					PHOTOS + "img-etretat-6.jpg",
 				]]} />
-			</div>
+				</div>
+			</>
 		)
 	}
 }

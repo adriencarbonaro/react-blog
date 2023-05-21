@@ -185,3 +185,7 @@ a.wine:hover {
 .subtitle-trouville {
 	color: var(--accent-trouville);
 }
+
+.trip-content {
+    padding                   : 50px 0;
+}

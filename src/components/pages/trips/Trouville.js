@@ -22,8 +22,9 @@ export default class Trouville extends ComponentScrollTop {
 	render () {
 		const class_name = "trouville";
 		return (
-			<div>
+			<>
 				<BannerTitle title="Trouville" class={class_name} />
+				<div class="trip-content">
 				<SVGLocation className={class_name}/>
 				<Title text="Week-end Normand" />
 				<Subtitle text="Un amour à la plage" accent={class_name} />
@@ -62,7 +63,8 @@ export default class Trouville extends ComponentScrollTop {
 				  PHOTOS + "img-trouville-16.jpg",
 				  PHOTOS + "img-trouville-17.jpg",
 				]]} />
-			</div>
+				</div>
+			</>
 		)
 	}
 }

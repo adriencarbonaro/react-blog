@@ -21,6 +21,7 @@ export default class Bourgogne extends ComponentScrollTop {
 		return (
 			<>
 				<BannerTitle title="Bourgogne" class={class_name} />
+				<div class="trip-content">
 				<SVGLocation className={class_name}/>
 				<Title text="Une nuit sous les étoiles" />
 				<Subtitle text="Escapade insolite" accent={class_name} />
@@ -49,6 +50,7 @@ export default class Bourgogne extends ComponentScrollTop {
 				<Story
 					text={<P4/>}
 				/>
+				</div>
 			</>
 		)
 	}

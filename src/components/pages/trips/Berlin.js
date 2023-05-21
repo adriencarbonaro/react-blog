@@ -22,8 +22,9 @@ export default class Berlin extends ComponentScrollTop {
 	render () {
 		const class_name = "berlin";
 		return (
-			<div>
+			<>
 				<BannerTitle title="Berlin" class={class_name} />
+				<div class="trip-content">
 				<SVGLocation className={class_name}/>
 				<Title text="Trois jours à Berlin" />
 				<Subtitle
@@ -56,7 +57,8 @@ export default class Berlin extends ComponentScrollTop {
 				<Story
 					text={<P5/>}
 				/>
-			</div>
+				</div>
+			</>
 		)
 	}
 }

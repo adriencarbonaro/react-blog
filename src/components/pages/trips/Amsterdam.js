@@ -26,6 +26,7 @@ export default class Amsterdam extends ComponentScrollTop {
 		return (
 			<>
 				<BannerTitle title="Amsterdam" class={class_name} />
+				<div class="trip-content">
 				<SVGLocation className={class_name}/>
 				<Title text="Trois jours à Amsterdam" />
 				<PhoneVideo src="https://nid-de-poule.s3.eu-west-3.amazonaws.com/videos/phone/amsterdam.mp4"/>
@@ -101,6 +102,7 @@ export default class Amsterdam extends ComponentScrollTop {
 				<Story
 					text={<P14/>}
 				/>
+				</div>
 			</>
 		)
 	}

@@ -22,8 +22,9 @@ export default class Bretagne extends ComponentScrollTop {
 	render () {
 		const class_name = "bretagne";
 		return (
-			<div>
+			<>
 				<BannerTitle title="Bretagne" class={class_name} />
+				<div class="trip-content">
 				<SVGLocation className={class_name}/>
 				<Title text="Escapade bretonne durant l'été" />
 				<Story text={<P1/>} />
@@ -104,7 +105,8 @@ export default class Bretagne extends ComponentScrollTop {
 				], [
 				  PHOTOS + "img-bretagne-33.jpg",
 				]]} />
-			</div>
+				</div>
+			</>
 		)
 	}
 }

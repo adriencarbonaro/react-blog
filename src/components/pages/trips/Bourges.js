@@ -23,8 +23,9 @@ export default class Bourges extends ComponentScrollTop {
 	render () {
 		const class_name = "bourges";
 		return (
-			<div>
+			<>
 				<BannerTitle title="Bourges" class={class_name} />
+				<div class="trip-content">
 				<SVGLocation className={class_name}/>
 				<Title text="Week-end dans le Berry" />
 				<Subtitle text="Terroir de Sancerre" accent={class_name} />
@@ -75,7 +76,8 @@ export default class Bourges extends ComponentScrollTop {
 					PHOTOS + "img-bourges-9.jpg",
 					PHOTOS + "img-bourges-10.jpg",
 				]]} />
-			</div>
+				</div>
+			</>
 		)
 	}
 }

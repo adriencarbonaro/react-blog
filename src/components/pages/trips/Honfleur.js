@@ -21,8 +21,9 @@ export default class Honfleur extends ComponentScrollTop {
 	render () {
 		const class_name = "honfleur";
 		return (
-			<div>
+			<>
 			<BannerTitle title="Honfleur" class={class_name} />
+				<div class="trip-content">
 				<SVGLocation className={class_name}/>
 				<Title text="Petite pause à Honfleur" />
 				<Story text={<P1/>} />
@@ -61,7 +62,8 @@ export default class Honfleur extends ComponentScrollTop {
 				  accent={class_name}
 				/>
 				<Story text={<P7/>} />
-			</div>
+				</div>
+			</>
 		)
 	}
 }

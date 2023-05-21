@@ -8,7 +8,6 @@ class Footer extends Component {
 	render() {
 		return (
 			<>
-			<div className='footer-margin'></div>
 			<div className='footer-container'>
 				<section className='social-media'>
 					<div className='social-media-wrap'>

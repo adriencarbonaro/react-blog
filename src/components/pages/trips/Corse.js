@@ -22,8 +22,9 @@ export default class Corse extends ComponentScrollTop {
 	render () {
 		const class_name = "corse";
 		return (
-		<div>
+		<>
 			<BannerTitle title="Corse" class={class_name} />
+			<div class="trip-content">
 			<SVGLocation className={class_name}/>
 			<Title text="Vacances en Corse" />
 			<Subtitle text="Juillet 2021" accent={class_name} />
@@ -114,7 +115,8 @@ export default class Corse extends ComponentScrollTop {
 			  src_col_1={PHOTOS + "img-corse-9.jpg"}
 			  src_col_2={PHOTOS + "img-corse-10.jpg"}
 			/>
-		</div>
+			</div>
+		</>
 		)
 	}
 }

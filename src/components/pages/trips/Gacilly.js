@@ -18,8 +18,9 @@ export default class Gacilly extends ComponentScrollTop {
 	render () {
 		const class_name = "gacilly";
 		return (
-		<div>
+		<>
 			<BannerTitle title="La Gacilly & Le Mans" class={class_name} />
+			<div class="trip-content">
 			<SVGLocation className={class_name}/>
 			<Title title="Week-end détente : La Gacilly et Le Mans" />
 			<Story text={<P1/>} />
@@ -64,7 +65,8 @@ export default class Gacilly extends ComponentScrollTop {
 				PHOTOS + "img-gacilly-16.jpg",
 			]]}
 			/>
-		</div>
+			</div>
+		</>
 		)
 	}
 }

@@ -23,8 +23,9 @@ export default class Crete extends ComponentScrollTop {
 	render () {
 		const class_name = "crete";
 		return (
-			<div>
+			<>
 				<BannerTitle title="Crète" class={class_name} />
+				<div class="trip-content">
 				<SVGLocation className={class_name}/>
 				<Title text="Une semaine en Crète" />
 				<Subtitle text="Le berceaux des Dieux" accent={class_name} />
@@ -84,7 +85,8 @@ export default class Crete extends ComponentScrollTop {
 				<Story text={<P9/>} />
 				<Story text={<P10/>} />
 				<PhotoSingle src={PHOTOS + "img-crete-11.jpg"} />
-			</div>
+				</div>
+			</>
 		);
 	}
 }

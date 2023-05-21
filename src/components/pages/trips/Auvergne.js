@@ -26,8 +26,9 @@ export default class Auvergne extends ComponentScrollTop {
 	render () {
 		const class_name = "auvergne";
 		return (
-			<div>
+			<>
 				<BannerTitle title="Auvergne" class={class_name} />
+				<div class="trip-content">
 				<SVGLocation className={class_name}/>
 				<Title text="Idées de promenades en Auvergne" />
 				<PhoneVideo color_spot="#e8f4ee" color_text="#68bc92" src="https://nid-de-poule.s3.eu-west-3.amazonaws.com/videos/phone/auvergne.mp4" />
@@ -100,7 +101,8 @@ export default class Auvergne extends ComponentScrollTop {
 					PHOTOS + "auvergne_048.jpg",
 					PHOTOS + "auvergne_049.jpg",
 				]]}/>
-			</div>
+				</div>
+			</>
 		)
 	}
 }

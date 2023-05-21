@@ -22,8 +22,9 @@ export default class Malta extends ComponentScrollTop {
 	render () {
 		const class_name = "malta";
 		return (
-			<div>
+			<>
 				<BannerTitle title="Malte" class={class_name} />
+				<div class="trip-content">
 				<SVGLocation className={class_name}/>
 				<Title text="Un séjour à Malte" />
 				<Story text={<P1/>} />
@@ -163,7 +164,8 @@ export default class Malta extends ComponentScrollTop {
 				  PHOTOS + "Malte-93.jpg",
 				  PHOTOS + "Malte-95.jpg",
 				]]} />
-			</div>
+				</div>
+			</>
 		)
 	}
 }

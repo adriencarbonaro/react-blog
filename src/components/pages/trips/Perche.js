@@ -19,8 +19,9 @@ export default class Perche extends ComponentScrollTop {
 	render () {
 		const class_name = "perche";
 		return (
-		<div>
+		<>
 			<BannerTitle title="Perche" class={class_name} />
+			<div class="trip-content">
 			<SVGLocation className={class_name}/>
 			<Title text="Quelques jours dans le Perche au printemps" />
 			<Subtitle
@@ -79,7 +80,8 @@ export default class Perche extends ComponentScrollTop {
 				PHOTOS + "img-perche-19.jpg",
 				PHOTOS + "img-perche-20.jpg",
 			]]} />
-		</div>
+			</div>
+		</>
 		)
 	}
 }
