@@ -1,5 +1,4 @@
 import React                 from 'react';
-import { Component }         from 'react';
 import { Route, Routes }     from 'react-router-dom'
 import { Paths }             from './assets/Paths';
 
@@ -26,33 +25,31 @@ import Trouville             from './components/pages/trips/Trouville'
 /* CSS */
 import './css/App.css';
 
-class App extends Component {
-	render () {
-	return (
-		<>
-			<Navbar />
-			<Routes>
-				<Route path={Paths.auvergne}    element={<Auvergne/>} />
-				<Route path={Paths.amsterdam}   element={<Amsterdam/>} />
-				<Route path={Paths.berlin}      element={<Berlin/>} />
-				<Route path={Paths.bourges}     element={<Bourges/>} />
-				<Route path={Paths.bourgogne}   element={<Bourgogne/>} />
-				<Route path={Paths.bretagne}    element={<Bretagne/>} />
-				<Route path={Paths.crete}       element={<Crete/>} />
-				<Route path={Paths.corse}       element={<Corse/>} />
-				<Route path={Paths.etretat}     element={<Etretat/>} />
-				<Route path={Paths.gacilly}     element={<Gacilly/>} />
-				<Route path={Paths.honfleur}    element={<Honfleur/>} />
-				<Route path={Paths.mans}        element={<Gacilly/>} />
-				<Route path={Paths.malta}       element={<Malta/>} />
-				<Route path={Paths.perche}      element={<Perche/>} />
-				<Route path={Paths.trouville}   element={<Trouville/>} />
-				<Route path={Paths.home}        element={<Home/>} />
-			</Routes>
-			<Footer />
-		</>
-	);
-	}
+function App ({ analytics }) {
+    return (
+        <>
+        <Navbar />
+        <Routes>
+            <Route path={Paths.auvergne}    element={<Auvergne analytics={analytics} />} />
+            <Route path={Paths.amsterdam}   element={<Amsterdam analytics={analytics}/>} />
+            <Route path={Paths.berlin}      element={<Berlin analytics={analytics}/>} />
+            <Route path={Paths.bourges}     element={<Bourges analytics={analytics}/>} />
+            <Route path={Paths.bourgogne}   element={<Bourgogne analytics={analytics}/>} />
+            <Route path={Paths.bretagne}    element={<Bretagne analytics={analytics}/>} />
+            <Route path={Paths.crete}       element={<Crete analytics={analytics}/>} />
+            <Route path={Paths.corse}       element={<Corse analytics={analytics}/>} />
+            <Route path={Paths.etretat}     element={<Etretat analytics={analytics}/>} />
+            <Route path={Paths.gacilly}     element={<Gacilly analytics={analytics}/>} />
+            <Route path={Paths.honfleur}    element={<Honfleur analytics={analytics}/>} />
+            <Route path={Paths.mans}        element={<Gacilly analytics={analytics}/>} />
+            <Route path={Paths.malta}       element={<Malta analytics={analytics}/>} />
+            <Route path={Paths.perche}      element={<Perche analytics={analytics}/>} />
+            <Route path={Paths.trouville}   element={<Trouville analytics={analytics}/>} />
+            <Route path={Paths.home}        element={<Home analytics={analytics}/>} />
+        </Routes>
+        <Footer />
+        </>
+    );
 }
 
 export default App;

@@ -2,7 +2,7 @@
 
 .PHONY: start
 start:
-	yarn start
+	BROWSER=NONE yarn start
 
 .PHONY: build
 build:

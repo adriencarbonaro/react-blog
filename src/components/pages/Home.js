@@ -6,10 +6,13 @@ import BannerHome            from '../BannerHome';
 /* CSS */
 import '../../css/App.css';
 
-export default class Home extends ComponentScrollTop {
-    render () {
-        return (
-        <>
+export default function Home (props) {
+    return (
+        <ComponentScrollTop
+          name={"home"}
+          analytics={props.analytics}
+          children={
+            <>
             <BannerHome title="Auvergne" video="banner_auvergne_3" />
             <Cards
               title="Monde"
@@ -45,7 +48,8 @@ export default class Home extends ComponentScrollTop {
                   { name: "trouville", title: "Trouville" },
               ]]}
             />
-        </>
-        );
-    }
+            </>
+          }
+        />
+    )
 }

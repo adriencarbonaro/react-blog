@@ -1,7 +1,15 @@
-import { Component }         from 'react';
+import { useEffect } from 'react';
+import ComponentAnalylitics   from './ComponentAnalytics';
 
-export default class ComponentScrollTop extends Component {
-	componentDidMount() {
-		window.scrollTo(0, 0)
-	}
+export default function ComponentScrollTop (props) {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    return (
+        <ComponentAnalylitics
+          name={props.name}
+          analytics={props.analytics}
+          children={props.children} />
+    );
 }
