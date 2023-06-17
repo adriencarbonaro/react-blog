@@ -1,5 +1,5 @@
 import React                  from 'react';
-import ComponentScrollTop     from '../../ComponentScrollTop';
+import Article                from '../../Article';
 import CustomLink             from '../../CustomLink';
 import { Story }              from '../../Story';
 import { BannerTitle }        from '../../BannerTitle';
@@ -18,7 +18,8 @@ const PHOTOS = Consts.AWS_URL + "photos/trips/perche/";
 export default function Perche (props) {
     const class_name = "perche";
     return (
-        <ComponentScrollTop
+        <Article
+          db={props.db}
           name={class_name}
           analytics={props.analytics}
           children={

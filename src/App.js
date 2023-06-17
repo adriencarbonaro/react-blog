@@ -25,27 +25,27 @@ import Trouville             from './components/pages/trips/Trouville'
 /* CSS */
 import './css/App.css';
 
-function App ({ analytics }) {
+function App ({ db, analytics }) {
     return (
         <>
         <Navbar />
         <Routes>
-            <Route path={Paths.auvergne}    element={<Auvergne analytics={analytics} />} />
-            <Route path={Paths.amsterdam}   element={<Amsterdam analytics={analytics}/>} />
-            <Route path={Paths.berlin}      element={<Berlin analytics={analytics}/>} />
-            <Route path={Paths.bourges}     element={<Bourges analytics={analytics}/>} />
-            <Route path={Paths.bourgogne}   element={<Bourgogne analytics={analytics}/>} />
-            <Route path={Paths.bretagne}    element={<Bretagne analytics={analytics}/>} />
-            <Route path={Paths.crete}       element={<Crete analytics={analytics}/>} />
-            <Route path={Paths.corse}       element={<Corse analytics={analytics}/>} />
-            <Route path={Paths.etretat}     element={<Etretat analytics={analytics}/>} />
-            <Route path={Paths.gacilly}     element={<Gacilly analytics={analytics}/>} />
-            <Route path={Paths.honfleur}    element={<Honfleur analytics={analytics}/>} />
-            <Route path={Paths.mans}        element={<Gacilly analytics={analytics}/>} />
-            <Route path={Paths.malta}       element={<Malta analytics={analytics}/>} />
-            <Route path={Paths.perche}      element={<Perche analytics={analytics}/>} />
-            <Route path={Paths.trouville}   element={<Trouville analytics={analytics}/>} />
-            <Route path={Paths.home}        element={<Home analytics={analytics}/>} />
+            <Route path={Paths.auvergne}    element={<Auvergne db={db} analytics={analytics} />} />
+            <Route path={Paths.amsterdam}   element={<Amsterdam db={db} analytics={analytics}/>} />
+            <Route path={Paths.berlin}      element={<Berlin db={db} analytics={analytics}/>} />
+            <Route path={Paths.bourges}     element={<Bourges db={db} analytics={analytics}/>} />
+            <Route path={Paths.bourgogne}   element={<Bourgogne db={db} analytics={analytics}/>} />
+            <Route path={Paths.bretagne}    element={<Bretagne db={db} analytics={analytics}/>} />
+            <Route path={Paths.crete}       element={<Crete db={db} analytics={analytics}/>} />
+            <Route path={Paths.corse}       element={<Corse db={db} analytics={analytics}/>} />
+            <Route path={Paths.etretat}     element={<Etretat db={db} analytics={analytics}/>} />
+            <Route path={Paths.gacilly}     element={<Gacilly db={db} analytics={analytics}/>} />
+            <Route path={Paths.honfleur}    element={<Honfleur db={db} analytics={analytics}/>} />
+            <Route path={Paths.mans}        element={<Gacilly db={db} analytics={analytics}/>} />
+            <Route path={Paths.malta}       element={<Malta db={db} analytics={analytics}/>} />
+            <Route path={Paths.perche}      element={<Perche db={db} analytics={analytics}/>} />
+            <Route path={Paths.trouville}   element={<Trouville db={db} analytics={analytics}/>} />
+            <Route path={Paths.home}        element={<Home db={db} analytics={analytics}/>} />
         </Routes>
         <Footer />
         </>

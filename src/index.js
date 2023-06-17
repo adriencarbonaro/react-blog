@@ -2,6 +2,7 @@ import React                  from 'react';
 import ReactDOM               from 'react-dom';
 import { initializeApp }      from "firebase/app";
 import { getAnalytics }       from "firebase/analytics";
+import { getFirestore }       from 'firebase/firestore';
 import App                    from './App';
 import {
   BrowserRouter,
@@ -21,11 +22,12 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+const db        = getFirestore(app);
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/*" element={<App analytics={analytics}/>}/>
+      <Route path="/*" element={<App db={db} analytics={analytics}/>}/>
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')

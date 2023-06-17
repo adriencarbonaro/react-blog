@@ -1,5 +1,5 @@
 import React                  from 'react';
-import ComponentScrollTop     from '../../ComponentScrollTop';
+import Article                from '../../Article';
 import { Story }              from "../../Story"
 import { Subtitle, Title }    from "../../Titles"
 import { PhotoGallery }       from '../../Photos';
@@ -20,7 +20,8 @@ const PHOTOS = Consts.AWS_URL + "photos/trips/malta/";
 export default function Malta (props) {
     const class_name = "malta";
     return (
-        <ComponentScrollTop
+        <Article
+          db={props.db}
           name={class_name}
           analytics={props.analytics}
           children={
