@@ -1,0 +1,42 @@
+.dog-friendly-container {
+    margin                    : 40px auto;
+    width                     : 60%;
+}
+
+@media only screen and (max-width: 960px) {
+  .dog-friendly-container {
+    width                     : 90%;
+  }
+}
+
+.dog-friendly-text-container {
+    display                   : flex;
+    height                    : 100px;
+    background-color          : #ffe7de;
+    border                    : none;
+    border-radius             : 10px;
+}
+
+.dog-friendly-header {
+    display                   : flex;
+    position                  : relative;
+    top                       : 15px;
+    left                      : 20px;
+    font-family               : 'Staatliches';
+    color                     : #e4ae88;
+    font-size                 : 26px;
+    align-items               : flex-end;
+}
+
+.dog-friendly-header-icon {
+    width                     : auto;
+    height                    : 50px;
+    margin                    : 0 10px 0 0;
+}
+
+.dog-friendly-text {
+    margin                    : auto;
+    font-family               : 'Poppins';
+    padding                   : 0 20px;
+    color                     : #c87753;
+}
