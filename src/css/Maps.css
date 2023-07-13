@@ -1,0 +1,12 @@
+.map-container {
+    width                     : 40%;
+    aspect-ratio              : 1;
+    border-radius             : 10px;
+    margin                    : 40px auto;
+}
+
+@media screen and (max-width: 960px) {
+    .map-container {
+        width                 : 90%;
+    }
+}
