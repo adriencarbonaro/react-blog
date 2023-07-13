@@ -14,6 +14,7 @@ import Consts                 from '../../../consts';
 import '../../../css/App.css';
 import '../../../css/trips/Trips.css'
 import { BannerTitle } from '../../BannerTitle';
+import { LocationCardGallery } from '../../LocationCard';
 
 const PHOTOS = Consts.AWS_URL + "photos/trips/malta/";
 
@@ -23,6 +24,7 @@ export default function Malta (props) {
         <Article
           db={props.db}
           name={class_name}
+          db={props.db}
           analytics={props.analytics}
           children={
             <>
@@ -110,10 +112,20 @@ export default function Malta (props) {
                 <Story text={<P15/>} />
                 <Story text={<P16/>} />
                 <Story text={<P17/>} />
+                <LocationCardGallery list={[[
+                    { text:"Kingsway Bar & Café", img: PHOTOS + "Malte-104.jpg", link: "https://www.tripadvisor.fr/Restaurant_Review-g190328-d12496609-Reviews-Kingsway-Valletta_Island_of_Malta.html" },
+                    { text:"Café Jubilee", img: PHOTOS + "Malte-105.jpg", link: "https://www.tripadvisor.fr/Restaurant_Review-g190328-d1379139-Reviews-Cafe_Jubilee_Valletta-Valletta_Island_of_Malta.html" },
+                    { text:"Taste", img: PHOTOS + "Malte-106.jpg", link: "https://www.tripadvisor.fr/Restaurant_Review-g190328-d19601510-Reviews-Taste-Valletta_Island_of_Malta.html" },
+                ]]} />
                 <Subtitle text="Où manger et boire un verre sur les Trois Cités ?" accent={class_name} />
                 <Story text={<P18/>} />
                 <Story text={<P19/>} />
                 <Story text={<P20/>} />
+                <LocationCardGallery list={[[
+                    { text:"DATE (Art café)", img: PHOTOS + "Malte-107.jpg", link: "https://www.tripadvisor.com/Restaurant_Review-g1748965-d23842023-Reviews-Date_Art_Cafe-Cospicua_Bormla_Island_of_Malta.html" },
+                    { text:"Café Rouge", img: PHOTOS + "Malte-108.jpg", link: "https://www.tripadvisor.fr/Restaurant_Review-g1748965-d7344316-Reviews-Cafe_Rouge-Cospicua_Bormla_Island_of_Malta.html" },
+                    { text:"Café Riche", img: PHOTOS + "Malte-109.jpg", link: "https://www.tripadvisor.fr/Restaurant_Review-g674784-d8832247-Reviews-Cafe_Riche-Birgu_Vittoriosa_Island_of_Malta.html" },
+                ]]} />
                 <Subtitle text="Le village de Popeye" accent={class_name} />
                 <Story text={<P21/>} />
                 <PhotoGallery list={[[
