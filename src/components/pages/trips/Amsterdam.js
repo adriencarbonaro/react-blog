@@ -11,6 +11,7 @@ import {
 import { PhoneVideo }         from '../../PhoneVideo';
 import CustomLink             from '../../CustomLink';
 import SVGLocation            from '../../SVGLocation'
+import { Map }                from '../../Maps';
 import Consts                 from '../../../consts';
 
 /* CSS */
@@ -33,6 +34,7 @@ export default function Amsterdam (props) {
                 <SVGLocation className={class_name}/>
                 <Title text="Trois jours à Amsterdam" />
                 <PhoneVideo src="https://nid-de-poule.s3.eu-west-3.amazonaws.com/videos/phone/amsterdam.mp4"/>
+                <Map loc={{lng: -0.9749, lat: 45.1617}}/>
                 <Story text={<P1/>} />
                 <Subtitle text="Vendredi 17 septembre" accent={class_name} />
                 <Story
