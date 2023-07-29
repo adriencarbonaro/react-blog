@@ -36,7 +36,7 @@
 
 .comment {
   background-color: #dde6e9ff;
-  width: 60%;
+  width: 40%;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -93,7 +93,7 @@
 /* comment form ***************************************************************/
 .comment-form {
   background-color: #dde6e9ff;
-  width: 60%;
+  width: 40%;
   border-radius: 10px;
   display: flex;
   flex-direction: column;

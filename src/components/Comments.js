@@ -15,9 +15,9 @@ import '../css/Comments.css';
 const LOCALE                  = "fr";
 const COL_COMMENTS            = "comments";
 const PLACEHOLDER_NAME        = "🎫 Votre nom";
-const PLACEHOLDER_EMAIL       = "📧 Votre email";
 const PLACEHOLDER_TEXT        = "✒️ Votre commentaire";
-const MAX_LENGTH              = 160;
+const MAX_LENGTH_NAME         = 40;
+const MAX_LENGTH_COMMENT      = 160;
 const EMPTY_STR               = "";
 const SUBMIT_TEXT             = "✉️ Envoyer";
 
@@ -28,7 +28,7 @@ function FormTextArea (props) {
             className={`comment-form-info comment-form-${props.name} ${props.wrong}`}
             placeholder={props.placeholder}
             value={props.text}
-            maxLength={MAX_LENGTH} />
+            maxLength={MAX_LENGTH_COMMENT} />
     }
 
     return (<>{makeTextArea()}</>);
@@ -42,7 +42,7 @@ function FormInput (props) {
             className={`comment-form-info comment-form-${props.name} ${props.wrong}`}
             placeholder={props.placeholder}
             value={props.text}
-            maxLength={MAX_LENGTH} />
+            maxLength={MAX_LENGTH_NAME} />
     }
 
     return (<>{makeInput()}</>);
@@ -51,7 +51,6 @@ function FormInput (props) {
 export default function Comments (props) {
     const [ comments, setComments ]     = useState([]);
     const [ name, setName ]             = useState({ value: EMPTY_STR, wrong: false });
-    const [ email, setEmail ]           = useState({ value: EMPTY_STR, wrong: false });
     const [ text, setText ]             = useState({ value: EMPTY_STR, wrong: false });
 
     function fetchComments () {
@@ -69,7 +68,6 @@ export default function Comments (props) {
     function sendComment () {
         addDoc(collection(props.db, COL_COMMENTS), {
           name: name.value,
-          email: email.value,
           text: text.value,
           article_key: props.article_key,
           replies: [],
@@ -87,33 +85,30 @@ export default function Comments (props) {
     }
 
     function onNameChange (evt) {
-        setName({ value: evt.target.value, wrong: evt.target.value === EMPTY_STR });
-    }
-
-    function onEmailChange (evt) {
-        setEmail({ value: evt.target.value, wrong: evt.target.value === EMPTY_STR });
+        setName({ value: evt.target.value, wrong: false });
     }
 
     function onTextChange (evt) {
-        setText({ value: evt.target.value, wrong: evt.target.value === EMPTY_STR });
+        setText({ value: evt.target.value, wrong: false });
     }
 
-    function isEmpty () {
-        return (
-          name.value === EMPTY_STR ||
-          email.value === EMPTY_STR ||
-          text.value === EMPTY_STR
-        );
+    function checkName () {
+        setName({ value: name.value, wrong: name.value === EMPTY_STR });
+        return name.value !== EMPTY_STR;
+    }
+
+    function checkText () {
+        setText({ value: text.value, wrong: text.value === EMPTY_STR });
+        return text.value !== EMPTY_STR;
     }
 
     function onBtnClick (evt) {
-        if (isEmpty()) return;
+        if (!(checkName() && checkText())) return;
         sendComment();
     }
 
     function clearForm () {
         setName({ value: EMPTY_STR, wrong: false });
-        setEmail({ value: EMPTY_STR, wrong: false });
         setText({ value: EMPTY_STR, wrong: false });
     }
 
@@ -174,7 +169,6 @@ export default function Comments (props) {
                 <div className="comment-form">
                     <div className="comment-form-elem">
                         <FormInput onChange={onNameChange} type="text" name="name" placeholder={PLACEHOLDER_NAME} text={name.value} wrong={name.wrong ? "wrong" : EMPTY_STR}/>
-                        <FormInput onChange={onEmailChange} type="email" name="email" placeholder={PLACEHOLDER_EMAIL} text={email.value} wrong={email.wrong ? "wrong" : EMPTY_STR}/>
                     </div>
                     <div className="comment-form-elem">
                         <FormTextArea onChange={onTextChange} name="text" placeholder={PLACEHOLDER_TEXT} text={text.value} wrong={text.wrong ? "wrong" : EMPTY_STR}/>
