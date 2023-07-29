@@ -60,7 +60,7 @@ export default function Comments (props) {
           const comments_docs = res.docs
           .map(r => r.data())
           .filter(d => d.article_key === props.article_key)
-          .sort((a,b) => a.date.seconds > b.date.seconds);
+          .sort((a,b) => b.date.seconds - a.date.seconds);
           setComments([ ...comments_docs ]);
         })
         .catch(err => { console.log(err); });
