@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "nid-de-poule"
-  }
+  },
+  "targets": {
+    "nid-de-poule": {
+      "hosting": {
+        "prod": [
+          "nid-de-poule"
+        ],
+        "staging": [
+          "staging-nid-de-poule"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
