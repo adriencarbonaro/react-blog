@@ -27,6 +27,7 @@ video.svg-clip-video {
 
 .phone-spot > .text {
 	fill: #e95f5e;
+	transform: translate(0px);
 }
 
 .phone-spot > .spot {
@@ -37,6 +38,10 @@ video.svg-clip-video {
 @media screen and (max-width: 500px) {
   .phone-spot {
     height: 530px;
-    transform: translateX(20px);
+    width: 100%;
+  }
+
+  .phone-spot > .text {
+    transform: translate(100px);
   }
 }
