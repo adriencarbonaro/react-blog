@@ -1,5 +1,6 @@
 import ComponentScrollTop     from './ComponentScrollTop';
 import Comments               from './Comments';
+import Subscription           from './Subscription';
 
 export default function Article (props) {
     return (
@@ -11,6 +12,7 @@ export default function Article (props) {
         <Comments
           db={props.db}
           article_key={props.name} />
+        <Subscription db={props.db} />
         </>
     );
 }

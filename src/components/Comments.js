@@ -8,6 +8,7 @@ import {
     getDocs,
     Timestamp
 }                             from 'firebase/firestore';
+import { EMPTY_STR }          from '../utils/constants';
 
 /* CSS */
 import '../css/Comments.css';
@@ -18,8 +19,7 @@ const PLACEHOLDER_NAME        = "🎫 Votre nom";
 const PLACEHOLDER_TEXT        = "✒️ Votre commentaire";
 const MAX_LENGTH_NAME         = 40;
 const MAX_LENGTH_COMMENT      = 160;
-const EMPTY_STR               = "";
-const SUBMIT_TEXT             = "✉️ Envoyer";
+const SUBMIT_TEXT             = "🚀 Envoyer";
 
 function FormTextArea (props) {
     function makeTextArea () {

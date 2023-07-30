@@ -11,10 +11,10 @@
 .comments-header {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 5px;
   font-family: 'Staatliches', sans-serif;
   font-size: 30px;
-  color: #d2dee4;
+  color:  #96b4bf;
 }
 
 .comments-header-text {
@@ -23,7 +23,7 @@
 
 .comments-header-emphasis {
   font-family: inherit;
-  color: #96b4bf;
+  color: #628999;
 }
 
 @media only screen and (max-width: 960px) {
