@@ -15,6 +15,7 @@ import Consts                 from '../../../consts';
 import { PhoneVideo }         from '../../PhoneVideo';
 import DogFriendly            from '../../DogFriendly';
 import { Map }                from '../../Maps';
+import Poi                    from '../../Poi';
 
 /* CSS */
 import '../../../css/App.css';
@@ -22,6 +23,11 @@ import '../../../css/trips/Trips.css'
 import '../../../css/PhoneVideo.css'
 
 const PHOTOS = Consts.AWS_URL + "photos/trips/auvergne/";
+
+const poi_list = [
+    new Poi({},{},{}),
+    new Poi({},{},{}),
+]
 
 export default function Auvergne (props) {
     const class_name = "auvergne";
