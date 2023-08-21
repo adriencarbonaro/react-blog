@@ -14,6 +14,7 @@ import SVGLocation            from '../../SVGLocation'
 import Consts                 from '../../../consts';
 import { PhoneVideo }         from '../../PhoneVideo';
 import DogFriendly            from '../../DogFriendly';
+import { Map }                from '../../Maps';
 
 /* CSS */
 import '../../../css/App.css';
@@ -37,6 +38,7 @@ export default function Auvergne (props) {
                 <Title text="Idées de promenades en Auvergne" />
                 <DogFriendly />
                 <PhoneVideo color_spot="#e8f4ee" color_text="#68bc92" src="https://nid-de-poule.s3.eu-west-3.amazonaws.com/videos/phone/auvergne.mp4" />
+                <Map loc={{lng: 2.970278, lat: 45.795556}}/>
                 <Story text={<P1/>} />
                 <Story text={<P2/>} />
                 <Story text={<P3/>} />
